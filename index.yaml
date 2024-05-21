@@ -10,7 +10,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.10.1
-    created: "2024-05-21T12:59:15.547734764+09:00"
+    created: "2024-05-21T13:44:12.646878622+09:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -39,7 +39,7 @@ entries:
   awx-operator:
   - apiVersion: v2
     appVersion: 2.15.0
-    created: "2024-05-21T12:59:15.548512456+09:00"
+    created: "2024-05-21T13:44:12.647740481+09:00"
     description: A Helm chart for the AWX Operator
     digest: d272279ef0f9b6ce171223450e9f030dfec3fd47adcd29ac39cc335dcd2cb84e
     name: awx-operator
@@ -56,7 +56,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v1
     appVersion: v1.14.5
-    created: "2024-05-21T12:59:15.552249185+09:00"
+    created: "2024-05-21T13:44:12.651152371+09:00"
     description: A Helm chart for cert-manager
     digest: 865bd97a0c1f13d52099f25b74f3c560972206bf52603818b00bc6c5c4278d5a
     home: https://github.com/cert-manager/cert-manager
@@ -87,7 +87,7 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 10.4.1
-    created: "2024-05-21T12:59:15.55539922+09:00"
+    created: "2024-05-21T13:44:12.655004752+09:00"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: eb68b49c8074143e064f17bfd31ebd67ebaf07e525426745c07477d4bdef8de4
     home: https://grafana.com
@@ -118,7 +118,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.10.0
-    created: "2024-05-21T12:59:15.560224802+09:00"
+    created: "2024-05-21T13:44:12.657856227+09:00"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: a0ae2ebd3b2bdde809090558d61e2c0b9a4984f09e70a2a874504c3815b346e4
@@ -147,13 +147,52 @@ entries:
       category: DeveloperTools
       images: |
         - name: keycloak
+          image: docker.io/bitnami/keycloak:24.0.4-debian-12-r1
+        - name: keycloak-config-cli
+          image: docker.io/bitnami/keycloak-config-cli:5.12.0-debian-12-r4
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 24.0.4
+    created: "2024-05-21T13:44:12.674042065+09:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 15.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Keycloak is a high performance Java-based identity and access management
+      solution. It lets developers add an authentication layer to their applications
+      with minimum effort.
+    digest: b432c5bcf8efa862c190ce4085c26f62420b202a974e701bf7c99b2274668612
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
+    keywords:
+    - keycloak
+    - access-management
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: keycloak
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
+    urls:
+    - charts/keycloak-21.2.2.tgz
+    version: 21.2.2
+  - annotations:
+      category: DeveloperTools
+      images: |
+        - name: keycloak
           image: docker.io/bitnami/keycloak:23.0.7-debian-12-r4
         - name: keycloak-config-cli
           image: docker.io/bitnami/keycloak-config-cli:5.11.1-debian-12-r0
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 23.0.7
-    created: "2024-05-21T12:59:15.569720044+09:00"
+    created: "2024-05-21T13:44:12.666938116+09:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -193,7 +232,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.72.0
-    created: "2024-05-21T12:59:15.620644405+09:00"
+    created: "2024-05-21T13:44:12.734715567+09:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -262,7 +301,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.71.2
-    created: "2024-05-21T12:59:15.595638243+09:00"
+    created: "2024-05-21T13:44:12.700186949+09:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -324,7 +363,7 @@ entries:
   kubernetes-replicator:
   - apiVersion: v2
     appVersion: v2.9.2
-    created: "2024-05-21T12:59:15.620911936+09:00"
+    created: "2024-05-21T13:44:12.734980672+09:00"
     description: Controller for replicating secrets+configmaps across namespaces
     digest: 7229545d3bdf075d8fd007d4ab67059f7a63483868efb0aaf506de0b1ff26633
     name: kubernetes-replicator
@@ -335,7 +374,7 @@ entries:
   local-path-provisioner:
   - apiVersion: v1
     appVersion: v0.0.26
-    created: "2024-05-21T12:59:15.62169697+09:00"
+    created: "2024-05-21T13:44:12.735951269+09:00"
     description: Use HostPath for persistent local storage with Kubernetes
     digest: 7a26dc746b60a67e694e49c52e1b43142c9c98a75d04cccd9ebf2e50f1f7b8ee
     home: https://github.com/rancher/local-path-provisioner
@@ -351,7 +390,7 @@ entries:
     version: 0.0.26
   - apiVersion: v1
     appVersion: v0.0.25
-    created: "2024-05-21T12:59:15.621302233+09:00"
+    created: "2024-05-21T13:44:12.735491734+09:00"
     description: Use HostPath for persistent local storage with Kubernetes
     digest: d0b29816de24dc528829da513c55e86e6baaa2f0c7346d80d628b4f97611e284
     home: https://github.com/rancher/local-path-provisioner
@@ -368,7 +407,7 @@ entries:
   loki-distributed:
   - apiVersion: v2
     appVersion: 2.9.6
-    created: "2024-05-21T12:59:15.625322108+09:00"
+    created: "2024-05-21T13:44:12.739586462+09:00"
     description: Helm chart for Grafana Loki in microservices mode
     digest: c0436b6adfd5dc27b6b81d4b5c62a00cf52c07f1318a5d985e16cb06286e855b
     home: https://grafana.github.io/helm-charts
@@ -387,7 +426,7 @@ entries:
   metallb:
   - apiVersion: v2
     appVersion: v0.14.4
-    created: "2024-05-21T12:59:15.627205426+09:00"
+    created: "2024-05-21T13:44:12.741630933+09:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -419,7 +458,7 @@ entries:
           description: "Updated the _addon-resizer_ OCI image to [v1.8.20](https://github.com/kubernetes/autoscaler/releases/tag/addon-resizer-1.8.20)."
     apiVersion: v2
     appVersion: 0.7.0
-    created: "2024-05-21T12:59:15.628699021+09:00"
+    created: "2024-05-21T13:44:12.743163344+09:00"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
     digest: 19df2fa9c4c6e1ec4f134da56ae9c3e6b610bfd5674744115c9e9864c5f3debe
@@ -455,7 +494,7 @@ entries:
           description: "Changed the default addon resizer nanny resource configuration to match the documented Metrics Server autoscaling values."
     apiVersion: v2
     appVersion: 0.6.4
-    created: "2024-05-21T12:59:15.627928905+09:00"
+    created: "2024-05-21T13:44:12.742302668+09:00"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
     digest: e7cba5a2d7e2b0949b3ea1aa48fc3780b71eba17e1edccc8273f5da67048164b
@@ -482,7 +521,7 @@ entries:
   nginx-ingress:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2024-05-21T12:59:15.630894711+09:00"
+    created: "2024-05-21T13:44:12.745610504+09:00"
     description: NGINX Ingress Controller
     digest: 24da115473019b9b1d388bf0fde01843a08b7a526743575a5f1c5e7e07909f4f
     home: https://github.com/nginxinc/kubernetes-ingress
@@ -504,7 +543,7 @@ entries:
   promtail:
   - apiVersion: v2
     appVersion: 2.9.3
-    created: "2024-05-21T12:59:15.633043599+09:00"
+    created: "2024-05-21T13:44:12.747626063+09:00"
     description: Promtail is an agent which ships the contents of local logs to a
       Loki instance
     digest: 8bf485b757bfc7c37e809b60a8f61324c84160c820269fda469cb6270045c514
@@ -526,7 +565,7 @@ entries:
   rook-ceph:
   - apiVersion: v2
     appVersion: v1.13.7
-    created: "2024-05-21T12:59:15.637685957+09:00"
+    created: "2024-05-21T13:44:12.754426358+09:00"
     dependencies:
     - name: library
       repository: file://../library
@@ -543,7 +582,7 @@ entries:
   rook-ceph-cluster:
   - apiVersion: v2
     appVersion: v1.13.7
-    created: "2024-05-21T12:59:15.635142456+09:00"
+    created: "2024-05-21T13:44:12.751847815+09:00"
     dependencies:
     - name: library
       repository: file://../library
@@ -557,4 +596,4 @@ entries:
     urls:
     - charts/rook-ceph-cluster-v1.13.7.tgz
     version: v1.13.7
-generated: "2024-05-21T12:59:15.532277097+09:00"
+generated: "2024-05-21T13:44:12.635156255+09:00"
