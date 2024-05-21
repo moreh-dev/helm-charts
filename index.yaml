@@ -10,7 +10,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.10.1
-    created: "2024-05-21T12:58:00.135370536+09:00"
+    created: "2024-05-21T12:59:15.547734764+09:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -39,7 +39,7 @@ entries:
   awx-operator:
   - apiVersion: v2
     appVersion: 2.15.0
-    created: "2024-05-21T12:58:00.136756338+09:00"
+    created: "2024-05-21T12:59:15.548512456+09:00"
     description: A Helm chart for the AWX Operator
     digest: d272279ef0f9b6ce171223450e9f030dfec3fd47adcd29ac39cc335dcd2cb84e
     name: awx-operator
@@ -56,7 +56,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v1
     appVersion: v1.14.5
-    created: "2024-05-21T12:58:00.141101643+09:00"
+    created: "2024-05-21T12:59:15.552249185+09:00"
     description: A Helm chart for cert-manager
     digest: 865bd97a0c1f13d52099f25b74f3c560972206bf52603818b00bc6c5c4278d5a
     home: https://github.com/cert-manager/cert-manager
@@ -87,7 +87,7 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 10.4.1
-    created: "2024-05-21T12:58:00.145104917+09:00"
+    created: "2024-05-21T12:59:15.55539922+09:00"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: eb68b49c8074143e064f17bfd31ebd67ebaf07e525426745c07477d4bdef8de4
     home: https://grafana.com
@@ -118,7 +118,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.10.0
-    created: "2024-05-21T12:58:00.148650535+09:00"
+    created: "2024-05-21T12:59:15.560224802+09:00"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: a0ae2ebd3b2bdde809090558d61e2c0b9a4984f09e70a2a874504c3815b346e4
@@ -153,7 +153,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 23.0.7
-    created: "2024-05-21T12:58:00.157351041+09:00"
+    created: "2024-05-21T12:59:15.569720044+09:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -192,8 +192,77 @@ entries:
           url: https://github.com/prometheus-operator/kube-prometheus
       artifacthub.io/operator: "true"
     apiVersion: v2
+    appVersion: v0.72.0
+    created: "2024-05-21T12:59:15.620644405+09:00"
+    dependencies:
+    - condition: crds.enabled
+      name: crds
+      repository: ""
+      version: 0.0.0
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 5.16.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.30.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 7.3.*
+    - condition: windowsMonitoring.enabled
+      name: prometheus-windows-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 0.3.*
+    description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards,
+      and Prometheus rules combined with documentation and scripts to provide easy
+      to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
+      Prometheus Operator.
+    digest: abffe075dae328054976fe5c5ebfd6dd365bb3c87ca9310bed7a654c24c5c760
+    home: https://github.com/prometheus-operator/kube-prometheus
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - operator
+    - prometheus
+    - kube-prometheus
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: andrew@quadcorps.co.uk
+      name: andrewgkew
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: github.gkarthiks@gmail.com
+      name: gkarthiks
+    - email: kube-prometheus-stack@sisti.pt
+      name: GMartinez-Sisti
+    - email: github@jkroepke.de
+      name: jkroepke
+    - email: scott@r6by.com
+      name: scottrigby
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: quentin.bisson@gmail.com
+      name: QuentinBisson
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - charts/kube-prometheus-stack-57.0.1.tgz
+    version: 57.0.1
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus-operator/kube-prometheus
+      artifacthub.io/operator: "true"
+    apiVersion: v2
     appVersion: v0.71.2
-    created: "2024-05-21T12:58:00.182612149+09:00"
+    created: "2024-05-21T12:59:15.595638243+09:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -255,7 +324,7 @@ entries:
   kubernetes-replicator:
   - apiVersion: v2
     appVersion: v2.9.2
-    created: "2024-05-21T12:58:00.182911664+09:00"
+    created: "2024-05-21T12:59:15.620911936+09:00"
     description: Controller for replicating secrets+configmaps across namespaces
     digest: 7229545d3bdf075d8fd007d4ab67059f7a63483868efb0aaf506de0b1ff26633
     name: kubernetes-replicator
@@ -266,7 +335,7 @@ entries:
   local-path-provisioner:
   - apiVersion: v1
     appVersion: v0.0.26
-    created: "2024-05-21T12:58:00.183947883+09:00"
+    created: "2024-05-21T12:59:15.62169697+09:00"
     description: Use HostPath for persistent local storage with Kubernetes
     digest: 7a26dc746b60a67e694e49c52e1b43142c9c98a75d04cccd9ebf2e50f1f7b8ee
     home: https://github.com/rancher/local-path-provisioner
@@ -282,7 +351,7 @@ entries:
     version: 0.0.26
   - apiVersion: v1
     appVersion: v0.0.25
-    created: "2024-05-21T12:58:00.183496918+09:00"
+    created: "2024-05-21T12:59:15.621302233+09:00"
     description: Use HostPath for persistent local storage with Kubernetes
     digest: d0b29816de24dc528829da513c55e86e6baaa2f0c7346d80d628b4f97611e284
     home: https://github.com/rancher/local-path-provisioner
@@ -299,7 +368,7 @@ entries:
   loki-distributed:
   - apiVersion: v2
     appVersion: 2.9.6
-    created: "2024-05-21T12:58:00.18821008+09:00"
+    created: "2024-05-21T12:59:15.625322108+09:00"
     description: Helm chart for Grafana Loki in microservices mode
     digest: c0436b6adfd5dc27b6b81d4b5c62a00cf52c07f1318a5d985e16cb06286e855b
     home: https://grafana.github.io/helm-charts
@@ -318,7 +387,7 @@ entries:
   metallb:
   - apiVersion: v2
     appVersion: v0.14.4
-    created: "2024-05-21T12:58:00.191141676+09:00"
+    created: "2024-05-21T12:59:15.627205426+09:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -350,7 +419,7 @@ entries:
           description: "Updated the _addon-resizer_ OCI image to [v1.8.20](https://github.com/kubernetes/autoscaler/releases/tag/addon-resizer-1.8.20)."
     apiVersion: v2
     appVersion: 0.7.0
-    created: "2024-05-21T12:58:00.193545534+09:00"
+    created: "2024-05-21T12:59:15.628699021+09:00"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
     digest: 19df2fa9c4c6e1ec4f134da56ae9c3e6b610bfd5674744115c9e9864c5f3debe
@@ -386,7 +455,7 @@ entries:
           description: "Changed the default addon resizer nanny resource configuration to match the documented Metrics Server autoscaling values."
     apiVersion: v2
     appVersion: 0.6.4
-    created: "2024-05-21T12:58:00.192434654+09:00"
+    created: "2024-05-21T12:59:15.627928905+09:00"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
     digest: e7cba5a2d7e2b0949b3ea1aa48fc3780b71eba17e1edccc8273f5da67048164b
@@ -413,7 +482,7 @@ entries:
   nginx-ingress:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2024-05-21T12:58:00.195953831+09:00"
+    created: "2024-05-21T12:59:15.630894711+09:00"
     description: NGINX Ingress Controller
     digest: 24da115473019b9b1d388bf0fde01843a08b7a526743575a5f1c5e7e07909f4f
     home: https://github.com/nginxinc/kubernetes-ingress
@@ -435,7 +504,7 @@ entries:
   promtail:
   - apiVersion: v2
     appVersion: 2.9.3
-    created: "2024-05-21T12:58:00.19730683+09:00"
+    created: "2024-05-21T12:59:15.633043599+09:00"
     description: Promtail is an agent which ships the contents of local logs to a
       Loki instance
     digest: 8bf485b757bfc7c37e809b60a8f61324c84160c820269fda469cb6270045c514
@@ -457,7 +526,7 @@ entries:
   rook-ceph:
   - apiVersion: v2
     appVersion: v1.13.7
-    created: "2024-05-21T12:58:00.202423786+09:00"
+    created: "2024-05-21T12:59:15.637685957+09:00"
     dependencies:
     - name: library
       repository: file://../library
@@ -474,7 +543,7 @@ entries:
   rook-ceph-cluster:
   - apiVersion: v2
     appVersion: v1.13.7
-    created: "2024-05-21T12:58:00.199092682+09:00"
+    created: "2024-05-21T12:59:15.635142456+09:00"
     dependencies:
     - name: library
       repository: file://../library
@@ -488,4 +557,4 @@ entries:
     urls:
     - charts/rook-ceph-cluster-v1.13.7.tgz
     version: v1.13.7
-generated: "2024-05-21T12:58:00.124916415+09:00"
+generated: "2024-05-21T12:59:15.532277097+09:00"
