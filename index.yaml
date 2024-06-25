@@ -10,7 +10,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.11.3
-    created: "2024-06-24T17:14:41.669482+09:00"
+    created: "2024-06-25T01:05:51.88562132Z"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -45,7 +45,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.10.1
-    created: "2024-06-24T17:14:41.662035+09:00"
+    created: "2024-06-25T01:05:51.875930277Z"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -74,7 +74,7 @@ entries:
   awx-operator:
   - apiVersion: v2
     appVersion: 2.15.0
-    created: "2024-06-24T17:14:41.670279+09:00"
+    created: "2024-06-25T01:05:51.886279835Z"
     description: A Helm chart for the AWX Operator
     digest: d272279ef0f9b6ce171223450e9f030dfec3fd47adcd29ac39cc335dcd2cb84e
     name: awx-operator
@@ -91,7 +91,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v1
     appVersion: v1.14.5
-    created: "2024-06-24T17:14:41.672713+09:00"
+    created: "2024-06-25T01:05:51.889405562Z"
     description: A Helm chart for cert-manager
     digest: 865bd97a0c1f13d52099f25b74f3c560972206bf52603818b00bc6c5c4278d5a
     home: https://github.com/cert-manager/cert-manager
@@ -122,7 +122,7 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 10.4.1
-    created: "2024-06-24T17:14:41.674761+09:00"
+    created: "2024-06-25T01:05:51.89269131Z"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: eb68b49c8074143e064f17bfd31ebd67ebaf07e525426745c07477d4bdef8de4
     home: https://grafana.com
@@ -153,7 +153,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.10.0
-    created: "2024-06-24T17:14:41.677506+09:00"
+    created: "2024-06-25T01:05:51.895424915Z"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: a0ae2ebd3b2bdde809090558d61e2c0b9a4984f09e70a2a874504c3815b346e4
@@ -188,7 +188,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 24.0.4
-    created: "2024-06-24T17:14:41.688784+09:00"
+    created: "2024-06-25T01:05:51.910986664Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -227,7 +227,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 23.0.7
-    created: "2024-06-24T17:14:41.683309+09:00"
+    created: "2024-06-25T01:05:51.903114628Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -267,7 +267,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.72.0
-    created: "2024-06-24T17:14:41.719095+09:00"
+    created: "2024-06-25T01:05:51.958764434Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -336,7 +336,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.71.2
-    created: "2024-06-24T17:14:41.703701+09:00"
+    created: "2024-06-25T01:05:51.934257525Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -398,7 +398,7 @@ entries:
   kubernetes-replicator:
   - apiVersion: v2
     appVersion: v2.9.2
-    created: "2024-06-24T17:14:41.7194+09:00"
+    created: "2024-06-25T01:05:51.959242803Z"
     description: Controller for replicating secrets+configmaps across namespaces
     digest: 7229545d3bdf075d8fd007d4ab67059f7a63483868efb0aaf506de0b1ff26633
     name: kubernetes-replicator
@@ -409,7 +409,7 @@ entries:
   local-path-provisioner:
   - apiVersion: v1
     appVersion: v0.0.26
-    created: "2024-06-24T17:14:41.720182+09:00"
+    created: "2024-06-25T01:05:51.960830056Z"
     description: Use HostPath for persistent local storage with Kubernetes
     digest: 7a26dc746b60a67e694e49c52e1b43142c9c98a75d04cccd9ebf2e50f1f7b8ee
     home: https://github.com/rancher/local-path-provisioner
@@ -425,7 +425,7 @@ entries:
     version: 0.0.26
   - apiVersion: v1
     appVersion: v0.0.25
-    created: "2024-06-24T17:14:41.719746+09:00"
+    created: "2024-06-25T01:05:51.960051979Z"
     description: Use HostPath for persistent local storage with Kubernetes
     digest: d0b29816de24dc528829da513c55e86e6baaa2f0c7346d80d628b4f97611e284
     home: https://github.com/rancher/local-path-provisioner
@@ -442,7 +442,7 @@ entries:
   loki-distributed:
   - apiVersion: v2
     appVersion: 2.9.6
-    created: "2024-06-24T17:14:41.723086+09:00"
+    created: "2024-06-25T01:05:51.968115524Z"
     description: Helm chart for Grafana Loki in microservices mode
     digest: c0436b6adfd5dc27b6b81d4b5c62a00cf52c07f1318a5d985e16cb06286e855b
     home: https://grafana.github.io/helm-charts
@@ -461,7 +461,7 @@ entries:
   metallb:
   - apiVersion: v2
     appVersion: v0.14.4
-    created: "2024-06-24T17:14:41.72475+09:00"
+    created: "2024-06-25T01:05:51.972034463Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -493,7 +493,7 @@ entries:
           description: "Updated the _addon-resizer_ OCI image to [v1.8.20](https://github.com/kubernetes/autoscaler/releases/tag/addon-resizer-1.8.20)."
     apiVersion: v2
     appVersion: 0.7.0
-    created: "2024-06-24T17:14:41.726149+09:00"
+    created: "2024-06-25T01:05:51.974764161Z"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
     digest: 19df2fa9c4c6e1ec4f134da56ae9c3e6b610bfd5674744115c9e9864c5f3debe
@@ -529,7 +529,7 @@ entries:
           description: "Changed the default addon resizer nanny resource configuration to match the documented Metrics Server autoscaling values."
     apiVersion: v2
     appVersion: 0.6.4
-    created: "2024-06-24T17:14:41.725455+09:00"
+    created: "2024-06-25T01:05:51.973351654Z"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
     digest: e7cba5a2d7e2b0949b3ea1aa48fc3780b71eba17e1edccc8273f5da67048164b
@@ -553,10 +553,25 @@ entries:
     urls:
     - charts/metrics-server-3.11.0.tgz
     version: 3.11.0
+  moai:
+  - apiVersion: v2
+    appVersion: 1.0.19
+    created: "2024-06-25T01:05:51.975932337Z"
+    description: A Helm chart for MoAI
+    digest: a4fa232300a6d90d1773c1110b7dacb40c79ce676eb1b42cb5d78039484c4335
+    home: https://github.com/moreh-dev/moai
+    name: moai
+    sources:
+    - https://github.com/moreh-dev/moai
+    - https://github.com/moreh-dev/web-common
+    type: application
+    urls:
+    - charts/moai-1.0.19.tgz
+    version: 1.0.19
   nginx-ingress:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2024-06-24T17:14:41.72804+09:00"
+    created: "2024-06-25T01:05:51.980112328Z"
     description: NGINX Ingress Controller
     digest: 24da115473019b9b1d388bf0fde01843a08b7a526743575a5f1c5e7e07909f4f
     home: https://github.com/nginxinc/kubernetes-ingress
@@ -578,7 +593,7 @@ entries:
   promtail:
   - apiVersion: v2
     appVersion: 2.9.3
-    created: "2024-06-24T17:14:41.729476+09:00"
+    created: "2024-06-25T01:05:51.981615745Z"
     description: Promtail is an agent which ships the contents of local logs to a
       Loki instance
     digest: 8bf485b757bfc7c37e809b60a8f61324c84160c820269fda469cb6270045c514
@@ -600,7 +615,7 @@ entries:
   rook-ceph:
   - apiVersion: v2
     appVersion: v1.13.7
-    created: "2024-06-24T17:14:41.732955+09:00"
+    created: "2024-06-25T01:05:51.987234005Z"
     dependencies:
     - name: library
       repository: file://../library
@@ -617,7 +632,7 @@ entries:
   rook-ceph-cluster:
   - apiVersion: v2
     appVersion: v1.13.7
-    created: "2024-06-24T17:14:41.730747+09:00"
+    created: "2024-06-25T01:05:51.983142635Z"
     dependencies:
     - name: library
       repository: file://../library
@@ -634,7 +649,7 @@ entries:
   sda-exporter:
   - apiVersion: v2
     appVersion: 0.2.3
-    created: "2024-06-24T17:14:41.733497+09:00"
+    created: "2024-06-25T01:05:51.98777976Z"
     description: SDA Exporter for Prometheus
     digest: ef25950cc6866e3ea70a0cf1a23ec6d8064799406d6571e2aebeabaa0d5f00ad
     home: https://github.com/moreh-dev/sda_exporter.go
@@ -647,7 +662,7 @@ entries:
     version: 0.2.3
   - apiVersion: v2
     appVersion: 0.2.2
-    created: "2024-06-24T17:14:41.733254+09:00"
+    created: "2024-06-25T01:05:51.987517623Z"
     description: SDA Exporter for Prometheus
     digest: 70f5cf558083be445872f901096f58fbd7a096fe46bd6a7c7377cbf95dae6126
     home: https://github.com/moreh-dev/sda_exporter.go
@@ -658,4 +673,4 @@ entries:
     urls:
     - charts/sda-exporter-0.2.2.tgz
     version: 0.2.2
-generated: "2024-06-24T17:14:41.654008+09:00"
+generated: "2024-06-25T01:05:51.866298552Z"
