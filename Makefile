@@ -26,5 +26,5 @@ remove-local-branch: ## Update remote branches and remove local branches.
 ##@ Release
 
 .PHONY: index
-index:
+index: ## Generate Helm repository index.
 	helm repo index .
