@@ -15,14 +15,6 @@
 help: ## Display this help.
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m<target>\033[0m\n"} /^[a-zA-Z_0-9-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
 
-##@ Development
-
-.PHONY: remove-local-branch
-remove-local-branch: ## Update remote branches and remove local branches.
-	git remote update --prune
-	git switch --detach origin/main
-	@git for-each-ref --format '%(refname:short)' refs/heads | xargs -r -t git branch -D
-
 ##@ Release
 
 .PHONY: index
