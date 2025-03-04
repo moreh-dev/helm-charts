@@ -104,7 +104,7 @@ entries:
           url: https://airflow.apache.org/docs/apache-airflow/2.9.3/_images/code.png
     apiVersion: v2
     appVersion: 2.9.3
-    created: "2025-03-04T12:52:23.54899942Z"
+    created: "2025-03-04T15:51:47.97730065Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -133,7 +133,7 @@ entries:
   amd-gpu:
   - apiVersion: v2
     appVersion: 1.31.0.0
-    created: "2025-03-04T12:52:23.553257613Z"
+    created: "2025-03-04T15:51:47.98167788Z"
     dependencies:
     - condition: nfd.enabled
       name: node-feature-discovery
@@ -160,7 +160,7 @@ entries:
     version: 0.14.0
   - apiVersion: v2
     appVersion: 1.25.2.8
-    created: "2025-03-04T12:52:23.550221128Z"
+    created: "2025-03-04T15:51:47.978560258Z"
     dependencies:
     - condition: nfd.enabled
       name: node-feature-discovery
@@ -195,7 +195,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.11.3
-    created: "2025-03-04T12:52:23.574403006Z"
+    created: "2025-03-04T15:51:48.002598543Z"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -230,7 +230,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.10.1
-    created: "2025-03-04T12:52:23.563014421Z"
+    created: "2025-03-04T15:51:47.991504211Z"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -259,7 +259,7 @@ entries:
   artifact:
   - apiVersion: v2
     appVersion: v0.1.2
-    created: "2025-03-04T12:52:23.574918618Z"
+    created: "2025-03-04T15:51:48.003434121Z"
     digest: c0cde387fe204c34fe23d3c988e5273a9ec903e6a60e2f36857a5684c2f90e0e
     home: https://github.com/moreh-dev/artifact
     name: artifact
@@ -271,7 +271,7 @@ entries:
     version: v0.1.2
   - apiVersion: v2
     appVersion: v0.1.1
-    created: "2025-03-04T12:52:23.574671136Z"
+    created: "2025-03-04T15:51:48.0029133Z"
     digest: 63d038e148d6e494833fcffd5bd9f8f2a08a4386874be310c07ea01ff486196e
     home: https://github.com/moreh-dev/artifact
     name: artifact
@@ -284,7 +284,7 @@ entries:
   awx-operator:
   - apiVersion: v2
     appVersion: 2.15.0
-    created: "2025-03-04T12:52:23.575611689Z"
+    created: "2025-03-04T15:51:48.004509636Z"
     description: A Helm chart for the AWX Operator
     digest: d272279ef0f9b6ce171223450e9f030dfec3fd47adcd29ac39cc335dcd2cb84e
     name: awx-operator
@@ -295,7 +295,7 @@ entries:
   base:
   - apiVersion: v2
     appVersion: 1.24.3
-    created: "2025-03-04T12:52:23.577591741Z"
+    created: "2025-03-04T15:51:48.006993394Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
     digest: 4e7c944f5737b4b5e9fe2e622c213f3e1940657ad003b60ab60455d3298adf3f
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -316,7 +316,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v1
     appVersion: v1.14.5
-    created: "2025-03-04T12:52:23.581766959Z"
+    created: "2025-03-04T15:51:48.011207131Z"
     description: A Helm chart for cert-manager
     digest: 865bd97a0c1f13d52099f25b74f3c560972206bf52603818b00bc6c5c4278d5a
     home: https://github.com/cert-manager/cert-manager
@@ -340,7 +340,7 @@ entries:
   gateway:
   - apiVersion: v2
     appVersion: 1.24.3
-    created: "2025-03-04T12:52:23.582409887Z"
+    created: "2025-03-04T15:51:48.011865679Z"
     description: Helm chart for deploying Istio gateways
     digest: a8f6b6e38bd66a44749b8f43412e53b648667c77e89762f2c8d29ae7a8919253
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -357,7 +357,7 @@ entries:
   gateway-api:
   - apiVersion: v2
     appVersion: v1.2.0
-    created: "2025-03-04T12:52:23.589149716Z"
+    created: "2025-03-04T15:51:48.018378821Z"
     description: Kubernetes Gateway API
     digest: 117837038436b2f6248bc47467be006f267d4175fc6469f52b30d86fbe043e78
     name: gateway-api
@@ -375,7 +375,7 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 10.4.1
-    created: "2025-03-04T12:52:23.59167277Z"
+    created: "2025-03-04T15:51:48.021094183Z"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: eb68b49c8074143e064f17bfd31ebd67ebaf07e525426745c07477d4bdef8de4
     home: https://grafana.com
@@ -406,7 +406,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.10.0
-    created: "2025-03-04T12:52:23.595062218Z"
+    created: "2025-03-04T15:51:48.024379005Z"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: a0ae2ebd3b2bdde809090558d61e2c0b9a4984f09e70a2a874504c3815b346e4
@@ -437,7 +437,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.11.3
-    created: "2025-03-04T12:52:23.600069487Z"
+    created: "2025-03-04T15:51:48.028990171Z"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: a9f371489a6c18042508c0b5c2ea669deaad7ccc08f37efc4522e336edda1c20
@@ -463,7 +463,7 @@ entries:
   istiod:
   - apiVersion: v2
     appVersion: 1.24.3
-    created: "2025-03-04T12:52:23.601586305Z"
+    created: "2025-03-04T15:51:48.030766773Z"
     description: Helm chart for istio control plane
     digest: a196fc82ab7e793c4bd105af0d760171e387a765a3a903bc73c4bb70acd01c7c
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -480,7 +480,7 @@ entries:
   k8s-ecr-login-renew:
   - apiVersion: v2
     appVersion: 1.7.1
-    created: "2025-03-04T12:52:23.601876987Z"
+    created: "2025-03-04T15:51:48.031086198Z"
     description: Deploys a cronJob which will renew ECR imagePullSecrets automatically
     digest: 47a6bbfa5136b5fffd0c5c27be190b51bdc236a6872335dfc91af12bf493bc1d
     keywords:
@@ -507,7 +507,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 26.0.5
-    created: "2025-03-04T12:52:23.626295792Z"
+    created: "2025-03-04T15:51:48.05711959Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -546,7 +546,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 24.0.4
-    created: "2025-03-04T12:52:23.618215464Z"
+    created: "2025-03-04T15:51:48.048083264Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -585,7 +585,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 23.0.7
-    created: "2025-03-04T12:52:23.610020893Z"
+    created: "2025-03-04T15:51:48.039363972Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -625,7 +625,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.78.2
-    created: "2025-03-04T12:52:23.701081468Z"
+    created: "2025-03-04T15:51:48.135398071Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -694,7 +694,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.72.0
-    created: "2025-03-04T12:52:23.673318304Z"
+    created: "2025-03-04T15:51:48.105109096Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -763,7 +763,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.71.2
-    created: "2025-03-04T12:52:23.649598893Z"
+    created: "2025-03-04T15:51:48.081556185Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -825,7 +825,7 @@ entries:
   kubernetes-replicator:
   - apiVersion: v2
     appVersion: v2.9.2
-    created: "2025-03-04T12:52:23.701365297Z"
+    created: "2025-03-04T15:51:48.135704642Z"
     description: Controller for replicating secrets+configmaps across namespaces
     digest: 7229545d3bdf075d8fd007d4ab67059f7a63483868efb0aaf506de0b1ff26633
     name: kubernetes-replicator
@@ -847,7 +847,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: v1.12.5
-    created: "2025-03-04T12:52:23.722033035Z"
+    created: "2025-03-04T15:51:48.155158436Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -920,7 +920,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: v1.8.5
-    created: "2025-03-04T12:52:23.705292053Z"
+    created: "2025-03-04T15:51:48.139945559Z"
     description: Kubernetes Native Policy Management
     digest: 747ee2317b34e2e9831b7f47d01086b7582a5c01b188461b8d43638b99efff81
     home: https://kyverno.io/
@@ -945,7 +945,7 @@ entries:
   local-path-provisioner:
   - apiVersion: v1
     appVersion: v0.0.26
-    created: "2025-03-04T12:52:23.72293675Z"
+    created: "2025-03-04T15:51:48.157535207Z"
     description: Use HostPath for persistent local storage with Kubernetes
     digest: 7a26dc746b60a67e694e49c52e1b43142c9c98a75d04cccd9ebf2e50f1f7b8ee
     home: https://github.com/rancher/local-path-provisioner
@@ -961,7 +961,7 @@ entries:
     version: 0.0.26
   - apiVersion: v1
     appVersion: v0.0.25
-    created: "2025-03-04T12:52:23.722505777Z"
+    created: "2025-03-04T15:51:48.156202956Z"
     description: Use HostPath for persistent local storage with Kubernetes
     digest: d0b29816de24dc528829da513c55e86e6baaa2f0c7346d80d628b4f97611e284
     home: https://github.com/rancher/local-path-provisioner
@@ -978,7 +978,7 @@ entries:
   loki-distributed:
   - apiVersion: v2
     appVersion: 2.9.6
-    created: "2025-03-04T12:52:23.726793269Z"
+    created: "2025-03-04T15:51:48.162072897Z"
     description: Helm chart for Grafana Loki in microservices mode
     digest: c0436b6adfd5dc27b6b81d4b5c62a00cf52c07f1318a5d985e16cb06286e855b
     home: https://grafana.github.io/helm-charts
@@ -1007,7 +1007,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 11.4.2
-    created: "2025-03-04T12:52:23.729597136Z"
+    created: "2025-03-04T15:51:48.167317556Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1038,7 +1038,7 @@ entries:
   metallb:
   - apiVersion: v2
     appVersion: v0.14.4
-    created: "2025-03-04T12:52:23.731708071Z"
+    created: "2025-03-04T15:51:48.169324477Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -1070,7 +1070,7 @@ entries:
           description: "Updated the _addon-resizer_ OCI image to [v1.8.20](https://github.com/kubernetes/autoscaler/releases/tag/addon-resizer-1.8.20)."
     apiVersion: v2
     appVersion: 0.7.0
-    created: "2025-03-04T12:52:23.733393593Z"
+    created: "2025-03-04T15:51:48.17080658Z"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
     digest: 19df2fa9c4c6e1ec4f134da56ae9c3e6b610bfd5674744115c9e9864c5f3debe
@@ -1106,7 +1106,7 @@ entries:
           description: "Changed the default addon resizer nanny resource configuration to match the documented Metrics Server autoscaling values."
     apiVersion: v2
     appVersion: 0.6.4
-    created: "2025-03-04T12:52:23.732540593Z"
+    created: "2025-03-04T15:51:48.170045412Z"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
     digest: e7cba5a2d7e2b0949b3ea1aa48fc3780b71eba17e1edccc8273f5da67048164b
@@ -1143,7 +1143,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2024.11.7
-    created: "2025-03-04T12:52:23.738096315Z"
+    created: "2025-03-04T15:51:48.175582241Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1174,7 +1174,7 @@ entries:
   moai-accl-mgr:
   - apiVersion: v2
     appVersion: 0.0.23
-    created: "2025-03-04T12:52:23.784120791Z"
+    created: "2025-03-04T15:51:48.20399556Z"
     description: A Helm chart for Kubernetes
     digest: 9ca3555dfd86eb4d98adc445c820d5d186039b1b3b5e93657a6a9653ef34aec0
     name: moai-accl-mgr
@@ -1184,7 +1184,7 @@ entries:
     version: 0.0.23
   - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc9
-    created: "2025-03-04T12:52:23.78170617Z"
+    created: "2025-03-04T15:51:48.202712648Z"
     description: A Helm chart for Kubernetes
     digest: a9fd111eb8dd9cd2a14a467aba3b8a8120f473478c89704ae018a16e41cf4dfb
     name: moai-accl-mgr
@@ -1194,7 +1194,7 @@ entries:
     version: 0.0.23-hotfix.rc9
   - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc8
-    created: "2025-03-04T12:52:23.780226121Z"
+    created: "2025-03-04T15:51:48.202071683Z"
     description: A Helm chart for Kubernetes
     digest: 2a3a4b90dbdd6c4a33782292655c3ae1a26936219d161f63e971eeac116812ca
     name: moai-accl-mgr
@@ -1204,7 +1204,7 @@ entries:
     version: 0.0.23-hotfix.rc8
   - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc7
-    created: "2025-03-04T12:52:23.778047129Z"
+    created: "2025-03-04T15:51:48.201288083Z"
     description: A Helm chart for Kubernetes
     digest: 121d8ff7c520dda5502bd9143cd866108b87a68dbd8405613d25fa56e573bda2
     name: moai-accl-mgr
@@ -1214,7 +1214,7 @@ entries:
     version: 0.0.23-hotfix.rc7
   - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc6
-    created: "2025-03-04T12:52:23.774582961Z"
+    created: "2025-03-04T15:51:48.200620808Z"
     description: A Helm chart for Kubernetes
     digest: 5c0defde0be56fa09f8087c7363aecdc4f7f8711ae381fc951f242956e207ed5
     name: moai-accl-mgr
@@ -1224,7 +1224,7 @@ entries:
     version: 0.0.23-hotfix.rc6
   - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc5
-    created: "2025-03-04T12:52:23.773161541Z"
+    created: "2025-03-04T15:51:48.199950709Z"
     description: A Helm chart for Kubernetes
     digest: d362b089e0234acf33a1dc339154b9daffb4b0cfa864dd42a0c6f101afcabd1a
     name: moai-accl-mgr
@@ -1234,7 +1234,7 @@ entries:
     version: 0.0.23-hotfix.rc5
   - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc4
-    created: "2025-03-04T12:52:23.772035573Z"
+    created: "2025-03-04T15:51:48.198042412Z"
     description: A Helm chart for Kubernetes
     digest: 758e879f62ba9d25ffaee5ae2403340039c9d26f63955f16483c71f6ee1618f8
     name: moai-accl-mgr
@@ -1244,7 +1244,7 @@ entries:
     version: 0.0.23-hotfix.rc4
   - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc3
-    created: "2025-03-04T12:52:23.770937085Z"
+    created: "2025-03-04T15:51:48.196954867Z"
     description: A Helm chart for Kubernetes
     digest: 184ebebbf61dc469a808f3d4a6182dd0e2835d8af260a413f87fe0fdf8038889
     name: moai-accl-mgr
@@ -1254,7 +1254,7 @@ entries:
     version: 0.0.23-hotfix.rc3
   - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc2
-    created: "2025-03-04T12:52:23.769838367Z"
+    created: "2025-03-04T15:51:48.19631288Z"
     description: A Helm chart for Kubernetes
     digest: 6854df0de6d51988e947763dfee5aaa9fb697c3c34be6beba6ab05837d4d9113
     name: moai-accl-mgr
@@ -1263,8 +1263,18 @@ entries:
     - charts/moai-accl-mgr-0.0.23-hotfix.rc2.tgz
     version: 0.0.23-hotfix.rc2
   - apiVersion: v2
+    appVersion: 0.0.23-hotfix.rc16
+    created: "2025-03-04T15:51:48.195666685Z"
+    description: A Helm chart for Kubernetes
+    digest: ca403736668a315df3d10dfe3ec0871bfc46683f6df19ee925cab750028e74ec
+    name: moai-accl-mgr
+    type: application
+    urls:
+    - charts/moai-accl-mgr-0.0.23-hotfix.rc16.tgz
+    version: 0.0.23-hotfix.rc16
+  - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc15
-    created: "2025-03-04T12:52:23.768282707Z"
+    created: "2025-03-04T15:51:48.195008498Z"
     description: A Helm chart for Kubernetes
     digest: d17e38dd454b87c67230a14063db3cf5ce9d814d1fa46d316458a8b8f0d7541f
     name: moai-accl-mgr
@@ -1274,7 +1284,7 @@ entries:
     version: 0.0.23-hotfix.rc15
   - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc14
-    created: "2025-03-04T12:52:23.767284256Z"
+    created: "2025-03-04T15:51:48.194341875Z"
     description: A Helm chart for Kubernetes
     digest: 0579ae64144ba3a079e2b7adffc9103a0df1fe77089ac015297a3e5a7acb860f
     name: moai-accl-mgr
@@ -1284,7 +1294,7 @@ entries:
     version: 0.0.23-hotfix.rc14
   - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc13
-    created: "2025-03-04T12:52:23.766282067Z"
+    created: "2025-03-04T15:51:48.19367403Z"
     description: A Helm chart for Kubernetes
     digest: d5572d5f7a8571fc7ad01d7a637ad79d256dca466a6581c233808a46f217f2f8
     name: moai-accl-mgr
@@ -1294,7 +1304,7 @@ entries:
     version: 0.0.23-hotfix.rc13
   - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc12
-    created: "2025-03-04T12:52:23.765246687Z"
+    created: "2025-03-04T15:51:48.193013238Z"
     description: A Helm chart for Kubernetes
     digest: 722398f20f7347a7b8d46cbd9c10ce8658660063f79b9fb10ba0e44a3f3a2288
     name: moai-accl-mgr
@@ -1304,7 +1314,7 @@ entries:
     version: 0.0.23-hotfix.rc12
   - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc11
-    created: "2025-03-04T12:52:23.760643596Z"
+    created: "2025-03-04T15:51:48.19231126Z"
     description: A Helm chart for Kubernetes
     digest: 6aaf357b5b4f1b4e4859222812c6e43d7f7fab8dd0d2a29eed4e5e4c77eb0d48
     name: moai-accl-mgr
@@ -1314,7 +1324,7 @@ entries:
     version: 0.0.23-hotfix.rc11
   - apiVersion: v2
     appVersion: 0.0.23-hotfix.rc10
-    created: "2025-03-04T12:52:23.759277029Z"
+    created: "2025-03-04T15:51:48.191101915Z"
     description: A Helm chart for Kubernetes
     digest: 2e37ed9d8e5f92674a4d7920b1bf389851da98aa44b88f189a64e6d611284f1e
     name: moai-accl-mgr
@@ -1324,7 +1334,7 @@ entries:
     version: 0.0.23-hotfix.rc10
   - apiVersion: v2
     appVersion: 0.0.23-hotfix
-    created: "2025-03-04T12:52:23.782948085Z"
+    created: "2025-03-04T15:51:48.20335765Z"
     description: A Helm chart for Kubernetes
     digest: 602bd4859f9b94d3d6c67e470885d8122dadacbe9290fc42b14e4f9d1efbef3e
     name: moai-accl-mgr
@@ -1334,7 +1344,7 @@ entries:
     version: 0.0.23-hotfix
   - apiVersion: v2
     appVersion: 0.0.22-hotfix.rc6
-    created: "2025-03-04T12:52:23.756318394Z"
+    created: "2025-03-04T15:51:48.188456451Z"
     description: A Helm chart for Kubernetes
     digest: 0f9479e6aeb5f214c208001733bd38d01366aaeda932eb4b863a1b5215960fb9
     name: moai-accl-mgr
@@ -1344,7 +1354,7 @@ entries:
     version: 0.0.22-hotfix.rc6
   - apiVersion: v2
     appVersion: 0.0.22-hotfix.rc5
-    created: "2025-03-04T12:52:23.755076368Z"
+    created: "2025-03-04T15:51:48.18781715Z"
     description: A Helm chart for Kubernetes
     digest: 18beff3ff39327f15f77df3272a5ed06938a0e3637680ee1951f4b1eac0cd7f0
     name: moai-accl-mgr
@@ -1354,7 +1364,7 @@ entries:
     version: 0.0.22-hotfix.rc5
   - apiVersion: v2
     appVersion: 0.0.22-hotfix.rc3
-    created: "2025-03-04T12:52:23.753833832Z"
+    created: "2025-03-04T15:51:48.187191533Z"
     description: A Helm chart for Kubernetes
     digest: f3a99ac50a5bed53cf35c6b355b57b0a6035d2ef2538296449491a6cc7856d0f
     name: moai-accl-mgr
@@ -1364,7 +1374,7 @@ entries:
     version: 0.0.22-hotfix.rc3
   - apiVersion: v2
     appVersion: 0.0.22-hotfix
-    created: "2025-03-04T12:52:23.757560749Z"
+    created: "2025-03-04T15:51:48.18926574Z"
     description: A Helm chart for Kubernetes
     digest: 7bdaa3a49f33b1f38704b2830a0f7de2146fc74402fffc08750e383ed58b4fdb
     name: moai-accl-mgr
@@ -1374,7 +1384,7 @@ entries:
     version: 0.0.22-hotfix
   - apiVersion: v2
     appVersion: 0.0.21-hotfix
-    created: "2025-03-04T12:52:23.752596846Z"
+    created: "2025-03-04T15:51:48.186548385Z"
     description: A Helm chart for Kubernetes
     digest: 291bcd0ef94f397a13b425d94bb56b1be7d0c00235964d03f56ee909ac079f96
     name: moai-accl-mgr
@@ -1384,7 +1394,7 @@ entries:
     version: 0.0.21-hotfix
   - apiVersion: v2
     appVersion: 0.0.20-hotfix
-    created: "2025-03-04T12:52:23.751432175Z"
+    created: "2025-03-04T15:51:48.185913321Z"
     description: A Helm chart for Kubernetes
     digest: 848fe073ecf0a3c267b8fb46f8b01eb3f355021f1faf576141726ef2e66e995c
     name: moai-accl-mgr
@@ -1394,7 +1404,7 @@ entries:
     version: 0.0.20-hotfix
   - apiVersion: v2
     appVersion: 0.0.19
-    created: "2025-03-04T12:52:23.750254039Z"
+    created: "2025-03-04T15:51:48.185270292Z"
     description: A Helm chart for Kubernetes
     digest: 6a25e68e4cf640568bbad53a88ae93ed8854f1136833d519c2c63d1d3fb2dc1b
     name: moai-accl-mgr
@@ -1404,7 +1414,7 @@ entries:
     version: 0.0.19
   - apiVersion: v2
     appVersion: 0.0.18
-    created: "2025-03-04T12:52:23.748996004Z"
+    created: "2025-03-04T15:51:48.184627874Z"
     description: A Helm chart for Kubernetes
     digest: 468797837011aadb3110a6ed63914b83ddfbc89ba5171b2a051b6af2c52e030b
     name: moai-accl-mgr
@@ -1414,7 +1424,7 @@ entries:
     version: 0.0.18
   - apiVersion: v2
     appVersion: 0.0.17
-    created: "2025-03-04T12:52:23.747099137Z"
+    created: "2025-03-04T15:51:48.183978323Z"
     description: A Helm chart for Kubernetes
     digest: 9cebe6b3638141583edbdaa01c0a55a6bcc52def30d043681a670324eeec2b8b
     name: moai-accl-mgr
@@ -1424,7 +1434,7 @@ entries:
     version: 0.0.17
   - apiVersion: v2
     appVersion: 0.0.17-hotfix.rc4
-    created: "2025-03-04T12:52:23.743599413Z"
+    created: "2025-03-04T15:51:48.180921064Z"
     description: A Helm chart for Kubernetes
     digest: d0aa3f8babc7f36c068996c3cf557455c5ea27b64b7ac2e76e521cfe93e664ef
     name: moai-accl-mgr
@@ -1434,7 +1444,7 @@ entries:
     version: 0.0.17-hotfix.rc4
   - apiVersion: v2
     appVersion: 0.0.17-hotfix.rc3
-    created: "2025-03-04T12:52:23.742823838Z"
+    created: "2025-03-04T15:51:48.180303833Z"
     description: A Helm chart for Kubernetes
     digest: af7ba9c1b36123d71e87230c2ef48d347776dbbc64e2cd7f7a6f48f932a82c59
     name: moai-accl-mgr
@@ -1444,7 +1454,7 @@ entries:
     version: 0.0.17-hotfix.rc3
   - apiVersion: v2
     appVersion: 0.0.17-hotfix
-    created: "2025-03-04T12:52:23.745641866Z"
+    created: "2025-03-04T15:51:48.182716333Z"
     description: A Helm chart for Kubernetes
     digest: d1dfb72d22865193c9eceea98a9b461096feeac48fd7c062f9f33fac9684b7a6
     name: moai-accl-mgr
@@ -1454,7 +1464,7 @@ entries:
     version: 0.0.17-hotfix
   - apiVersion: v2
     appVersion: 0.0.16-hotfix
-    created: "2025-03-04T12:52:23.742216966Z"
+    created: "2025-03-04T15:51:48.179687915Z"
     description: A Helm chart for Kubernetes
     digest: 2b2e361deb91fd99c77488e4a9a9dae29dcc73e7445e123e6572302f9ea3ddfd
     name: moai-accl-mgr
@@ -1464,7 +1474,7 @@ entries:
     version: 0.0.16-hotfix
   - apiVersion: v2
     appVersion: 0.0.15-hotfix
-    created: "2025-03-04T12:52:23.74166109Z"
+    created: "2025-03-04T15:51:48.179120367Z"
     description: A Helm chart for Kubernetes
     digest: 5b1901e3bd04044ccd19741944341a170fa61b95559951b34cc230543d5e6ff1
     name: moai-accl-mgr
@@ -1474,7 +1484,7 @@ entries:
     version: 0.0.15-hotfix
   - apiVersion: v2
     appVersion: 0.0.14-hotfix
-    created: "2025-03-04T12:52:23.741059438Z"
+    created: "2025-03-04T15:51:48.178508757Z"
     description: A Helm chart for Kubernetes
     digest: ae7f8a794b1982ab95dd456bf8fcaf042e6ab280ebf0c661623ee159ceb805d1
     name: moai-accl-mgr
@@ -1484,7 +1494,7 @@ entries:
     version: 0.0.14-hotfix
   - apiVersion: v2
     appVersion: 0.0.13-hotfix
-    created: "2025-03-04T12:52:23.740498012Z"
+    created: "2025-03-04T15:51:48.177935779Z"
     description: A Helm chart for Kubernetes
     digest: f82b89459489c8de7e52e368aafebf259b62a6e7ae77ec5c03b560f24a65f01e
     name: moai-accl-mgr
@@ -1494,7 +1504,7 @@ entries:
     version: 0.0.13-hotfix
   - apiVersion: v2
     appVersion: 0.0.12-hotfix
-    created: "2025-03-04T12:52:23.739909695Z"
+    created: "2025-03-04T15:51:48.177355457Z"
     description: A Helm chart for Kubernetes
     digest: 276bec6f964995632792640e09d7b0339db54ba9e86d6798779b397b61ec8669
     name: moai-accl-mgr
@@ -1504,7 +1514,7 @@ entries:
     version: 0.0.12-hotfix
   - apiVersion: v2
     appVersion: 0.0.11-hotfix
-    created: "2025-03-04T12:52:23.739298566Z"
+    created: "2025-03-04T15:51:48.176766859Z"
     description: A Helm chart for Kubernetes
     digest: 27eb32edb2ff0b3b3a06547ee797a15d9930710b57547ea5649094f5fbd1f778
     name: moai-accl-mgr
@@ -1514,7 +1524,7 @@ entries:
     version: 0.0.11-hotfix
   - apiVersion: v2
     appVersion: 0.0.10
-    created: "2025-03-04T12:52:23.738725518Z"
+    created: "2025-03-04T15:51:48.176191838Z"
     description: A Helm chart for Kubernetes
     digest: a2f1e5aa1d7d3805aa6405d0f78a81704af06379237d2b876b45fa37bca4581b
     name: moai-accl-mgr
@@ -1524,7 +1534,7 @@ entries:
     version: 0.0.10
   - apiVersion: v2
     appVersion: 0.0.9-hotfix
-    created: "2025-03-04T12:52:23.797556688Z"
+    created: "2025-03-04T15:51:48.210226035Z"
     description: A Helm chart for Kubernetes
     digest: b1d3762d6a44d8e94a83556593ecf146d72134189df7fe835c86154b4b446798
     name: moai-accl-mgr
@@ -1534,7 +1544,7 @@ entries:
     version: 0.0.9-hotfix
   - apiVersion: v2
     appVersion: 0.0.8
-    created: "2025-03-04T12:52:23.796344438Z"
+    created: "2025-03-04T15:51:48.209618061Z"
     description: A Helm chart for Kubernetes
     digest: 5e79b58af50ffded63a6fc95c11be5db37968fd31676098bd5e9fbe271cdff06
     name: moai-accl-mgr
@@ -1544,7 +1554,7 @@ entries:
     version: 0.0.8
   - apiVersion: v2
     appVersion: 0.0.8-hotfix
-    created: "2025-03-04T12:52:23.79041809Z"
+    created: "2025-03-04T15:51:48.209008295Z"
     description: A Helm chart for Kubernetes
     digest: 3c898b39c09a2fb00e2ce0340d181ac100f37989d49ac78ac397f453ea0b7990
     name: moai-accl-mgr
@@ -1554,7 +1564,7 @@ entries:
     version: 0.0.8-hotfix
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2025-03-04T12:52:23.789378522Z"
+    created: "2025-03-04T15:51:48.208368772Z"
     description: A Helm chart for Kubernetes
     digest: dcea7301e6215a39b47b5afb30dbaf2d35126da3382fe3e9841c64f9f266e188
     name: moai-accl-mgr
@@ -1564,7 +1574,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2025-03-04T12:52:23.788310552Z"
+    created: "2025-03-04T15:51:48.207206275Z"
     description: A Helm chart for Kubernetes
     digest: 576d22b96a216ceb80648bce71d9c16fbd20e386d78ad1a397bf64f051acc558
     name: moai-accl-mgr
@@ -1574,7 +1584,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2025-03-04T12:52:23.787285942Z"
+    created: "2025-03-04T15:51:48.205839407Z"
     description: A Helm chart for Kubernetes
     digest: e21c3b8d904f5b750414dcb41ba5b5184a877d6ec534a785cc4ac0efa7b7b10e
     name: moai-accl-mgr
@@ -1584,7 +1594,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2025-03-04T12:52:23.786160153Z"
+    created: "2025-03-04T15:51:48.205109917Z"
     description: A Helm chart for Kubernetes
     digest: c71812850b5c8ad69b5b9d23808246d36333645bc80267b6af95c3bcdbb6f3c5
     name: moai-accl-mgr
@@ -1594,7 +1604,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.3
-    created: "2025-03-04T12:52:23.785207166Z"
+    created: "2025-03-04T15:51:48.204538552Z"
     description: A Helm chart for Kubernetes
     digest: 05915724c7361f0c9bce5194cc98a4ea7ecc562770484b588cdc1185e4cbc02a
     name: moai-accl-mgr
@@ -1605,7 +1615,7 @@ entries:
   moai-admin-web:
   - apiVersion: v2
     appVersion: v0.0.9
-    created: "2025-03-04T12:52:23.806172649Z"
+    created: "2025-03-04T15:51:48.21651584Z"
     description: A Helm chart for MoAI admin web application
     digest: 2f9d6937ff34c9f3c6f3c69e32233cc11b3382269ef5bdc45b11c95dc293544d
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1618,7 +1628,7 @@ entries:
     version: v0.0.9
   - apiVersion: v2
     appVersion: v0.0.8
-    created: "2025-03-04T12:52:23.805244419Z"
+    created: "2025-03-04T15:51:48.215031786Z"
     description: A Helm chart for MoAI admin web application
     digest: 56cc6c3809617129a587ed20a92c162bb50171c6fb8025515c091a5e6a3947a6
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1631,7 +1641,7 @@ entries:
     version: v0.0.8
   - apiVersion: v2
     appVersion: v0.0.7
-    created: "2025-03-04T12:52:23.80435439Z"
+    created: "2025-03-04T15:51:48.213794487Z"
     description: A Helm chart for MoAI admin web application
     digest: e4ccf8ad2105b9466677b99d507e1b152390303cdd5cb28750c1eec98aa7a051
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1644,7 +1654,7 @@ entries:
     version: v0.0.7
   - apiVersion: v2
     appVersion: v0.0.6
-    created: "2025-03-04T12:52:23.803442941Z"
+    created: "2025-03-04T15:51:48.213346562Z"
     description: A Helm chart for MoAI admin web application
     digest: d165cd87684075b3f3e50f749e841b2ded8598b405e5e56086b8eff6f6d1e13d
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1657,7 +1667,7 @@ entries:
     version: v0.0.6
   - apiVersion: v2
     appVersion: v0.0.5
-    created: "2025-03-04T12:52:23.802532734Z"
+    created: "2025-03-04T15:51:48.212877047Z"
     description: A Helm chart for MoAI admin web application
     digest: 2460151d9b32d1915624f263e9c5d057289f8530428455f708807c1855a94aca
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1670,7 +1680,7 @@ entries:
     version: v0.0.5
   - apiVersion: v2
     appVersion: v0.0.4
-    created: "2025-03-04T12:52:23.801619762Z"
+    created: "2025-03-04T15:51:48.212421017Z"
     description: A Helm chart for MoAI admin web application
     digest: e81ea8a58a56966cd4a4b650724f08a41e835e8c8299eb40dda3e4244d6fa035
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1683,7 +1693,7 @@ entries:
     version: v0.0.4
   - apiVersion: v2
     appVersion: v0.0.3
-    created: "2025-03-04T12:52:23.800742757Z"
+    created: "2025-03-04T15:51:48.211986597Z"
     description: A Helm chart for MoAI admin web application
     digest: 49e74c21751f538a2770b0586975f91be684bc3b8fcc72b7bbe892a1b6484a3c
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1696,7 +1706,7 @@ entries:
     version: v0.0.3
   - apiVersion: v2
     appVersion: v0.0.2
-    created: "2025-03-04T12:52:23.799939119Z"
+    created: "2025-03-04T15:51:48.211434818Z"
     description: A Helm chart for MoAI admin web application
     digest: 7a70ead5fc298f7e1c7666bd834d057a2a196e242edfb07f9919ff62e65a17fd
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1709,7 +1719,7 @@ entries:
     version: v0.0.2
   - apiVersion: v2
     appVersion: v0.0.1
-    created: "2025-03-04T12:52:23.799186035Z"
+    created: "2025-03-04T15:51:48.211044711Z"
     description: A Helm chart for MoAI admin web application
     digest: 89e9cf419083a1e14711b9ee924933765a21a4f08825b36fc62131edbc15ab07
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1722,7 +1732,7 @@ entries:
     version: v0.0.1
   - apiVersion: v2
     appVersion: v0.0.0
-    created: "2025-03-04T12:52:23.798300544Z"
+    created: "2025-03-04T15:51:48.210619979Z"
     description: A Helm chart for MoAI admin web application
     digest: 4a2c1b126544b57150a7d0b2b01a0798185fe9c648a944b43438734fe910e31d
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1736,7 +1746,7 @@ entries:
   moai-enduser-web:
   - apiVersion: v2
     appVersion: v0.0.15
-    created: "2025-03-04T12:52:23.817460011Z"
+    created: "2025-03-04T15:51:48.219869392Z"
     description: A Helm chart for MoAI enduser web application
     digest: 307b7fcf47fb2216982f6c8b5bde9e536bba270b7d3b65a10b822af10e76d839
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1749,7 +1759,7 @@ entries:
     version: v0.0.15
   - apiVersion: v2
     appVersion: v0.0.14
-    created: "2025-03-04T12:52:23.816581252Z"
+    created: "2025-03-04T15:51:48.219442857Z"
     description: A Helm chart for MoAI enduser web application
     digest: 0e4dbc4d6ede25d1f63de58f1cce3a39707a6f8bc5d0004a2d01f4cf59e0e701
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1762,7 +1772,7 @@ entries:
     version: v0.0.14
   - apiVersion: v2
     appVersion: v0.0.13
-    created: "2025-03-04T12:52:23.815734414Z"
+    created: "2025-03-04T15:51:48.219040747Z"
     description: A Helm chart for MoAI enduser web application
     digest: e6aa0168141ab3b3c84ddc5d910090861878d9f107bf4e9c8e86a153fb54533a
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1775,7 +1785,7 @@ entries:
     version: v0.0.13
   - apiVersion: v2
     appVersion: v0.0.12
-    created: "2025-03-04T12:52:23.814925666Z"
+    created: "2025-03-04T15:51:48.218621546Z"
     description: A Helm chart for MoAI enduser web application
     digest: c5f372584ca56dafdd19c83a58ae0eddaac4138ba76f119ab0e6f3ad3102df8f
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1788,7 +1798,7 @@ entries:
     version: v0.0.12
   - apiVersion: v2
     appVersion: v0.0.11
-    created: "2025-03-04T12:52:23.813288695Z"
+    created: "2025-03-04T15:51:48.21821069Z"
     description: A Helm chart for MoAI enduser web application
     digest: f92845bd7e78ba3042f9cd010a240a72420cb4da529d2f59d71885e89868193c
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1801,7 +1811,7 @@ entries:
     version: v0.0.11
   - apiVersion: v2
     appVersion: v0.0.10
-    created: "2025-03-04T12:52:23.812178856Z"
+    created: "2025-03-04T15:51:48.217781891Z"
     description: A Helm chart for MoAI enduser web application
     digest: d3720af0be7b4208c0c9656493f00e49256e7ba509e2989cf789be50e418b703
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1814,7 +1824,7 @@ entries:
     version: v0.0.10
   - apiVersion: v2
     appVersion: v0.0.9
-    created: "2025-03-04T12:52:23.82384875Z"
+    created: "2025-03-04T15:51:48.224852274Z"
     description: A Helm chart for MoAI enduser web application
     digest: 6503d36d14c6512ec8359a1555690d74f88de51d7d5409dc7c79974379e051af
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1827,7 +1837,7 @@ entries:
     version: v0.0.9
   - apiVersion: v2
     appVersion: v0.0.8
-    created: "2025-03-04T12:52:23.82300678Z"
+    created: "2025-03-04T15:51:48.223604738Z"
     description: A Helm chart for MoAI enduser web application
     digest: e9059861605235a689543fd62d4afbb8d2e9a037281dee5a67fcb022aa7a2eed
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1840,7 +1850,7 @@ entries:
     version: v0.0.8
   - apiVersion: v2
     appVersion: v0.0.7
-    created: "2025-03-04T12:52:23.822233128Z"
+    created: "2025-03-04T15:51:48.22254474Z"
     description: A Helm chart for MoAI enduser web application
     digest: 748c1296b3d528ae3d192a5bed012b489326336f123caca0f7bd03dece6d9cf5
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1853,7 +1863,7 @@ entries:
     version: v0.0.7
   - apiVersion: v2
     appVersion: v0.0.6
-    created: "2025-03-04T12:52:23.821506153Z"
+    created: "2025-03-04T15:51:48.221947626Z"
     description: A Helm chart for MoAI enduser web application
     digest: 275dd33c028eda21852f7325e8653dc9d3f820007dabc792c1535f466d636409
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1866,7 +1876,7 @@ entries:
     version: v0.0.6
   - apiVersion: v2
     appVersion: v0.0.5
-    created: "2025-03-04T12:52:23.820716271Z"
+    created: "2025-03-04T15:51:48.221437546Z"
     description: A Helm chart for MoAI enduser web application
     digest: a3291573b4c452e0614e417b99736b8bf687e208e1e166ec99b46f52c4a020b4
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1879,7 +1889,7 @@ entries:
     version: v0.0.5
   - apiVersion: v2
     appVersion: v0.0.4
-    created: "2025-03-04T12:52:23.819876916Z"
+    created: "2025-03-04T15:51:48.221055824Z"
     description: A Helm chart for MoAI enduser web application
     digest: 8dd6f4e42978b66c247014fd095ab93bf8261e2345e377fc3a479748242da1b1
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1892,7 +1902,7 @@ entries:
     version: v0.0.4
   - apiVersion: v2
     appVersion: v0.0.3
-    created: "2025-03-04T12:52:23.819066746Z"
+    created: "2025-03-04T15:51:48.220656219Z"
     description: A Helm chart for MoAI enduser web application
     digest: ba6ef8cd7478b270263cad24c84c99b3b44d03085ae9f04a799486c1c27d661b
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1905,7 +1915,7 @@ entries:
     version: v0.0.3
   - apiVersion: v2
     appVersion: v0.0.2
-    created: "2025-03-04T12:52:23.818250995Z"
+    created: "2025-03-04T15:51:48.220274257Z"
     description: A Helm chart for MoAI enduser web application
     digest: c6a4e8d6d18c0c3564d7bac41987c96f9c616824e18f0e994dcd5e678c405877
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1918,7 +1928,7 @@ entries:
     version: v0.0.2
   - apiVersion: v2
     appVersion: v0.0.1
-    created: "2025-03-04T12:52:23.811131393Z"
+    created: "2025-03-04T15:51:48.217370143Z"
     description: A Helm chart for MoAI enduser web application
     digest: 0d08331ab8dc82cc98628608dd08192c22d21171dd1d34cdb50a32abb416ba12
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1931,7 +1941,7 @@ entries:
     version: v0.0.1
   - apiVersion: v2
     appVersion: v0.0.0
-    created: "2025-03-04T12:52:23.810050989Z"
+    created: "2025-03-04T15:51:48.216965769Z"
     description: A Helm chart for MoAI enduser web application
     digest: f7cd27ce9cf23f88ccfb709531be2a9509cc9b95d1f17e00eda085f8f172c9a7
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -1945,7 +1955,7 @@ entries:
   moai-keycloak-init:
   - apiVersion: v2
     appVersion: v0.0.9
-    created: "2025-03-04T12:52:23.826387302Z"
+    created: "2025-03-04T15:51:48.226255009Z"
     description: A Helm chart for init keycloak configuration
     digest: 4efcd53eb0cd35c3093acae9862c3a9da0ffcb2672ed689886e795148043ad79
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1958,7 +1968,7 @@ entries:
     version: v0.0.9
   - apiVersion: v2
     appVersion: v0.0.8
-    created: "2025-03-04T12:52:23.825985854Z"
+    created: "2025-03-04T15:51:48.226077308Z"
     description: A Helm chart for init keycloak configuration
     digest: cbbdd3fd4044d59c37b7ff7ec579d0b5827b6ca8519cc89cf101706e9a3a7b06
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1971,7 +1981,7 @@ entries:
     version: v0.0.8
   - apiVersion: v2
     appVersion: v0.0.7
-    created: "2025-03-04T12:52:23.825641071Z"
+    created: "2025-03-04T15:51:48.225864912Z"
     description: A Helm chart for init keycloak configuration
     digest: feb8100da5425e5b05531d95a8f5fab1b04edb00fab338ecd85420112d20ca89
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1984,7 +1994,7 @@ entries:
     version: v0.0.7
   - apiVersion: v2
     appVersion: v0.0.6
-    created: "2025-03-04T12:52:23.825284506Z"
+    created: "2025-03-04T15:51:48.225680428Z"
     description: A Helm chart for init keycloak configuration
     digest: a81b843eae51ecc2e8cb1f0dadaba4df012999dd22a6f8502ffcaf97e4d1b636
     home: https://github.com/moreh-dev/moai-admin-web
@@ -1997,7 +2007,7 @@ entries:
     version: v0.0.6
   - apiVersion: v2
     appVersion: v0.0.5
-    created: "2025-03-04T12:52:23.824953319Z"
+    created: "2025-03-04T15:51:48.225491576Z"
     description: A Helm chart for init keycloak configuration
     digest: baa80c2f07c68d0cc813761f0db03dd46e857b75f7758e0304d95ca02bcd1b0b
     home: https://github.com/moreh-dev/moai-admin-web
@@ -2010,7 +2020,7 @@ entries:
     version: v0.0.5
   - apiVersion: v2
     appVersion: v0.0.4
-    created: "2025-03-04T12:52:23.824570145Z"
+    created: "2025-03-04T15:51:48.22530074Z"
     description: A Helm chart for init keycloak configuration
     digest: 7d287579341393e38262aea7d2712f12c5caea9114cc8947920f2d996060c3fe
     home: https://github.com/moreh-dev/moai-admin-web
@@ -2023,7 +2033,7 @@ entries:
     version: v0.0.4
   - apiVersion: v2
     appVersion: v0.0.3
-    created: "2025-03-04T12:52:23.824200666Z"
+    created: "2025-03-04T15:51:48.225107119Z"
     description: A Helm chart for init keycloak configuration
     digest: 93781e222046a55ce57416df0c23e66d81820a5d6fa614edcbd312e34d1fa6ae
     home: https://github.com/moreh-dev/moai-admin-web
@@ -2037,7 +2047,7 @@ entries:
   moai-operator:
   - apiVersion: v2
     appVersion: 0.5.1
-    created: "2025-03-04T12:52:23.83425585Z"
+    created: "2025-03-04T15:51:48.228046438Z"
     description: A Helm chart for Kubernetes
     digest: 22abaee76711094bc530de34c50ee6a3712f701d9c33e1ec7f72063f9ae3acdf
     name: moai-operator
@@ -2047,7 +2057,7 @@ entries:
     version: 0.5.1
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2025-03-04T12:52:23.83364952Z"
+    created: "2025-03-04T15:51:48.227690344Z"
     description: A Helm chart for Kubernetes
     digest: 765df6b4e29c139c48fa186434e59965d87267c35748f8115ba2dcb6be913575
     name: moai-operator
@@ -2057,7 +2067,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2025-03-04T12:52:23.832835513Z"
+    created: "2025-03-04T15:51:48.227346093Z"
     description: A Helm chart for Kubernetes
     digest: 0be7e85442651af4961544b1f5778fd1dbb68381c02dbe364ce78a8cf8f25390
     name: moai-operator
@@ -2067,7 +2077,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2025-03-04T12:52:23.832118516Z"
+    created: "2025-03-04T15:51:48.226997954Z"
     description: A Helm chart for Kubernetes
     digest: f9e1b784c43d5b5f86b38a5190886a64398ed31355907d3c13b1b80013370289
     name: moai-operator
@@ -2077,7 +2087,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2025-03-04T12:52:23.831385479Z"
+    created: "2025-03-04T15:51:48.226618216Z"
     description: A Helm chart for Kubernetes
     digest: da060ea16c859ebfeb4e6d459c53ef3158343f1e985f6880837def8ba18d2252
     name: moai-operator
@@ -2088,7 +2098,7 @@ entries:
   moai-web:
   - apiVersion: v2
     appVersion: 1.0.34
-    created: "2025-03-04T12:52:23.847757239Z"
+    created: "2025-03-04T15:51:48.23467738Z"
     description: A Helm chart for MoAI
     digest: 0660b10fc29586f86507b3abf13eb33b28ea8c7e3c0b983b786215e3cd971c15
     home: https://github.com/moreh-dev/moai
@@ -2102,7 +2112,7 @@ entries:
     version: 1.0.34
   - apiVersion: v2
     appVersion: 1.0.33
-    created: "2025-03-04T12:52:23.846469388Z"
+    created: "2025-03-04T15:51:48.23420018Z"
     description: A Helm chart for MoAI
     digest: 44d096e08746c5fd18564dbc1b06eede42b28d92efc904267a1fb7e221c07b9d
     home: https://github.com/moreh-dev/moai
@@ -2116,7 +2126,7 @@ entries:
     version: 1.0.33
   - apiVersion: v2
     appVersion: 1.0.32
-    created: "2025-03-04T12:52:23.841729272Z"
+    created: "2025-03-04T15:51:48.233705668Z"
     description: A Helm chart for MoAI
     digest: eb6a8fecd4bd28b7398f05a933c18e8f242147ec919121069de5755e8ab503cf
     home: https://github.com/moreh-dev/moai
@@ -2130,7 +2140,7 @@ entries:
     version: 1.0.32
   - apiVersion: v2
     appVersion: 1.0.31
-    created: "2025-03-04T12:52:23.840763031Z"
+    created: "2025-03-04T15:51:48.233216857Z"
     description: A Helm chart for MoAI
     digest: 8cc2b37d0fd4dc6a04cd359c4b834044dafba7bfd875723cbf4339aa6009d2bb
     home: https://github.com/moreh-dev/moai
@@ -2144,7 +2154,7 @@ entries:
     version: 1.0.31
   - apiVersion: v2
     appVersion: 1.0.30
-    created: "2025-03-04T12:52:23.839859396Z"
+    created: "2025-03-04T15:51:48.232662945Z"
     description: A Helm chart for MoAI
     digest: 76942e9a5b6f960bcf7ed2db98f0dce85f7096643470c1bfd6eb4c5aa8a9c447
     home: https://github.com/moreh-dev/moai
@@ -2158,7 +2168,7 @@ entries:
     version: 1.0.30
   - apiVersion: v2
     appVersion: 1.0.29
-    created: "2025-03-04T12:52:23.838939642Z"
+    created: "2025-03-04T15:51:48.2311115Z"
     description: A Helm chart for MoAI
     digest: beca21539eeadc74b50283906505381e236acd504e9770fa8ce1eab77f429644
     home: https://github.com/moreh-dev/moai
@@ -2172,7 +2182,7 @@ entries:
     version: 1.0.29
   - apiVersion: v2
     appVersion: 1.0.28
-    created: "2025-03-04T12:52:23.838096159Z"
+    created: "2025-03-04T15:51:48.229953213Z"
     description: A Helm chart for MoAI
     digest: f60fdd2a784914fcfe6e54922703e01ca103f3f740778fedf2d6a5d999746650
     home: https://github.com/moreh-dev/moai
@@ -2186,7 +2196,7 @@ entries:
     version: 1.0.28
   - apiVersion: v2
     appVersion: 1.0.27
-    created: "2025-03-04T12:52:23.837233652Z"
+    created: "2025-03-04T15:51:48.229480001Z"
     description: A Helm chart for MoAI
     digest: 872a9033d08cdc684795d7f0a009addb74c297358d961a403c2206cd21619fe0
     home: https://github.com/moreh-dev/moai
@@ -2200,7 +2210,7 @@ entries:
     version: 1.0.27
   - apiVersion: v2
     appVersion: 1.0.26
-    created: "2025-03-04T12:52:23.836372667Z"
+    created: "2025-03-04T15:51:48.22901807Z"
     description: A Helm chart for MoAI
     digest: cae0eababfde6bf3d57a912624835e404963ed5976942ec6e05d9a8f998a6b23
     home: https://github.com/moreh-dev/moai
@@ -2214,7 +2224,7 @@ entries:
     version: 1.0.26
   - apiVersion: v2
     appVersion: 1.0.25
-    created: "2025-03-04T12:52:23.835437794Z"
+    created: "2025-03-04T15:51:48.228511706Z"
     description: A Helm chart for MoAI
     digest: 049376dd067af2737e2305e6d905da9f06778398a8527fe8b4f5ba2ff209c9eb
     home: https://github.com/moreh-dev/moai
@@ -2243,7 +2253,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.12
-    created: "2025-03-04T12:52:23.858286968Z"
+    created: "2025-03-04T15:51:48.241767595Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2275,7 +2285,7 @@ entries:
   morehbuild:
   - apiVersion: v2
     appVersion: v0.2.19
-    created: "2025-03-04T12:52:23.867043992Z"
+    created: "2025-03-04T15:51:48.246365306Z"
     description: Moreh Build
     digest: ea819bc1761b1a72218d28f6e5f4bf25d633b190064845da5a4a5994c4df387d
     name: morehbuild
@@ -2285,7 +2295,7 @@ entries:
     version: v0.2.19
   - apiVersion: v2
     appVersion: v0.2.18
-    created: "2025-03-04T12:52:23.86608786Z"
+    created: "2025-03-04T15:51:48.245874341Z"
     description: Moreh Build
     digest: c40ca9267cd9bd442c7be41def8ad0640b6924ba4f498bbff8d8010e631e7227
     name: morehbuild
@@ -2295,7 +2305,7 @@ entries:
     version: v0.2.18
   - apiVersion: v2
     appVersion: v0.2.17
-    created: "2025-03-04T12:52:23.865233637Z"
+    created: "2025-03-04T15:51:48.245396751Z"
     description: Moreh Build
     digest: 37d17185f0763f97238b7aee6103db64dc52900d446e4f1098e03db903841de1
     name: morehbuild
@@ -2305,7 +2315,7 @@ entries:
     version: v0.2.17
   - apiVersion: v2
     appVersion: v0.2.16
-    created: "2025-03-04T12:52:23.864396216Z"
+    created: "2025-03-04T15:51:48.244966769Z"
     description: Moreh Build
     digest: 2cd9a86737c60de46e168b51d7f9bbdf8978e1c21321879821469f188681ce44
     name: morehbuild
@@ -2315,7 +2325,7 @@ entries:
     version: v0.2.16
   - apiVersion: v2
     appVersion: v0.2.15
-    created: "2025-03-04T12:52:23.863531154Z"
+    created: "2025-03-04T15:51:48.24452726Z"
     description: Moreh Build
     digest: ac0b06b55d36075fe055f61604cd4e0a2281297d52e2432351517172dcd783da
     name: morehbuild
@@ -2325,7 +2335,7 @@ entries:
     version: v0.2.15
   - apiVersion: v2
     appVersion: v0.2.14
-    created: "2025-03-04T12:52:23.862678054Z"
+    created: "2025-03-04T15:51:48.244090295Z"
     description: Moreh Build
     digest: 5ca0bbf360b19f9a8b2781378d09640d9566b7d13d63d5a53a5e7d21502fd2d1
     name: morehbuild
@@ -2335,7 +2345,7 @@ entries:
     version: v0.2.14
   - apiVersion: v2
     appVersion: v0.2.13
-    created: "2025-03-04T12:52:23.861893611Z"
+    created: "2025-03-04T15:51:48.243646718Z"
     description: Moreh Build
     digest: 7a42c789abf3dca08f617d5b76494e56a4366965ea1617c5f5a9aa66bb2a7db4
     name: morehbuild
@@ -2345,7 +2355,7 @@ entries:
     version: v0.2.13
   - apiVersion: v2
     appVersion: v0.2.12
-    created: "2025-03-04T12:52:23.861029971Z"
+    created: "2025-03-04T15:51:48.24321838Z"
     description: Moreh Build
     digest: da13d6d7e078513034e4964c1c8992f844860f705f67a125bc8770092ed5cb14
     name: morehbuild
@@ -2355,7 +2365,7 @@ entries:
     version: v0.2.12
   - apiVersion: v2
     appVersion: v0.2.11
-    created: "2025-03-04T12:52:23.860145973Z"
+    created: "2025-03-04T15:51:48.242759094Z"
     description: Moreh Build
     digest: b0092c49f33b3cc16ed42afa7e6962b696482a529232b14e63e87bbfdcae71c4
     name: morehbuild
@@ -2365,7 +2375,7 @@ entries:
     version: v0.2.11
   - apiVersion: v2
     appVersion: v0.2.10
-    created: "2025-03-04T12:52:23.85918927Z"
+    created: "2025-03-04T15:51:48.242319765Z"
     description: Moreh Build
     digest: 0dc8d9a01e630937c8fdc5ff87c3e0582e8097f868254c9d210262ae65b91473
     name: morehbuild
@@ -2375,7 +2385,7 @@ entries:
     version: v0.2.10
   - apiVersion: v2
     appVersion: v0.2.9
-    created: "2025-03-04T12:52:23.874827672Z"
+    created: "2025-03-04T15:51:48.247856036Z"
     description: Moreh Build
     digest: 77273d49f9070dcc1677b7a33ff5eee4f6cdacf6cd138fbc73ba3a2f51116e04
     name: morehbuild
@@ -2385,7 +2395,7 @@ entries:
     version: v0.2.9
   - apiVersion: v2
     appVersion: v0.2.8
-    created: "2025-03-04T12:52:23.87351736Z"
+    created: "2025-03-04T15:51:48.247376391Z"
     description: Moreh Build
     digest: 7c1af09af584e426028a6971dac522c261984d19163c1d8bf83b6f395de2e7b0
     name: morehbuild
@@ -2395,7 +2405,7 @@ entries:
     version: v0.2.8
   - apiVersion: v2
     appVersion: v0.2.7
-    created: "2025-03-04T12:52:23.872167173Z"
+    created: "2025-03-04T15:51:48.246869196Z"
     description: Moreh Build
     digest: d9366a50471dc62970e53fde587cbe025f342a6aabdc30c11d251d1526a99f5e
     name: morehbuild
@@ -2406,7 +2416,7 @@ entries:
   nginx-ingress:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2025-03-04T12:52:23.879635294Z"
+    created: "2025-03-04T15:51:48.251354029Z"
     description: NGINX Ingress Controller
     digest: 3e050d7d1b9ee8ab7d78fa87f7be5b91cb0e345a912d4a4fb3c407ae2c33b936
     home: https://github.com/nginxinc/kubernetes-ingress
@@ -2438,7 +2448,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.1.0
-    created: "2025-03-04T12:52:23.887825232Z"
+    created: "2025-03-04T15:51:48.255939698Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2470,7 +2480,7 @@ entries:
   promtail:
   - apiVersion: v2
     appVersion: 2.9.3
-    created: "2025-03-04T12:52:23.890190471Z"
+    created: "2025-03-04T15:51:48.257256192Z"
     description: Promtail is an agent which ships the contents of local logs to a
       Loki instance
     digest: 8bf485b757bfc7c37e809b60a8f61324c84160c820269fda469cb6270045c514
@@ -2492,7 +2502,7 @@ entries:
   rook-ceph:
   - apiVersion: v2
     appVersion: v1.15.8
-    created: "2025-03-04T12:52:23.920169296Z"
+    created: "2025-03-04T15:51:48.275638699Z"
     dependencies:
     - name: library
       repository: file://../library
@@ -2508,7 +2518,7 @@ entries:
     version: v1.15.8
   - apiVersion: v2
     appVersion: v1.15.1
-    created: "2025-03-04T12:52:23.910952204Z"
+    created: "2025-03-04T15:51:48.270865741Z"
     dependencies:
     - name: library
       repository: file://../library
@@ -2524,7 +2534,7 @@ entries:
     version: v1.15.1
   - apiVersion: v2
     appVersion: v1.13.7
-    created: "2025-03-04T12:52:23.904970283Z"
+    created: "2025-03-04T15:51:48.267520384Z"
     dependencies:
     - name: library
       repository: file://../library
@@ -2541,7 +2551,7 @@ entries:
   rook-ceph-cluster:
   - apiVersion: v2
     appVersion: v1.15.1
-    created: "2025-03-04T12:52:23.896464887Z"
+    created: "2025-03-04T15:51:48.262261771Z"
     dependencies:
     - name: library
       repository: file://../library
@@ -2557,7 +2567,7 @@ entries:
     version: v1.15.1
   - apiVersion: v2
     appVersion: v1.13.7
-    created: "2025-03-04T12:52:23.893218716Z"
+    created: "2025-03-04T15:51:48.260550801Z"
     dependencies:
     - name: library
       repository: file://../library
@@ -2574,7 +2584,7 @@ entries:
   sda-exporter:
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2025-03-04T12:52:23.923795676Z"
+    created: "2025-03-04T15:51:48.277107006Z"
     description: SDA Exporter for Prometheus
     digest: 24f4159d554d767f217fccd73161ac97e96e4b767acbaa8f5128820066e31de6
     home: https://github.com/moreh-dev/sda_exporter.go
@@ -2587,7 +2597,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.5
-    created: "2025-03-04T12:52:23.922968584Z"
+    created: "2025-03-04T15:51:48.276794093Z"
     description: SDA Exporter for Prometheus
     digest: 0d7f53048efc805cdbc2421495b29978c83ab44c553dc34bcc2d4ed5664dc98b
     home: https://github.com/moreh-dev/sda_exporter.go
@@ -2600,7 +2610,7 @@ entries:
     version: 0.2.5
   - apiVersion: v2
     appVersion: 0.2.4
-    created: "2025-03-04T12:52:23.92222638Z"
+    created: "2025-03-04T15:51:48.276515393Z"
     description: SDA Exporter for Prometheus
     digest: de3541825aa2a0d600a89d356d010ca7b80fdf452762ed75efc0e81146961977
     home: https://github.com/moreh-dev/sda_exporter.go
@@ -2613,7 +2623,7 @@ entries:
     version: 0.2.4
   - apiVersion: v2
     appVersion: 0.2.3
-    created: "2025-03-04T12:52:23.921483536Z"
+    created: "2025-03-04T15:51:48.276211446Z"
     description: SDA Exporter for Prometheus
     digest: ef25950cc6866e3ea70a0cf1a23ec6d8064799406d6571e2aebeabaa0d5f00ad
     home: https://github.com/moreh-dev/sda_exporter.go
@@ -2626,7 +2636,7 @@ entries:
     version: 0.2.3
   - apiVersion: v2
     appVersion: 0.2.2
-    created: "2025-03-04T12:52:23.920859102Z"
+    created: "2025-03-04T15:51:48.275941093Z"
     description: SDA Exporter for Prometheus
     digest: 70f5cf558083be445872f901096f58fbd7a096fe46bd6a7c7377cbf95dae6126
     home: https://github.com/moreh-dev/sda_exporter.go
@@ -2640,7 +2650,7 @@ entries:
   sda-manager:
   - apiVersion: v2
     appVersion: 1.11.0
-    created: "2025-03-04T12:52:23.92497814Z"
+    created: "2025-03-04T15:51:48.277546615Z"
     description: A Helm chart for Kubernetes
     digest: 5db093c6281f50c7200573e71eeb6959e9d3cdd29529d8c272d7f5bf86fdd78e
     name: sda-manager
@@ -2651,7 +2661,7 @@ entries:
   tempo-distributed:
   - apiVersion: v2
     appVersion: 2.6.0
-    created: "2025-03-04T12:52:23.940737413Z"
+    created: "2025-03-04T15:51:48.287841578Z"
     dependencies:
     - alias: minio
       condition: minio.enabled
@@ -2706,7 +2716,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 0.44.0-distroless-libc
-    created: "2025-03-04T12:52:23.953757229Z"
+    created: "2025-03-04T15:51:48.292932689Z"
     description: A lightweight, ultra-fast tool for building observability pipelines
     digest: 5150aa848f3a7b2ecb464ec67a3667bf33820faaff66c536412589a4ed132cc5
     home: https://vector.dev/
@@ -2742,7 +2752,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 0.43.1-distroless-libc
-    created: "2025-03-04T12:52:23.950643775Z"
+    created: "2025-03-04T15:51:48.291157349Z"
     description: A lightweight, ultra-fast tool for building observability pipelines
     digest: 5ecc27c00d936776bc7efa51825232ed2014e947fb326f9de89d66415bf96f49
     home: https://vector.dev/
@@ -2778,7 +2788,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 0.43.0-distroless-libc
-    created: "2025-03-04T12:52:23.943885902Z"
+    created: "2025-03-04T15:51:48.289507223Z"
     description: A lightweight, ultra-fast tool for building observability pipelines
     digest: 7e861f2f6687b581f274c206206bc0b7d1f6ba769170cef9b2c63cfe7547e150
     home: https://vector.dev/
@@ -2801,4 +2811,4 @@ entries:
     urls:
     - charts/vector-0.38.0.tgz
     version: 0.38.0
-generated: "2025-03-04T12:52:23.537241697Z"
+generated: "2025-03-04T15:51:47.965415876Z"
