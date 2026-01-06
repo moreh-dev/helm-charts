@@ -420,6 +420,17 @@ entries:
     urls:
     - charts/dynamo-0.2.1.tgz
     version: 0.2.1
+  fortigate-exporter:
+  - apiVersion: v2
+    appVersion: 1.24.1
+    created: 2026-01-06T:17:36.444116318Z"
+    description: A Helm chart for Kubernetes
+    digest: 35949c54ff50aab8d717a6088ff6c94700f7f5375b3207c5ee84665d83efc2b3
+    name: fortigate-exporter
+    type: application
+    urls:
+    - charts/fortigate-exporter-1.24.1.tgz
+    version: 1.24.1
   gateway:
   - apiVersion: v2
     appVersion: 1.25.4
