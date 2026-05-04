@@ -104,7 +104,7 @@ entries:
           url: https://airflow.apache.org/docs/apache-airflow/2.9.3/_images/code.png
     apiVersion: v2
     appVersion: 2.9.3
-    created: "2026-05-04T06:35:31.192666136Z"
+    created: "2026-05-04T06:35:34.427563403Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -133,7 +133,7 @@ entries:
   amd-gpu:
   - apiVersion: v2
     appVersion: 1.31.0.6
-    created: "2026-05-04T06:35:31.196873016Z"
+    created: "2026-05-04T06:35:34.431846857Z"
     dependencies:
     - condition: nfd.enabled
       name: node-feature-discovery
@@ -160,7 +160,7 @@ entries:
     version: 0.19.0-moreh.1
   - apiVersion: v2
     appVersion: 1.31.0.0
-    created: "2026-05-04T06:35:31.195397215Z"
+    created: "2026-05-04T06:35:34.430350046Z"
     dependencies:
     - condition: nfd.enabled
       name: node-feature-discovery
@@ -187,7 +187,7 @@ entries:
     version: 0.14.0
   - apiVersion: v2
     appVersion: 1.25.2.8
-    created: "2026-05-04T06:35:31.193981196Z"
+    created: "2026-05-04T06:35:34.428844139Z"
     dependencies:
     - condition: nfd.enabled
       name: node-feature-discovery
@@ -222,7 +222,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.11.3
-    created: "2026-05-04T06:35:31.217559155Z"
+    created: "2026-05-04T06:35:34.454079817Z"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -257,7 +257,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.10.1
-    created: "2026-05-04T06:35:31.206852024Z"
+    created: "2026-05-04T06:35:34.44178613Z"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -286,7 +286,7 @@ entries:
   artifact:
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2026-05-04T06:35:31.218147776Z"
+    created: "2026-05-04T06:35:34.454634605Z"
     digest: 640c33edbbca0b542ee237e213360a6eceb4f74412707eaefaed99b20b8f142f
     home: https://github.com/moreh-dev/artifact
     name: artifact
@@ -298,7 +298,7 @@ entries:
     version: v0.2.0
   - apiVersion: v2
     appVersion: v0.1.7
-    created: "2026-05-04T06:35:31.217880987Z"
+    created: "2026-05-04T06:35:34.454362386Z"
     digest: fad39a68b26ef17a8e7dca67cba857d4bfecf777ff1e5dc092fe394211d7ae0c
     home: https://github.com/moreh-dev/artifact
     name: artifact
@@ -311,7 +311,7 @@ entries:
   awx-operator:
   - apiVersion: v2
     appVersion: 2.15.0
-    created: "2026-05-04T06:35:31.218893231Z"
+    created: "2026-05-04T06:35:34.455424142Z"
     description: A Helm chart for the AWX Operator
     digest: d272279ef0f9b6ce171223450e9f030dfec3fd47adcd29ac39cc335dcd2cb84e
     name: awx-operator
@@ -322,7 +322,7 @@ entries:
   base:
   - apiVersion: v2
     appVersion: 1.25.4
-    created: "2026-05-04T06:35:31.224848359Z"
+    created: "2026-05-04T06:35:34.460513171Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
     digest: da6fbecf71b1e67e3c06c6a5d4c288cf83bbf2dd3f6271586cce552d2581f390
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -336,7 +336,7 @@ entries:
     version: 1.25.4
   - apiVersion: v2
     appVersion: 1.24.3
-    created: "2026-05-04T06:35:31.222161784Z"
+    created: "2026-05-04T06:35:34.457238747Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
     digest: 4e7c944f5737b4b5e9fe2e622c213f3e1940657ad003b60ab60455d3298adf3f
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -358,7 +358,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v2
     appVersion: v1.19.0
-    created: "2026-05-04T06:35:31.231560315Z"
+    created: "2026-05-04T06:35:34.467006758Z"
     description: A Helm chart for cert-manager
     digest: b581634069151fce8073d0e08d454e712daf7f9bfb9df00b35d5fdcba01936b8
     home: https://cert-manager.io
@@ -382,7 +382,7 @@ entries:
   device-metrics-exporter-charts:
   - apiVersion: v2
     appVersion: v1.2.1
-    created: "2026-05-04T06:35:31.231927602Z"
+    created: "2026-05-04T06:35:34.467337547Z"
     description: A Helm chart for AMD Device Metric Exporter
     digest: c5e3ba76c6dfa67557883154a3ca80f35a0b046837640bcaaefbefc4b28c1484
     keywords:
@@ -409,7 +409,7 @@ entries:
   dynamo:
   - apiVersion: v2
     appVersion: 0.2.1
-    created: "2026-05-04T06:35:31.232612323Z"
+    created: "2026-05-04T06:35:34.468060139Z"
     description: A Helm chart for dynamo deployment
     digest: 040f4021e996814bacb7fc694da5ccd6dbc4fe8b89aa028f79e5fcaefa170949
     home: https://github.com/moreh-dev/dynamo
@@ -423,7 +423,7 @@ entries:
   fortigate-exporter:
   - apiVersion: v2
     appVersion: 1.24.1
-    created: "2026-05-04T06:35:31.233079818Z"
+    created: "2026-05-04T06:35:34.468481777Z"
     description: A Helm chart for Kubernetes
     digest: 4ddb395141242b9ec68cb63b5ebdff511ce0df9249e8b721dad427502f0a08a1
     name: fortigate-exporter
@@ -434,7 +434,7 @@ entries:
   gateway:
   - apiVersion: v2
     appVersion: 1.25.4
-    created: "2026-05-04T06:35:31.234624648Z"
+    created: "2026-05-04T06:35:34.469824379Z"
     description: Helm chart for deploying Istio gateways
     digest: 67feaf4cf5d6744cfbce67a1e479e3d436a59e964dc063d9ec0ca80c51f20655
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -450,7 +450,7 @@ entries:
     version: 1.25.4
   - apiVersion: v2
     appVersion: 1.24.3
-    created: "2026-05-04T06:35:31.233888641Z"
+    created: "2026-05-04T06:35:34.469127786Z"
     description: Helm chart for deploying Istio gateways
     digest: a8f6b6e38bd66a44749b8f43412e53b648667c77e89762f2c8d29ae7a8919253
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -467,7 +467,7 @@ entries:
   gateway-api:
   - apiVersion: v2
     appVersion: v1.3.0
-    created: "2026-05-04T06:35:31.248102671Z"
+    created: "2026-05-04T06:35:34.482964011Z"
     description: Kubernetes Gateway API
     digest: fe30ba6f17b67f00de1fda2facbcc46e77e2204e80f3523092a9007561ce8865
     home: https://gateway-api.sigs.k8s.io/
@@ -480,7 +480,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: v1.2.0
-    created: "2026-05-04T06:35:31.240936125Z"
+    created: "2026-05-04T06:35:34.476143602Z"
     description: Kubernetes Gateway API
     digest: 117837038436b2f6248bc47467be006f267d4175fc6469f52b30d86fbe043e78
     name: gateway-api
@@ -491,7 +491,7 @@ entries:
   gateway-api-inference-extension:
   - apiVersion: v2
     appVersion: v0.5.1
-    created: "2026-05-04T06:35:31.248352318Z"
+    created: "2026-05-04T06:35:34.483281024Z"
     description: Kubernetes Gateway API Inference Extension
     digest: e12ef305ffacdbfcf1fe875a3733f47f547ea04f4d0fba0c07395919283fb75a
     home: https://gateway-api-inference-extension.sigs.k8s.io/
@@ -506,7 +506,7 @@ entries:
   gpu-operator-charts:
   - apiVersion: v2
     appVersion: v1.4.0
-    created: "2026-05-04T06:35:31.254473018Z"
+    created: "2026-05-04T06:35:34.488062078Z"
     dependencies:
     - condition: node-feature-discovery.enabled
       name: node-feature-discovery
@@ -550,7 +550,7 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 11.6.1
-    created: "2026-05-04T06:35:31.259768915Z"
+    created: "2026-05-04T06:35:34.496522964Z"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 6c0e8435a5b3192caa76e56e144908dced3be5e03cab1de9efb7f83b91886b9b
     home: https://grafana.com
@@ -589,7 +589,7 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 10.4.1
-    created: "2026-05-04T06:35:31.256978936Z"
+    created: "2026-05-04T06:35:34.491446427Z"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: eb68b49c8074143e064f17bfd31ebd67ebaf07e525426745c07477d4bdef8de4
     home: https://grafana.com
@@ -620,7 +620,7 @@ entries:
   harbor:
   - apiVersion: v1
     appVersion: 2.10.0
-    created: "2026-05-04T06:35:31.264037482Z"
+    created: "2026-05-04T06:35:34.499732889Z"
     description: An open source trusted cloud native registry that stores, signs,
       and scans content
     digest: a0ae2ebd3b2bdde809090558d61e2c0b9a4984f09e70a2a874504c3815b346e4
@@ -647,7 +647,7 @@ entries:
   heimdall:
   - apiVersion: v2
     appVersion: v0.8.0
-    created: "2026-05-04T06:35:31.289650085Z"
+    created: "2026-05-04T06:35:34.519304363Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -664,7 +664,7 @@ entries:
     version: v0.8.0
   - apiVersion: v2
     appVersion: v0.7.1
-    created: "2026-05-04T06:35:31.286606159Z"
+    created: "2026-05-04T06:35:34.517655578Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -681,7 +681,7 @@ entries:
     version: v0.7.1
   - apiVersion: v2
     appVersion: v0.7.0
-    created: "2026-05-04T06:35:31.282249691Z"
+    created: "2026-05-04T06:35:34.516336551Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -698,7 +698,7 @@ entries:
     version: v0.7.0
   - apiVersion: v2
     appVersion: v0.6.1
-    created: "2026-05-04T06:35:31.279350707Z"
+    created: "2026-05-04T06:35:34.515066795Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -715,7 +715,7 @@ entries:
     version: v0.6.1
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2026-05-04T06:35:31.276929557Z"
+    created: "2026-05-04T06:35:34.513748549Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -732,7 +732,7 @@ entries:
     version: v0.6.0
   - apiVersion: v2
     appVersion: v0.5.1
-    created: "2026-05-04T06:35:31.274986993Z"
+    created: "2026-05-04T06:35:34.512041236Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -749,7 +749,7 @@ entries:
     version: v0.5.1
   - apiVersion: v2
     appVersion: v0.5.0
-    created: "2026-05-04T06:35:31.273629444Z"
+    created: "2026-05-04T06:35:34.50945755Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -766,7 +766,7 @@ entries:
     version: v0.5.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-05-04T06:35:31.272346313Z"
+    created: "2026-05-04T06:35:34.508209225Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -784,7 +784,7 @@ entries:
   heimdall-aigateway-crd:
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2026-05-04T06:35:31.26423441Z"
+    created: "2026-05-04T06:35:34.499919338Z"
     description: Heimdall AI Gateway CRDs
     digest: c9f9c03ccf1542aa8e4bbbcf034a828d64b0076e8e6ba3ab5930bc294a495666
     home: https://github.com/moreh-dev/aigateway
@@ -798,7 +798,7 @@ entries:
   heimdall-crd:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-05-04T06:35:31.265124024Z"
+    created: "2026-05-04T06:35:34.501303388Z"
     description: Heimdall; AI Gateway operator for MIF
     digest: 5e998a9d4071480336d0cfead07ebb60ce90eef39e9f9b22f861ed235b2b8814
     home: https://github.com/moreh-dev/heimdall
@@ -812,7 +812,7 @@ entries:
   heimdall-inference-scheduler:
   - apiVersion: v2
     appVersion: v0.8.1
-    created: "2026-05-04T06:35:31.269487597Z"
+    created: "2026-05-04T06:35:34.506956782Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -829,7 +829,7 @@ entries:
     version: v0.8.1
   - apiVersion: v2
     appVersion: v0.8.1-rc.2
-    created: "2026-05-04T06:35:31.268068282Z"
+    created: "2026-05-04T06:35:34.505489117Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -846,7 +846,7 @@ entries:
     version: v0.8.1-rc.2
   - apiVersion: v2
     appVersion: v0.8.1-rc.1
-    created: "2026-05-04T06:35:31.266626425Z"
+    created: "2026-05-04T06:35:34.504026621Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -865,8 +865,33 @@ entries:
   - annotations:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
+    appVersion: v0.2.1
+    created: "2026-05-04T06:35:34.536538643Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 2.31.4
+    description: Hermod - LLM artifact lifecycle operator for Kubernetes
+    digest: a436c0f01fa2b9539c3562533a7437acc60cbb529c3fdd75b147694aa4190b81
+    home: https://github.com/moreh-dev/hermod
+    keywords:
+    - kubernetes
+    - operator
+    - llm
+    - artifact
+    kubeVersion: '>= 1.32.0-0'
+    name: hermod
+    sources:
+    - https://github.com/moreh-dev/hermod/tree/main/deploy/helm/hermod
+    type: application
+    urls:
+    - charts/hermod-v0.2.1.tgz
+    version: v0.2.1
+  - annotations:
+      kubebuilder.io/generated-by: kubebuilder
+    apiVersion: v2
     appVersion: v0.2.0
-    created: "2026-05-04T06:35:31.30871522Z"
+    created: "2026-05-04T06:35:34.535143262Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -891,7 +916,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.2.0-rc.1
-    created: "2026-05-04T06:35:31.307148329Z"
+    created: "2026-05-04T06:35:34.533680105Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -916,7 +941,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-05-04T06:35:31.305487392Z"
+    created: "2026-05-04T06:35:34.532090241Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -941,7 +966,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.1.0-rc.3
-    created: "2026-05-04T06:35:31.304143097Z"
+    created: "2026-05-04T06:35:34.529467373Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -966,7 +991,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.1.0-rc.2
-    created: "2026-05-04T06:35:31.302732298Z"
+    created: "2026-05-04T06:35:34.527802659Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -991,7 +1016,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.1.0-rc.1
-    created: "2026-05-04T06:35:31.299096256Z"
+    created: "2026-05-04T06:35:34.526492007Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1016,7 +1041,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.0.3
-    created: "2026-05-04T06:35:31.296683602Z"
+    created: "2026-05-04T06:35:34.525204488Z"
     description: Hermod - LLM artifact lifecycle operator for Kubernetes
     digest: 8898acaeb74e33bb2a299e6c2b9a94d9c66cc4ddb476158605c86f24b5a4d2a0
     home: https://github.com/moreh-dev/hermod
@@ -1035,7 +1060,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.0.2
-    created: "2026-05-04T06:35:31.295486703Z"
+    created: "2026-05-04T06:35:34.524517012Z"
     description: Hermod - LLM artifact lifecycle operator for Kubernetes
     digest: 771071189c033328f55c2ec8ebcecc6e06fa2e4570c987abb70d79ba2d172806
     keywords:
@@ -1051,7 +1076,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.0.1
-    created: "2026-05-04T06:35:31.294396935Z"
+    created: "2026-05-04T06:35:34.523890791Z"
     description: Hermod - LLM artifact lifecycle operator for Kubernetes
     digest: 7a7a830983ad9e12f91f058776dfeca9385368427bdce435b20b727e7fbf4c2f
     keywords:
@@ -1068,7 +1093,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.2.1
-    created: "2026-05-04T06:35:31.293351379Z"
+    created: "2026-05-04T06:35:34.522887043Z"
     description: Hermod CRDs for LLM artifact lifecycle management
     digest: 719a7e84a6012b68b08738d3f66de8fb3222022335f23f8d0bab6ae5be833f80
     home: https://github.com/moreh-dev/hermod
@@ -1086,7 +1111,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.2.0
-    created: "2026-05-04T06:35:31.292789077Z"
+    created: "2026-05-04T06:35:34.522384563Z"
     description: Hermod CRDs for LLM artifact lifecycle management
     digest: 7933440369ebfc7fdeac53b3f96eec4b14aaca54c3836c6c9840341935973728
     home: https://github.com/moreh-dev/hermod
@@ -1104,7 +1129,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.2.0-rc.1
-    created: "2026-05-04T06:35:31.292239148Z"
+    created: "2026-05-04T06:35:34.521958616Z"
     description: Hermod CRDs for LLM artifact lifecycle management
     digest: 51471f0915a6f58786d3e755d45a48a225795695dd7b99d268045ec661889adf
     home: https://github.com/moreh-dev/hermod
@@ -1122,7 +1147,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-05-04T06:35:31.29168408Z"
+    created: "2026-05-04T06:35:34.521357071Z"
     description: Hermod CRDs for LLM artifact lifecycle management
     digest: 81736ed49b0b00020cfbfa26de8dea2f579b7df16a27094d480a063221f7cba6
     home: https://github.com/moreh-dev/hermod
@@ -1140,7 +1165,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.1.0-rc.3
-    created: "2026-05-04T06:35:31.291184596Z"
+    created: "2026-05-04T06:35:34.520908011Z"
     description: Hermod CRDs for LLM artifact lifecycle management
     digest: 0c7a0eaa153c56073152a61d0250937c2a685cd9d3c407a2ce28274ae3b5fe33
     home: https://github.com/moreh-dev/hermod
@@ -1158,7 +1183,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.1.0-rc.2
-    created: "2026-05-04T06:35:31.290656297Z"
+    created: "2026-05-04T06:35:34.520430508Z"
     description: Hermod CRDs for LLM artifact lifecycle management
     digest: d54a2ba8bd822e2ae5c2eeebd87c450c8e526ba64597bbecfe387a94139cba66
     home: https://github.com/moreh-dev/hermod
@@ -1176,7 +1201,7 @@ entries:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
     appVersion: v0.1.0-rc.1
-    created: "2026-05-04T06:35:31.29017671Z"
+    created: "2026-05-04T06:35:34.51997759Z"
     description: Hermod CRDs for LLM artifact lifecycle management
     digest: 9097ffd7d3c794fdcb99e93130753848c39bebd758c91f1a37a9b0839321d18c
     home: https://github.com/moreh-dev/hermod
@@ -1193,7 +1218,7 @@ entries:
   inference-service:
   - apiVersion: v2
     appVersion: v0.7.0
-    created: "2026-05-04T06:35:31.31140396Z"
+    created: "2026-05-04T06:35:34.537918373Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1215,7 +1240,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.11.3
-    created: "2026-05-04T06:35:31.315295228Z"
+    created: "2026-05-04T06:35:34.542833659Z"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: a9f371489a6c18042508c0b5c2ea669deaad7ccc08f37efc4522e336edda1c20
@@ -1241,7 +1266,7 @@ entries:
   istiod:
   - apiVersion: v2
     appVersion: 1.25.4
-    created: "2026-05-04T06:35:31.319457103Z"
+    created: "2026-05-04T06:35:34.545825295Z"
     description: Helm chart for istio control plane
     digest: 5783362e3d5c54f760e901092dbb351ccbd1b8a257b93fb03cb6e33cc2d6359b
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -1257,7 +1282,7 @@ entries:
     version: 1.25.4
   - apiVersion: v2
     appVersion: 1.24.3
-    created: "2026-05-04T06:35:31.316869843Z"
+    created: "2026-05-04T06:35:34.544328525Z"
     description: Helm chart for istio control plane
     digest: a196fc82ab7e793c4bd105af0d760171e387a765a3a903bc73c4bb70acd01c7c
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -1274,7 +1299,7 @@ entries:
   k8s-ecr-login-renew:
   - apiVersion: v2
     appVersion: 1.7.1
-    created: "2026-05-04T06:35:31.320330868Z"
+    created: "2026-05-04T06:35:34.54613812Z"
     description: Deploys a cronJob which will renew ECR imagePullSecrets automatically
     digest: 47a6bbfa5136b5fffd0c5c27be190b51bdc236a6872335dfc91af12bf493bc1d
     keywords:
@@ -1301,7 +1326,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 26.0.5
-    created: "2026-05-04T06:35:31.347395729Z"
+    created: "2026-05-04T06:35:34.571786068Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1340,7 +1365,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 24.0.4
-    created: "2026-05-04T06:35:31.338363161Z"
+    created: "2026-05-04T06:35:34.56329294Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1379,7 +1404,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 23.0.7
-    created: "2026-05-04T06:35:31.329228434Z"
+    created: "2026-05-04T06:35:34.55436508Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1421,7 +1446,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.83.0
-    created: "2026-05-04T06:35:31.454732223Z"
+    created: "2026-05-04T06:35:34.6797151Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -1498,7 +1523,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.78.2
-    created: "2026-05-04T06:35:31.425713348Z"
+    created: "2026-05-04T06:35:34.649092446Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -1567,7 +1592,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.72.0
-    created: "2026-05-04T06:35:31.3972716Z"
+    created: "2026-05-04T06:35:34.622147959Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -1636,7 +1661,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.71.2
-    created: "2026-05-04T06:35:31.372397258Z"
+    created: "2026-05-04T06:35:34.598443597Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -1697,7 +1722,7 @@ entries:
     version: 56.8.2
   kubeflow-trainer:
   - apiVersion: v2
-    created: "2026-05-04T06:35:31.466842287Z"
+    created: "2026-05-04T06:35:34.687958703Z"
     dependencies:
     - condition: jobset.install
       name: jobset
@@ -1731,7 +1756,7 @@ entries:
   kubernetes-replicator:
   - apiVersion: v2
     appVersion: v2.9.2
-    created: "2026-05-04T06:35:31.467139042Z"
+    created: "2026-05-04T06:35:34.688238286Z"
     description: Controller for replicating secrets+configmaps across namespaces
     digest: 7229545d3bdf075d8fd007d4ab67059f7a63483868efb0aaf506de0b1ff26633
     name: kubernetes-replicator
@@ -1753,7 +1778,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: v1.14.4
-    created: "2026-05-04T06:35:31.508214071Z"
+    created: "2026-05-04T06:35:34.729514384Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -1804,7 +1829,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: v1.12.5
-    created: "2026-05-04T06:35:31.48925267Z"
+    created: "2026-05-04T06:35:34.710421884Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -1877,7 +1902,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: v1.8.5
-    created: "2026-05-04T06:35:31.472105843Z"
+    created: "2026-05-04T06:35:34.693811639Z"
     description: Kubernetes Native Policy Management
     digest: 747ee2317b34e2e9831b7f47d01086b7582a5c01b188461b8d43638b99efff81
     home: https://kyverno.io/
@@ -1902,7 +1927,7 @@ entries:
   local-path-provisioner:
   - apiVersion: v1
     appVersion: v0.0.31
-    created: "2026-05-04T06:35:31.509660537Z"
+    created: "2026-05-04T06:35:34.731241995Z"
     description: Use HostPath for persistent local storage with Kubernetes
     digest: a614e9f5d36abb2d6a8be4c5c3231888f89492b3c0a200182e9b44b9d7768544
     home: https://github.com/rancher/local-path-provisioner
@@ -1918,7 +1943,7 @@ entries:
     version: 0.0.31
   - apiVersion: v1
     appVersion: v0.0.26
-    created: "2026-05-04T06:35:31.509166693Z"
+    created: "2026-05-04T06:35:34.730566011Z"
     description: Use HostPath for persistent local storage with Kubernetes
     digest: 7a26dc746b60a67e694e49c52e1b43142c9c98a75d04cccd9ebf2e50f1f7b8ee
     home: https://github.com/rancher/local-path-provisioner
@@ -1934,7 +1959,7 @@ entries:
     version: 0.0.26
   - apiVersion: v1
     appVersion: v0.0.25
-    created: "2026-05-04T06:35:31.508716711Z"
+    created: "2026-05-04T06:35:34.730029548Z"
     description: Use HostPath for persistent local storage with Kubernetes
     digest: d0b29816de24dc528829da513c55e86e6baaa2f0c7346d80d628b4f97611e284
     home: https://github.com/rancher/local-path-provisioner
@@ -1951,7 +1976,7 @@ entries:
   loki:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-05-04T06:35:31.5224863Z"
+    created: "2026-05-04T06:35:34.74420435Z"
     dependencies:
     - alias: minio
       condition: minio.enabled
@@ -1988,7 +2013,7 @@ entries:
   loki-distributed:
   - apiVersion: v2
     appVersion: 2.9.6
-    created: "2026-05-04T06:35:31.528676069Z"
+    created: "2026-05-04T06:35:34.750798559Z"
     description: Helm chart for Grafana Loki in microservices mode
     digest: c0436b6adfd5dc27b6b81d4b5c62a00cf52c07f1318a5d985e16cb06286e855b
     home: https://grafana.github.io/helm-charts
@@ -2017,7 +2042,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 11.4.2
-    created: "2026-05-04T06:35:31.531630626Z"
+    created: "2026-05-04T06:35:34.753748315Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2048,7 +2073,7 @@ entries:
   metallb:
   - apiVersion: v2
     appVersion: v0.15.2
-    created: "2026-05-04T06:35:31.538395571Z"
+    created: "2026-05-04T06:35:34.760188298Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -2073,7 +2098,7 @@ entries:
     version: 0.15.2
   - apiVersion: v2
     appVersion: v0.14.4
-    created: "2026-05-04T06:35:31.534619988Z"
+    created: "2026-05-04T06:35:34.755791214Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -2105,7 +2130,7 @@ entries:
           description: "Updated the _addon-resizer_ OCI image to [v1.8.20](https://github.com/kubernetes/autoscaler/releases/tag/addon-resizer-1.8.20)."
     apiVersion: v2
     appVersion: 0.7.0
-    created: "2026-05-04T06:35:31.540056799Z"
+    created: "2026-05-04T06:35:34.761720793Z"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
     digest: 19df2fa9c4c6e1ec4f134da56ae9c3e6b610bfd5674744115c9e9864c5f3debe
@@ -2141,7 +2166,7 @@ entries:
           description: "Changed the default addon resizer nanny resource configuration to match the documented Metrics Server autoscaling values."
     apiVersion: v2
     appVersion: 0.6.4
-    created: "2026-05-04T06:35:31.539178466Z"
+    created: "2026-05-04T06:35:34.760935555Z"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
     digest: e7cba5a2d7e2b0949b3ea1aa48fc3780b71eba17e1edccc8273f5da67048164b
@@ -2178,7 +2203,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2024.11.7
-    created: "2026-05-04T06:35:31.543215217Z"
+    created: "2026-05-04T06:35:34.764604665Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2209,7 +2234,7 @@ entries:
   moai-accl-mgr:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-05-04T06:35:31.562093262Z"
+    created: "2026-05-04T06:35:34.783142185Z"
     description: A Helm chart for Kubernetes
     digest: 9964836b94c3092e92eb1274efc0c7e114d1157457fab7a6af65087cff734869
     name: moai-accl-mgr
@@ -2219,7 +2244,7 @@ entries:
     version: v0.1.0
   - apiVersion: v2
     appVersion: v0.0.35
-    created: "2026-05-04T06:35:31.55884279Z"
+    created: "2026-05-04T06:35:34.77945457Z"
     description: A Helm chart for Kubernetes
     digest: cb8e5d5e025e52f9299b76f65e9ef4740a715edbbb638a043941f7e3ab65b46d
     name: moai-accl-mgr
@@ -2229,7 +2254,7 @@ entries:
     version: v0.0.35
   - apiVersion: v2
     appVersion: v0.0.34
-    created: "2026-05-04T06:35:31.557072338Z"
+    created: "2026-05-04T06:35:34.777503562Z"
     description: A Helm chart for Kubernetes
     digest: 315b8c1d88be6671dc69ef4d70e5557094e9265a0f30945ea7a6ed1fc2034752
     name: moai-accl-mgr
@@ -2239,7 +2264,7 @@ entries:
     version: v0.0.34
   - apiVersion: v2
     appVersion: v0.0.33
-    created: "2026-05-04T06:35:31.554774521Z"
+    created: "2026-05-04T06:35:34.775454312Z"
     description: A Helm chart for Kubernetes
     digest: 1093fcc040d5a3695f6d9acd124cf2ba047ff18c7dbd7cca7088ca5133fe0b7d
     name: moai-accl-mgr
@@ -2249,7 +2274,7 @@ entries:
     version: v0.0.33
   - apiVersion: v2
     appVersion: v0.0.32
-    created: "2026-05-04T06:35:31.550585473Z"
+    created: "2026-05-04T06:35:34.77224982Z"
     description: A Helm chart for Kubernetes
     digest: daaaa6ef19c776b94f55713ec4f2a91849f64a7a186f67e5086a5b5a9b11d5e9
     name: moai-accl-mgr
@@ -2259,7 +2284,7 @@ entries:
     version: v0.0.32
   - apiVersion: v2
     appVersion: v0.0.32-hotfix.rc4
-    created: "2026-05-04T06:35:31.549207275Z"
+    created: "2026-05-04T06:35:34.770854882Z"
     description: A Helm chart for Kubernetes
     digest: b82ee7e7c344b0eaee9324be5e50e8aad45342ff6b0e2ef9ef6160c21e296579
     name: moai-accl-mgr
@@ -2269,7 +2294,7 @@ entries:
     version: v0.0.32-hotfix.rc4
   - apiVersion: v2
     appVersion: v0.0.32-hotfix.rc2
-    created: "2026-05-04T06:35:31.54767588Z"
+    created: "2026-05-04T06:35:34.769454654Z"
     description: A Helm chart for Kubernetes
     digest: 2d1318aaf617bbb861ba6a9bdb67826072b9fcd9a0dbf1e216ab960392b92293
     name: moai-accl-mgr
@@ -2279,7 +2304,7 @@ entries:
     version: v0.0.32-hotfix.rc2
   - apiVersion: v2
     appVersion: v0.0.32-hotfix.rc1
-    created: "2026-05-04T06:35:31.545617842Z"
+    created: "2026-05-04T06:35:34.767448423Z"
     description: A Helm chart for Kubernetes
     digest: 628a9936f61138e44aca012522c6da9c98fc6493ab6d2411cf1a479791f5f688
     name: moai-accl-mgr
@@ -2290,7 +2315,7 @@ entries:
   moai-admin-web:
   - apiVersion: v2
     appVersion: v1.1.1
-    created: "2026-05-04T06:35:31.5650375Z"
+    created: "2026-05-04T06:35:34.785360763Z"
     description: A Helm chart for MoAI admin web application
     digest: 29b7f9f52b4a9702aa34eae856c1295113962313784ae79864cc28c50ba29ef0
     home: https://github.com/moreh-dev/moai-admin-web
@@ -2303,7 +2328,7 @@ entries:
     version: v1.1.1
   - apiVersion: v2
     appVersion: v1.1.0
-    created: "2026-05-04T06:35:31.564433961Z"
+    created: "2026-05-04T06:35:34.784811787Z"
     description: A Helm chart for MoAI admin web application
     digest: 45dc9317852394ba5810b8df61e640321ea05624ab7803bfc1756937e12074c2
     home: https://github.com/moreh-dev/moai-admin-web
@@ -2316,7 +2341,7 @@ entries:
     version: v1.1.0
   - apiVersion: v2
     appVersion: v1.0.1
-    created: "2026-05-04T06:35:31.563859476Z"
+    created: "2026-05-04T06:35:34.78423074Z"
     description: A Helm chart for MoAI admin web application
     digest: 90500d8c9e5a04c86f2100c238dd17ae9a6cbf9b038e6eb9196fd2c553bf0c28
     home: https://github.com/moreh-dev/moai-admin-web
@@ -2329,7 +2354,7 @@ entries:
     version: v1.0.1
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2026-05-04T06:35:31.563300961Z"
+    created: "2026-05-04T06:35:34.78369033Z"
     description: A Helm chart for MoAI admin web application
     digest: 86525e11887e6487eddb8a5ef71f4431bfa8913cb8d4ceb8ed0457a81e7676bc
     home: https://github.com/moreh-dev/moai-admin-web
@@ -2343,7 +2368,7 @@ entries:
   moai-enduser-web:
   - apiVersion: v2
     appVersion: v1.1.0
-    created: "2026-05-04T06:35:31.567218069Z"
+    created: "2026-05-04T06:35:34.787532363Z"
     description: A Helm chart for MoAI enduser web application
     digest: 8e782451e6087c3c35d39120d24fd3628209b44cf872cbf2117d5ac4a5980d79
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -2356,7 +2381,7 @@ entries:
     version: v1.1.0
   - apiVersion: v2
     appVersion: v1.0.2
-    created: "2026-05-04T06:35:31.566619169Z"
+    created: "2026-05-04T06:35:34.786939976Z"
     description: A Helm chart for MoAI enduser web application
     digest: c5e9d9134720b263c93dd62ab718c6848121803a232eb313be83899e22f5678a
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -2369,7 +2394,7 @@ entries:
     version: v1.0.2
   - apiVersion: v2
     appVersion: v1.0.1
-    created: "2026-05-04T06:35:31.566104556Z"
+    created: "2026-05-04T06:35:34.786415835Z"
     description: A Helm chart for MoAI enduser web application
     digest: c6dd1876dbd9bdb6a7c6b48269a6d17045e6a7785c2ed19410ca6f5f004f230b
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -2382,7 +2407,7 @@ entries:
     version: v1.0.1
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2026-05-04T06:35:31.565573573Z"
+    created: "2026-05-04T06:35:34.785915219Z"
     description: A Helm chart for MoAI enduser web application
     digest: 7cdb1451d83f6500a0ddc16f0f9af4b5175cbf308308a6a9f46add99559aac9c
     home: https://github.com/moreh-dev/moai-enduser-web
@@ -2396,7 +2421,7 @@ entries:
   moai-gatekeeper:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-05-04T06:35:31.567545962Z"
+    created: "2026-05-04T06:35:34.787879482Z"
     description: A Helm chart for Moai Gatekeeper service with Redis
     digest: 78fe81b408b7fd9edcbef6e632f52925aa15553fb7c69d4d6c0a2e11cc32e666
     home: https://github.com/moreh-dev/moai-gatekeeper
@@ -2410,7 +2435,7 @@ entries:
   moai-inference-framework:
   - apiVersion: v2
     appVersion: v0.4.0
-    created: "2026-05-04T06:35:31.875988091Z"
+    created: "2026-05-04T06:35:35.091641239Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2470,7 +2495,7 @@ entries:
     version: v0.4.0
   - apiVersion: v2
     appVersion: v0.3.0
-    created: "2026-05-04T06:35:31.798672778Z"
+    created: "2026-05-04T06:35:35.013399483Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2513,7 +2538,7 @@ entries:
     version: v0.3.0
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2026-05-04T06:35:31.734046963Z"
+    created: "2026-05-04T06:35:34.959272098Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2556,7 +2581,7 @@ entries:
     version: v0.2.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-05-04T06:35:31.683092493Z"
+    created: "2026-05-04T06:35:34.902442781Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2599,7 +2624,7 @@ entries:
     version: v0.1.0
   - apiVersion: v2
     appVersion: v0.0.1
-    created: "2026-05-04T06:35:31.626630902Z"
+    created: "2026-05-04T06:35:34.849506352Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2643,7 +2668,7 @@ entries:
   moai-inference-preset:
   - apiVersion: v2
     appVersion: v0.5.0
-    created: "2026-05-04T06:35:31.883578442Z"
+    created: "2026-05-04T06:35:35.097766763Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2660,7 +2685,7 @@ entries:
     version: v0.5.0
   - apiVersion: v2
     appVersion: v0.4.0
-    created: "2026-05-04T06:35:31.880209268Z"
+    created: "2026-05-04T06:35:35.095759931Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2677,7 +2702,7 @@ entries:
     version: v0.4.0
   - apiVersion: v2
     appVersion: v0.3.0
-    created: "2026-05-04T06:35:31.879080145Z"
+    created: "2026-05-04T06:35:35.09463119Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2694,7 +2719,7 @@ entries:
     version: v0.3.0
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2026-05-04T06:35:31.878083391Z"
+    created: "2026-05-04T06:35:35.093600202Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2711,7 +2736,7 @@ entries:
     version: v0.2.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-05-04T06:35:31.876989144Z"
+    created: "2026-05-04T06:35:35.092574014Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2729,7 +2754,7 @@ entries:
   moai-keycloak-init:
   - apiVersion: v2
     appVersion: v1.1.1
-    created: "2026-05-04T06:35:31.884981976Z"
+    created: "2026-05-04T06:35:35.098580494Z"
     description: A Helm chart for init keycloak configuration
     digest: 14575070d265f40f54067b506caea7a77c079ada95b215f968a44522a04c0dce
     home: https://github.com/moreh-dev/moai-admin-web
@@ -2742,7 +2767,7 @@ entries:
     version: v1.1.1
   - apiVersion: v2
     appVersion: v1.1.0
-    created: "2026-05-04T06:35:31.884761283Z"
+    created: "2026-05-04T06:35:35.098376573Z"
     description: A Helm chart for init keycloak configuration
     digest: 50ef099e2b6481849137c63aadb85a1561fecec72ecc12eab9b2bddd9ed82177
     home: https://github.com/moreh-dev/moai-admin-web
@@ -2755,7 +2780,7 @@ entries:
     version: v1.1.0
   - apiVersion: v2
     appVersion: v1.0.1
-    created: "2026-05-04T06:35:31.884423181Z"
+    created: "2026-05-04T06:35:35.098171129Z"
     description: A Helm chart for init keycloak configuration
     digest: 2ca3cf781652fb247da6a1323bb635f607b4e211f4e16cbad5918489405e8b0b
     home: https://github.com/moreh-dev/moai-admin-web
@@ -2768,7 +2793,7 @@ entries:
     version: v1.0.1
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2026-05-04T06:35:31.884130212Z"
+    created: "2026-05-04T06:35:35.097978969Z"
     description: A Helm chart for init keycloak configuration
     digest: 74acdd88ea20e1476e756960eec7126f3ab86cf8cd64e310b6d7d9094006ca5a
     home: https://github.com/moreh-dev/moai-admin-web
@@ -2796,7 +2821,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.12
-    created: "2026-05-04T06:35:31.890750387Z"
+    created: "2026-05-04T06:35:35.104080587Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2828,7 +2853,7 @@ entries:
   morehbuild:
   - apiVersion: v2
     appVersion: v0.3.6
-    created: "2026-05-04T06:35:31.893165136Z"
+    created: "2026-05-04T06:35:35.1056119Z"
     description: Moreh Build
     digest: 19f196de374883ac26601e77d04124b79255cb28b6d1094acb32bd2088916f20
     name: morehbuild
@@ -2838,7 +2863,7 @@ entries:
     version: v0.3.6
   - apiVersion: v2
     appVersion: v0.3.5
-    created: "2026-05-04T06:35:31.892215199Z"
+    created: "2026-05-04T06:35:35.105178019Z"
     description: Moreh Build
     digest: b2717076ca39c756681512643474345b8c5f75970b51c3eb858a70abc0efefc6
     name: morehbuild
@@ -2848,7 +2873,7 @@ entries:
     version: v0.3.5
   - apiVersion: v2
     appVersion: v0.3.4
-    created: "2026-05-04T06:35:31.891214244Z"
+    created: "2026-05-04T06:35:35.104621678Z"
     description: Moreh Build
     digest: 18c64e95476463f5b55a64370061f4a09675c3bbd660d08f33ea6d3704baeeda
     name: morehbuild
@@ -2859,7 +2884,7 @@ entries:
   moss:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-05-04T06:35:31.945343996Z"
+    created: "2026-05-04T06:35:35.153294245Z"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -2876,7 +2901,7 @@ entries:
     version: v0.1.0
   - apiVersion: v2
     appVersion: v0.0.5
-    created: "2026-05-04T06:35:31.939406588Z"
+    created: "2026-05-04T06:35:35.14699645Z"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -2899,7 +2924,7 @@ entries:
     version: v0.0.5
   - apiVersion: v2
     appVersion: v0.0.4
-    created: "2026-05-04T06:35:31.931684053Z"
+    created: "2026-05-04T06:35:35.138719083Z"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -2922,7 +2947,7 @@ entries:
     version: v0.0.4
   - apiVersion: v2
     appVersion: v0.0.3
-    created: "2026-05-04T06:35:31.923887658Z"
+    created: "2026-05-04T06:35:35.130517347Z"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -2945,7 +2970,7 @@ entries:
     version: v0.0.3
   - apiVersion: v2
     appVersion: v0.0.2
-    created: "2026-05-04T06:35:31.914196828Z"
+    created: "2026-05-04T06:35:35.121041389Z"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -2968,7 +2993,7 @@ entries:
     version: v0.0.2
   - apiVersion: v2
     appVersion: v0.0.1
-    created: "2026-05-04T06:35:31.90412147Z"
+    created: "2026-05-04T06:35:35.113280749Z"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -3003,7 +3028,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 9.4.0
-    created: "2026-05-04T06:35:31.949171667Z"
+    created: "2026-05-04T06:35:35.157679745Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3045,7 +3070,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.29.0
-    created: "2026-05-04T06:35:31.953472292Z"
+    created: "2026-05-04T06:35:35.162648467Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3076,7 +3101,7 @@ entries:
   nginx-ingress:
   - apiVersion: v2
     appVersion: 3.5.0
-    created: "2026-05-04T06:35:31.955308427Z"
+    created: "2026-05-04T06:35:35.165000044Z"
     description: NGINX Ingress Controller
     digest: 3e050d7d1b9ee8ab7d78fa87f7be5b91cb0e345a912d4a4fb3c407ae2c33b936
     home: https://github.com/nginxinc/kubernetes-ingress
@@ -3105,7 +3130,7 @@ entries:
               url: https://github.com/oauth2-proxy/manifests/pull/300
     apiVersion: v2
     appVersion: 7.8.2
-    created: "2026-05-04T06:35:31.96354225Z"
+    created: "2026-05-04T06:35:35.173819204Z"
     dependencies:
     - alias: redis
       condition: redis.enabled
@@ -3142,7 +3167,7 @@ entries:
   odin:
   - apiVersion: v2
     appVersion: v0.9.0-rc.1
-    created: "2026-05-04T06:35:32.110091999Z"
+    created: "2026-05-04T06:35:35.33128644Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3163,7 +3188,7 @@ entries:
     version: v0.9.0-rc.1
   - apiVersion: v2
     appVersion: v0.8.0
-    created: "2026-05-04T06:35:32.105690135Z"
+    created: "2026-05-04T06:35:35.326975239Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3184,7 +3209,7 @@ entries:
     version: v0.8.0
   - apiVersion: v2
     appVersion: v0.7.0
-    created: "2026-05-04T06:35:32.098020557Z"
+    created: "2026-05-04T06:35:35.321112839Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3205,7 +3230,7 @@ entries:
     version: v0.7.0
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2026-05-04T06:35:32.091216678Z"
+    created: "2026-05-04T06:35:35.31558375Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3226,7 +3251,7 @@ entries:
     version: v0.6.0
   - apiVersion: v2
     appVersion: v0.5.1
-    created: "2026-05-04T06:35:32.085197098Z"
+    created: "2026-05-04T06:35:35.310031179Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3247,7 +3272,7 @@ entries:
     version: v0.5.1
   - apiVersion: v2
     appVersion: v0.5.0
-    created: "2026-05-04T06:35:32.080282785Z"
+    created: "2026-05-04T06:35:35.303292129Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3268,7 +3293,7 @@ entries:
     version: v0.5.0
   - apiVersion: v2
     appVersion: v0.4.0
-    created: "2026-05-04T06:35:32.07413254Z"
+    created: "2026-05-04T06:35:35.296401555Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3289,7 +3314,7 @@ entries:
     version: v0.4.0
   - apiVersion: v2
     appVersion: v0.3.0
-    created: "2026-05-04T06:35:32.067775638Z"
+    created: "2026-05-04T06:35:35.29055882Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3310,7 +3335,7 @@ entries:
     version: v0.3.0
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2026-05-04T06:35:32.062856005Z"
+    created: "2026-05-04T06:35:35.285918955Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3331,7 +3356,7 @@ entries:
     version: v0.2.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-05-04T06:35:32.056308605Z"
+    created: "2026-05-04T06:35:35.279893719Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3353,7 +3378,7 @@ entries:
   odin-crd:
   - apiVersion: v2
     appVersion: v0.9.0-rc.1
-    created: "2026-05-04T06:35:32.050476695Z"
+    created: "2026-05-04T06:35:35.27438564Z"
     description: Odin; Inference Service operator for MIF
     digest: a47c7498a96075f1a96f96c0225a0b9644ca26eddede405ccac04072c44b79bf
     home: https://github.com/moreh-dev/odin
@@ -3366,7 +3391,7 @@ entries:
     version: v0.9.0-rc.1
   - apiVersion: v2
     appVersion: v0.8.0
-    created: "2026-05-04T06:35:32.041566689Z"
+    created: "2026-05-04T06:35:35.26626699Z"
     description: Odin; Inference Service operator for MIF
     digest: 00d06bcffe385875ca1f4065ff7a42a4dc690833c633881cc59796279d29caa8
     home: https://github.com/moreh-dev/odin
@@ -3379,7 +3404,7 @@ entries:
     version: v0.8.0
   - apiVersion: v2
     appVersion: v0.7.0
-    created: "2026-05-04T06:35:32.031665736Z"
+    created: "2026-05-04T06:35:35.258034555Z"
     description: Odin; Inference Service operator for MIF
     digest: 5760ccae0ffa784549514427459546602ec667f3a8356f0f3e0cfb711a8fea85
     home: https://github.com/moreh-dev/odin
@@ -3392,7 +3417,7 @@ entries:
     version: v0.7.0
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2026-05-04T06:35:32.022192726Z"
+    created: "2026-05-04T06:35:35.247992681Z"
     description: Odin; Inference Service operator for MIF
     digest: feb4107c044aa74e675495e9ba5646ba1a31fe1b11737c416e726bd3daaf8b1a
     home: https://github.com/moreh-dev/odin
@@ -3405,7 +3430,7 @@ entries:
     version: v0.6.0
   - apiVersion: v2
     appVersion: v0.5.1
-    created: "2026-05-04T06:35:32.014635979Z"
+    created: "2026-05-04T06:35:35.23917303Z"
     description: Odin; Inference Service operator for MIF
     digest: c50cfe611697ebc1ff558b62878d3ef9e4296229afcc04c44cfc3225e23d8e92
     home: https://github.com/moreh-dev/odin
@@ -3418,7 +3443,7 @@ entries:
     version: v0.5.1
   - apiVersion: v2
     appVersion: v0.5.0
-    created: "2026-05-04T06:35:32.007016597Z"
+    created: "2026-05-04T06:35:35.227667448Z"
     description: Odin; Inference Service operator for MIF
     digest: df5f0faaacdc82f5c4c815d59772e167312d588eda725f4d6db3e51529139d50
     home: https://github.com/moreh-dev/odin
@@ -3431,7 +3456,7 @@ entries:
     version: v0.5.0
   - apiVersion: v2
     appVersion: v0.4.0
-    created: "2026-05-04T06:35:31.999351949Z"
+    created: "2026-05-04T06:35:35.216198632Z"
     description: Odin; Inference Service operator for MIF
     digest: fc36b4985929a60ddf7d47510d3d8824ee469b810d14c6a4b088683154ab0c71
     home: https://github.com/moreh-dev/odin
@@ -3444,7 +3469,7 @@ entries:
     version: v0.4.0
   - apiVersion: v2
     appVersion: v0.3.0
-    created: "2026-05-04T06:35:31.991603702Z"
+    created: "2026-05-04T06:35:35.205893055Z"
     description: Odin; Inference Service operator for MIF
     digest: c196f0e5b5395c80800e1ff4fbdf4c50d31874db020e93e6639ca31960a5351c
     home: https://github.com/moreh-dev/odin
@@ -3457,7 +3482,7 @@ entries:
     version: v0.3.0
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2026-05-04T06:35:31.982283018Z"
+    created: "2026-05-04T06:35:35.197038588Z"
     description: Odin; Inference Service operator for MIF
     digest: 82a5d05435dd9b947ab1ab3194bd1b7eccb7fe0cc04fa91d4a77bb10b4a83018
     home: https://github.com/moreh-dev/odin
@@ -3470,7 +3495,7 @@ entries:
     version: v0.2.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-05-04T06:35:31.973280936Z"
+    created: "2026-05-04T06:35:35.185575866Z"
     description: Odin; Inference Service operator for MIF
     digest: 205973be4195b5bbab46a16af3ff6868116222e3a3bf72c9534b5224a47a5afa
     home: https://github.com/moreh-dev/odin
@@ -3484,7 +3509,7 @@ entries:
   portal-web:
   - apiVersion: v2
     appVersion: v1.1.5
-    created: "2026-05-04T06:35:32.111931789Z"
+    created: "2026-05-04T06:35:35.332858098Z"
     description: A Helm chart for Moreh Portal
     digest: 777cc10b9b7c533fe103ff791e428135c8c2658b2ed816e3bf8ab5a5c520368f
     home: https://github.com/moreh-dev/portal-web
@@ -3498,7 +3523,7 @@ entries:
     version: v1.1.5
   - apiVersion: v2
     appVersion: v1.1.4
-    created: "2026-05-04T06:35:32.110902455Z"
+    created: "2026-05-04T06:35:35.332101354Z"
     description: A Helm chart for Moreh Portal
     digest: a25dba0758a950d35ef7cb9909449e976d0ff148346548db7af0a98b322f40ad
     home: https://github.com/moreh-dev/portal-web
@@ -3512,7 +3537,7 @@ entries:
     version: v1.1.4
   - apiVersion: v2
     appVersion: v1.1.3
-    created: "2026-05-04T06:35:32.110502056Z"
+    created: "2026-05-04T06:35:35.33159163Z"
     description: A Helm chart for Moreh Portal
     digest: 042117037b6304eef1b1d28fe129c998522cf19a9c92050a950662ad328e331f
     home: https://github.com/moreh-dev/portal-web
@@ -3537,7 +3562,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.1.0
-    created: "2026-05-04T06:35:32.117424466Z"
+    created: "2026-05-04T06:35:35.339360819Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3569,7 +3594,7 @@ entries:
   promtail:
   - apiVersion: v2
     appVersion: 2.9.3
-    created: "2026-05-04T06:35:32.118900417Z"
+    created: "2026-05-04T06:35:35.340788488Z"
     description: Promtail is an agent which ships the contents of local logs to a
       Loki instance
     digest: 8bf485b757bfc7c37e809b60a8f61324c84160c820269fda469cb6270045c514
@@ -3591,7 +3616,7 @@ entries:
   rook-ceph:
   - apiVersion: v2
     appVersion: v1.16.7
-    created: "2026-05-04T06:35:32.140995628Z"
+    created: "2026-05-04T06:35:35.362479564Z"
     dependencies:
     - name: library
       repository: file://../library
@@ -3607,7 +3632,7 @@ entries:
     version: v1.16.7
   - apiVersion: v2
     appVersion: v1.15.8
-    created: "2026-05-04T06:35:32.138012739Z"
+    created: "2026-05-04T06:35:35.359618665Z"
     dependencies:
     - name: library
       repository: file://../library
@@ -3623,7 +3648,7 @@ entries:
     version: v1.15.8
   - apiVersion: v2
     appVersion: v1.15.1
-    created: "2026-05-04T06:35:32.132779068Z"
+    created: "2026-05-04T06:35:35.354814704Z"
     dependencies:
     - name: library
       repository: file://../library
@@ -3639,7 +3664,7 @@ entries:
     version: v1.15.1
   - apiVersion: v2
     appVersion: v1.13.7
-    created: "2026-05-04T06:35:32.129263411Z"
+    created: "2026-05-04T06:35:35.35147531Z"
     dependencies:
     - name: library
       repository: file://../library
@@ -3656,7 +3681,7 @@ entries:
   rook-ceph-cluster:
   - apiVersion: v2
     appVersion: v1.15.1
-    created: "2026-05-04T06:35:32.124820181Z"
+    created: "2026-05-04T06:35:35.346367208Z"
     dependencies:
     - name: library
       repository: file://../library
@@ -3672,7 +3697,7 @@ entries:
     version: v1.15.1
   - apiVersion: v2
     appVersion: v1.13.7
-    created: "2026-05-04T06:35:32.123097679Z"
+    created: "2026-05-04T06:35:35.344587309Z"
     dependencies:
     - name: library
       repository: file://../library
@@ -3689,7 +3714,7 @@ entries:
   slackbot:
   - apiVersion: v2
     appVersion: v0.0.4
-    created: "2026-05-04T06:35:32.141685149Z"
+    created: "2026-05-04T06:35:35.363180685Z"
     description: A Helm chart for Moreh Portal SlackBot
     digest: f384fceb665f1fc8eba30862206f489745fef02eec77f44c30108cf8218fa206
     home: https://github.com/moreh-dev/slackbot
@@ -3702,7 +3727,7 @@ entries:
     version: v0.0.4
   - apiVersion: v2
     appVersion: v0.0.3
-    created: "2026-05-04T06:35:32.141515882Z"
+    created: "2026-05-04T06:35:35.363019884Z"
     description: A Helm chart for Moreh Portal SlackBot
     digest: 2acd08af4208e74af57827fb68082b87a3f54568a437c5d877b771528265bda0
     home: https://github.com/moreh-dev/slackbot
@@ -3715,7 +3740,7 @@ entries:
     version: v0.0.3
   - apiVersion: v2
     appVersion: v0.0.2
-    created: "2026-05-04T06:35:32.141350272Z"
+    created: "2026-05-04T06:35:35.362856929Z"
     description: A Helm chart for Moreh Portal SlackBot
     digest: 50a0da359654beb84617564d75862fc3760624e0e99b0e61d670f441a7122479
     home: https://github.com/moreh-dev/slackbot
@@ -3728,7 +3753,7 @@ entries:
     version: v0.0.2
   - apiVersion: v2
     appVersion: v0.0.1
-    created: "2026-05-04T06:35:32.141177008Z"
+    created: "2026-05-04T06:35:35.362653449Z"
     description: A Helm chart for Moreh Portal SlackBot
     digest: 4813da0054267bc12ce45d22ac3329f5d6b0e19ce0d0b147e9322def140f2e9a
     home: https://github.com/moreh-dev/slackbot
@@ -3742,7 +3767,7 @@ entries:
   tempo-distributed:
   - apiVersion: v2
     appVersion: 2.6.0
-    created: "2026-05-04T06:35:32.150632616Z"
+    created: "2026-05-04T06:35:35.374616447Z"
     dependencies:
     - alias: minio
       condition: minio.enabled
@@ -3794,7 +3819,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.37.2
-    created: "2026-05-04T06:35:32.16681009Z"
+    created: "2026-05-04T06:35:35.389577982Z"
     dependencies:
     - condition: minio.enabled
       name: minio
@@ -3839,7 +3864,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 0.44.0-distroless-libc
-    created: "2026-05-04T06:35:32.172077573Z"
+    created: "2026-05-04T06:35:35.39454563Z"
     description: A lightweight, ultra-fast tool for building observability pipelines
     digest: 5150aa848f3a7b2ecb464ec67a3667bf33820faaff66c536412589a4ed132cc5
     home: https://vector.dev/
@@ -3875,7 +3900,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 0.43.1-distroless-libc
-    created: "2026-05-04T06:35:32.170185374Z"
+    created: "2026-05-04T06:35:35.392908319Z"
     description: A lightweight, ultra-fast tool for building observability pipelines
     digest: 5ecc27c00d936776bc7efa51825232ed2014e947fb326f9de89d66415bf96f49
     home: https://vector.dev/
@@ -3911,7 +3936,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 0.43.0-distroless-libc
-    created: "2026-05-04T06:35:32.168473531Z"
+    created: "2026-05-04T06:35:35.391248726Z"
     description: A lightweight, ultra-fast tool for building observability pipelines
     digest: 7e861f2f6687b581f274c206206bc0b7d1f6ba769170cef9b2c63cfe7547e150
     home: https://vector.dev/
@@ -3942,7 +3967,7 @@ entries:
       kubeVersion: '>=1.24'
     apiVersion: v2
     appVersion: 1.3.0
-    created: "2026-05-04T06:35:32.174851452Z"
+    created: "2026-05-04T06:35:35.399106227Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami/
@@ -3965,7 +3990,7 @@ entries:
   whereabouts-chart:
   - apiVersion: v2
     appVersion: v0.8.0
-    created: "2026-05-04T06:35:32.175617235Z"
+    created: "2026-05-04T06:35:35.399441334Z"
     description: A Helm chart for Kubernetes
     digest: 7cdb7cf5295476be3655e41a075befb38f5944bbb82cda55b199e5e91b5d8c31
     name: whereabouts-chart
@@ -3973,4 +3998,4 @@ entries:
     urls:
     - charts/whereabouts-chart-0.1.1.tgz
     version: 0.1.1
-generated: "2026-05-04T06:35:31.17838457Z"
+generated: "2026-05-04T06:35:34.41330558Z"
