@@ -308,6 +308,27 @@ entries:
     urls:
     - charts/artifact-v0.1.7.tgz
     version: v0.1.7
+  artifact-keeper:
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2026-06-19T18:00:42.973223783+09:00"
+    description: Enterprise artifact registry supporting 45+ package formats
+    digest: 7501e5f8e8b5f9ffd6a89a29c762d551071618951a880229c378b13d745938ce
+    home: https://artifactkeeper.com
+    keywords:
+    - artifact-registry
+    - package-manager
+    - devops
+    - security-scanning
+    maintainers:
+    - name: brandonrc
+    name: artifact-keeper
+    sources:
+    - https://github.com/artifact-keeper/artifact-keeper
+    type: application
+    urls:
+    - charts/artifact-keeper-1.2.1.tgz
+    version: 1.2.1
   awx-operator:
   - apiVersion: v2
     appVersion: 2.15.0
