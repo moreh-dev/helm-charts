@@ -185,42 +185,6 @@ entries:
     urls:
     - charts/amd-gpu-0.13.0.tgz
     version: 0.13.0
-  argo-cd:
-  - annotations:
-      artifacthub.io/changes: |
-        - kind: changed
-          description: Default argocd repo-server init container replicas to empty
-      artifacthub.io/signKey: |
-        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
-        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
-    apiVersion: v2
-    appVersion: v2.11.3
-    created: "2026-09-19T23:04:28.878934399Z"
-    dependencies:
-    - condition: redis-ha.enabled
-      name: redis-ha
-      repository: https://dandydeveloper.github.io/charts/
-      version: 4.26.1
-    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
-      tool for Kubernetes.
-    digest: d8a1d402329419855ececb795132338360271944229b744c4c49757ae1b624cb
-    home: https://github.com/argoproj/argo-helm
-    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
-    keywords:
-    - argoproj
-    - argocd
-    - gitops
-    kubeVersion: '>=1.23.0-0'
-    maintainers:
-    - name: argoproj
-      url: https://argoproj.github.io/
-    name: argo-cd
-    sources:
-    - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
-    - https://github.com/argoproj/argo-cd
-    urls:
-    - charts/argo-cd-7.2.1.tgz
-    version: 7.2.1
   artifact:
   - apiVersion: v2
     appVersion: v0.2.0
@@ -355,20 +319,6 @@ entries:
     urls:
     - charts/cert-manager-v1.19.0.tgz
     version: v1.19.0
-  dynamo:
-  - apiVersion: v2
-    appVersion: 0.2.1
-    created: "2026-09-19T23:04:28.894743092Z"
-    description: A Helm chart for dynamo deployment
-    digest: 040f4021e996814bacb7fc694da5ccd6dbc4fe8b89aa028f79e5fcaefa170949
-    home: https://github.com/moreh-dev/dynamo
-    name: dynamo
-    sources:
-    - https://github.com/moreh-dev/dynamo
-    type: application
-    urls:
-    - charts/dynamo-0.2.1.tgz
-    version: 0.2.1
   fortigate-exporter:
   - apiVersion: v2
     appVersion: 1.24.1
@@ -437,21 +387,6 @@ entries:
     urls:
     - charts/gateway-api-1.2.0.tgz
     version: 1.2.0
-  gateway-api-inference-extension:
-  - apiVersion: v2
-    appVersion: v0.5.1
-    created: "2026-09-19T23:04:28.905681542Z"
-    description: Kubernetes Gateway API Inference Extension
-    digest: e12ef305ffacdbfcf1fe875a3733f47f547ea04f4d0fba0c07395919283fb75a
-    home: https://gateway-api-inference-extension.sigs.k8s.io/
-    name: gateway-api-inference-extension
-    sources:
-    - https://github.com/kubernetes-sigs/gateway-api-inference-extension
-    - https://github.com/kubernetes-sigs/gateway-api-inference-extension/tree/main/config/crd
-    type: application
-    urls:
-    - charts/gateway-api-inference-extension-0.5.1.tgz
-    version: 0.5.1
   gpu-operator-charts:
   - apiVersion: v2
     appVersion: v1.4.0
@@ -1082,24 +1017,6 @@ entries:
     urls:
     - charts/hermod-crd-v0.1.0.tgz
     version: v0.1.0
-  inference-service:
-  - apiVersion: v2
-    appVersion: v0.7.0
-    created: "2026-09-19T23:04:28.949652201Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    description: Inference service
-    digest: 2aa057ae52b135835c1bf350d8756c42fff3f516867b99b4730f817699889de7
-    home: https://github.com/moreh-dev/odin
-    name: inference-service
-    sources:
-    - https://github.com/moreh-dev/odin/tree/main/deploy/helm/inference-service
-    type: application
-    urls:
-    - charts/inference-service-v0.7.0.tgz
-    version: v0.7.0
   istiod:
   - apiVersion: v2
     appVersion: 1.25.4
@@ -1253,17 +1170,6 @@ entries:
     urls:
     - charts/kube-prometheus-stack-74.2.2.tgz
     version: 74.2.2
-  kubernetes-replicator:
-  - apiVersion: v2
-    appVersion: v2.9.2
-    created: "2026-09-19T23:04:29.038645615Z"
-    description: Controller for replicating secrets+configmaps across namespaces
-    digest: 7229545d3bdf075d8fd007d4ab67059f7a63483868efb0aaf506de0b1ff26633
-    name: kubernetes-replicator
-    type: application
-    urls:
-    - charts/kubernetes-replicator-2.9.2.tgz
-    version: 2.9.2
   kyverno:
   - annotations:
       artifacthub.io/changes: |
@@ -1370,47 +1276,6 @@ entries:
     urls:
     - charts/loki-6.30.0.tgz
     version: 6.30.0
-  mariadb:
-  - annotations:
-      category: Database
-      images: |
-        - name: mariadb
-          image: docker.io/bitnami/mariadb:11.4.2-debian-12-r0
-        - name: mysqld-exporter
-          image: docker.io/bitnami/mysqld-exporter:0.15.1-debian-12-r27
-        - name: os-shell
-          image: docker.io/bitnami/os-shell:12-debian-12-r25
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 11.4.2
-    created: "2026-09-19T23:04:29.08038772Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: MariaDB is an open source, community-developed SQL database server
-      that is widely in use around the world due to its enterprise features, flexibility,
-      and collaboration with leading tech firms.
-    digest: c0d02e1f7937b651546be93cdd41ea668db422e1a1667e4f9ff8214c390edad0
-    home: https://bitnami.com
-    icon: https://bitnami.com/assets/stacks/mariadb/img/mariadb-stack-220x234.png
-    keywords:
-    - mariadb
-    - mysql
-    - database
-    - sql
-    - prometheus
-    maintainers:
-    - name: Broadcom, Inc. All Rights Reserved.
-      url: https://github.com/bitnami/charts
-    name: mariadb
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/mariadb
-    urls:
-    - charts/mariadb-19.0.1.tgz
-    version: 19.0.1
   metallb:
   - apiVersion: v2
     appVersion: v0.15.2
@@ -1920,77 +1785,6 @@ entries:
     urls:
     - charts/mongodb-0.3.3.tgz
     version: 0.3.3
-  morehbuild:
-  - apiVersion: v2
-    appVersion: v0.3.6
-    created: "2026-09-19T23:04:29.385334565Z"
-    description: Moreh Build
-    digest: 19f196de374883ac26601e77d04124b79255cb28b6d1094acb32bd2088916f20
-    name: morehbuild
-    type: application
-    urls:
-    - charts/morehbuild-v0.3.6.tgz
-    version: v0.3.6
-  moss:
-  - apiVersion: v2
-    appVersion: v0.1.0
-    created: "2026-09-19T23:04:29.416137619Z"
-    dependencies:
-    - condition: mysql.enabled
-      name: mysql
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - database
-      version: 14.0.0
-    description: A Helm chart for MoSS
-    digest: 8cb84df631cfb1219ee2fd92455c733ae068de4784bd0a8e4eb92476daf51d71
-    name: moss
-    type: application
-    urls:
-    - charts/moss-v0.1.0.tgz
-    version: v0.1.0
-  nginx:
-  - annotations:
-      category: Infrastructure
-      images: |
-        - name: git
-          image: docker.io/bitnami/git:2.50.1-debian-12-r1
-        - name: nginx
-          image: docker.io/bitnami/nginx:1.29.0-debian-12-r5
-        - name: nginx-exporter
-          image: docker.io/bitnami/nginx-exporter:1.4.2-debian-12-r7
-      licenses: Apache-2.0
-      tanzuCategory: clusterUtility
-    apiVersion: v2
-    appVersion: 1.29.0
-    created: "2026-09-19T23:04:29.421618064Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: NGINX Open Source is a web server that can be also used as a reverse
-      proxy, load balancer, and HTTP cache. Recommended for high-demanding sites due
-      to its ability to provide faster content.
-    digest: 1b15fce52057553275cf13344b7d728f216ffe2630498e26d3222dba65b56a07
-    home: https://bitnami.com
-    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/nginx/img/nginx-stack-220x234.png
-    keywords:
-    - nginx
-    - http
-    - web
-    - www
-    - reverse proxy
-    maintainers:
-    - name: Broadcom, Inc. All Rights Reserved.
-      url: https://github.com/bitnami/charts
-    name: nginx
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/nginx
-    urls:
-    - charts/nginx-21.1.1.tgz
-    version: 21.1.1
   norns:
   - apiVersion: v2
     appVersion: v0.1.0
@@ -2675,50 +2469,6 @@ entries:
     urls:
     - charts/rook-ceph-cluster-v1.15.1.tgz
     version: v1.15.1
-  tempo-distributed:
-  - apiVersion: v2
-    appVersion: 2.6.0
-    created: "2026-09-19T23:04:29.606488878Z"
-    dependencies:
-    - alias: minio
-      condition: minio.enabled
-      name: minio
-      repository: https://charts.min.io/
-      version: 4.0.12
-    - alias: grafana-agent-operator
-      condition: metaMonitoring.grafanaAgent.installOperator
-      name: grafana-agent-operator
-      repository: https://grafana.github.io/helm-charts
-      version: 0.5.0
-    - alias: rollout_operator
-      condition: rollout_operator.enabled
-      name: rollout-operator
-      repository: https://grafana.github.io/helm-charts
-      version: 0.21.0
-    description: Grafana Tempo in MicroService mode
-    digest: 86c5105dc5c9b59ddd3c5a1aa18342514976c4d9b8697bd38aa5bf69ed06f18a
-    home: https://grafana.com/docs/tempo/latest/
-    icon: https://raw.githubusercontent.com/grafana/tempo/master/docs/tempo/website/logo_and_name.png
-    maintainers:
-    - email: number101010@gmail.com
-      name: joe-elliott
-    - email: 9215868@gmail.com
-      name: swartz-k
-    - name: annanay25
-    - name: mdisibio
-    - name: mapno
-    - name: BitProcessor
-    - name: faustodavid
-    - name: zalegrala
-    - email: sheikhabubaker761@gmail.com
-      name: Sheikh-Abubaker
-    name: tempo-distributed
-    sources:
-    - https://github.com/grafana/tempo
-    type: application
-    urls:
-    - charts/tempo-distributed-1.26.0.tgz
-    version: 1.26.0
   thanos:
   - annotations:
       category: Analytics
