@@ -159,33 +159,6 @@ entries:
     - charts/amd-gpu-0.19.0-moreh.1.tgz
     version: 0.19.0-moreh.1
   - apiVersion: v2
-    appVersion: 1.31.0.0
-    created: "2026-09-19T23:04:28.865560307Z"
-    dependencies:
-    - condition: nfd.enabled
-      name: node-feature-discovery
-      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
-      version: '>= 0.8.1-0'
-    description: A Helm chart for deploying Kubernetes AMD GPU device plugin
-    digest: 900d8e9ecc5aff6e1c259113852570a6a439084770d853435a04466174663e8a
-    home: https://github.com/ROCm/k8s-device-plugin
-    icon: https://raw.githubusercontent.com/ROCm/k8s-device-plugin/master/helm/logo.png
-    keywords:
-    - kubernetes
-    - cluster
-    - hardware
-    - gpu
-    kubeVersion: '>= 1.18.0-0'
-    maintainers:
-    - name: Kenny Ho <Kenny.Ho@amd.com>
-    name: amd-gpu
-    sources:
-    - https://github.com/ROCm/k8s-device-plugin
-    type: application
-    urls:
-    - charts/amd-gpu-0.14.0.tgz
-    version: 0.14.0
-  - apiVersion: v2
     appVersion: 1.25.2.8
     created: "2026-09-19T23:04:28.864720257Z"
     dependencies:
@@ -248,41 +221,6 @@ entries:
     urls:
     - charts/argo-cd-7.2.1.tgz
     version: 7.2.1
-  - annotations:
-      artifacthub.io/changes: |
-        - kind: changed
-          description: Added support for http probe scheme for dex liveness and readiness
-      artifacthub.io/signKey: |
-        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
-        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
-    apiVersion: v2
-    appVersion: v2.10.1
-    created: "2026-09-19T23:04:28.873107095Z"
-    dependencies:
-    - condition: redis-ha.enabled
-      name: redis-ha
-      repository: https://dandydeveloper.github.io/charts/
-      version: 4.26.1
-    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
-      tool for Kubernetes.
-    digest: 457e12363da5312a353addd91e2445c6a6ccf2a56064dcde76a33c8f81b8939b
-    home: https://github.com/argoproj/argo-helm
-    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
-    keywords:
-    - argoproj
-    - argocd
-    - gitops
-    kubeVersion: '>=1.23.0-0'
-    maintainers:
-    - name: argoproj
-      url: https://argoproj.github.io/
-    name: argo-cd
-    sources:
-    - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
-    - https://github.com/argoproj/argo-cd
-    urls:
-    - charts/argo-cd-6.4.1.tgz
-    version: 6.4.1
   artifact:
   - apiVersion: v2
     appVersion: v0.2.0
@@ -296,18 +234,6 @@ entries:
     urls:
     - charts/artifact-v0.2.0.tgz
     version: v0.2.0
-  - apiVersion: v2
-    appVersion: v0.1.7
-    created: "2026-09-19T23:04:28.885205003Z"
-    digest: fad39a68b26ef17a8e7dca67cba857d4bfecf777ff1e5dc092fe394211d7ae0c
-    home: https://github.com/moreh-dev/artifact
-    name: artifact
-    sources:
-    - https://github.com/moreh-dev/artifact
-    type: application
-    urls:
-    - charts/artifact-v0.1.7.tgz
-    version: v0.1.7
   artifact-keeper:
   - apiVersion: v2
     appVersion: 1.9.0
@@ -369,17 +295,6 @@ entries:
     urls:
     - charts/artifact-keeper-1.2.1.tgz
     version: 1.2.1
-  awx-operator:
-  - apiVersion: v2
-    appVersion: 2.15.0
-    created: "2026-09-19T23:04:28.885752241Z"
-    description: A Helm chart for the AWX Operator
-    digest: d272279ef0f9b6ce171223450e9f030dfec3fd47adcd29ac39cc335dcd2cb84e
-    name: awx-operator
-    type: application
-    urls:
-    - charts/awx-operator-2.15.0.tgz
-    version: 2.15.0
   base:
   - apiVersion: v2
     appVersion: 1.25.4
@@ -440,33 +355,6 @@ entries:
     urls:
     - charts/cert-manager-v1.19.0.tgz
     version: v1.19.0
-  device-metrics-exporter-charts:
-  - apiVersion: v2
-    appVersion: v1.2.1
-    created: "2026-09-19T23:04:28.894320052Z"
-    description: A Helm chart for AMD Device Metric Exporter
-    digest: c5e3ba76c6dfa67557883154a3ca80f35a0b046837640bcaaefbefc4b28c1484
-    keywords:
-    - kubernetes
-    - cluster
-    - hardware
-    - amd
-    - gpu
-    - monitoring
-    - prometheus
-    kubeVersion: '>= 1.27.0-0'
-    maintainers:
-    - email: prshanmug@amd.com
-      name: Praveen Kumar Shanmugam
-    - email: yan.sun3@amd.com
-      name: Yan Sun
-    - email: shrey.ajmera@amd.com
-      name: Shrey Ajmera
-    name: device-metrics-exporter-charts
-    type: application
-    urls:
-    - charts/device-metrics-exporter-charts-v1.2.1-moreh.1.tgz
-    version: v1.2.1-moreh.1
   dynamo:
   - apiVersion: v2
     appVersion: 0.2.1
@@ -641,43 +529,6 @@ entries:
     urls:
     - charts/grafana-8.15.0.tgz
     version: 8.15.0
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/links: |
-        - name: Chart Source
-          url: https://github.com/grafana/helm-charts
-        - name: Upstream Project
-          url: https://github.com/grafana/grafana
-    apiVersion: v2
-    appVersion: 10.4.1
-    created: "2026-09-19T23:04:28.910474933Z"
-    description: The leading tool for querying and visualizing time series and metrics.
-    digest: eb68b49c8074143e064f17bfd31ebd67ebaf07e525426745c07477d4bdef8de4
-    home: https://grafana.com
-    icon: https://artifacthub.io/image/b4fed1a7-6c8f-4945-b99d-096efa3e4116
-    keywords:
-    - monitoring
-    - metric
-    kubeVersion: ^1.8.0-0
-    maintainers:
-    - email: zanhsieh@gmail.com
-      name: zanhsieh
-    - email: rluckie@cisco.com
-      name: rtluckie
-    - email: maor.friedman@redhat.com
-      name: maorfr
-    - email: miroslav.hadzhiev@gmail.com
-      name: Xtigyro
-    - email: mail@torstenwalter.de
-      name: torstenwalter
-    name: grafana
-    sources:
-    - https://github.com/grafana/grafana
-    - https://github.com/grafana/helm-charts
-    type: application
-    urls:
-    - charts/grafana-7.3.9.tgz
-    version: 7.3.9
   harbor:
   - apiVersion: v1
     appVersion: 2.10.0
@@ -758,23 +609,6 @@ entries:
     - charts/heimdall-v0.3.0.tgz
     version: v0.3.0
   - apiVersion: v2
-    appVersion: v0.3.0-rc.1
-    created: "2026-09-19T23:04:28.934011483Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    description: Heimdall; AI Gateway operator for MIF
-    digest: 8af7986f9318039f3452f151a1561c1b41d0af8a26395a9ccbd4017a48f4b8b7
-    home: https://github.com/moreh-dev/heimdall
-    name: heimdall
-    sources:
-    - https://github.com/moreh-dev/heimdall/tree/main/deploy/helm/heimdall
-    type: application
-    urls:
-    - charts/heimdall-v0.3.0-rc.1.tgz
-    version: v0.3.0-rc.1
-  - apiVersion: v2
     appVersion: v0.2.0
     created: "2026-09-19T23:04:28.932069352Z"
     dependencies:
@@ -791,23 +625,6 @@ entries:
     urls:
     - charts/heimdall-v0.2.0.tgz
     version: v0.2.0
-  - apiVersion: v2
-    appVersion: v0.2.0-rc.1
-    created: "2026-09-19T23:04:28.931310414Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    description: Heimdall; AI Gateway operator for MIF
-    digest: 9b59810232bb4c8fe0ae2e1b6ec5d4b34a049bf31754709e832b1979a9aef29f
-    home: https://github.com/moreh-dev/heimdall
-    name: heimdall
-    sources:
-    - https://github.com/moreh-dev/heimdall/tree/main/deploy/helm/heimdall
-    type: application
-    urls:
-    - charts/heimdall-v0.2.0-rc.1.tgz
-    version: v0.2.0-rc.1
   - apiVersion: v2
     appVersion: v0.1.0
     created: "2026-09-19T23:04:28.930548713Z"
@@ -839,32 +656,6 @@ entries:
     urls:
     - charts/heimdall-aigateway-crd-v0.15.0.tgz
     version: v0.15.0
-  - apiVersion: v2
-    appVersion: v0.14.0
-    created: "2026-09-19T23:04:28.915716617Z"
-    description: Heimdall AI Gateway CRDs
-    digest: e4337a59c47830e32057433a41f29a059bc1ee168461a4d2123e5bc316cdd768
-    home: https://github.com/moreh-dev/aigateway
-    name: heimdall-aigateway-crd
-    sources:
-    - https://github.com/moreh-dev/aigateway/tree/main/deploy/helm/heimdall-aigateway-crd
-    type: application
-    urls:
-    - charts/heimdall-aigateway-crd-v0.14.0.tgz
-    version: v0.14.0
-  - apiVersion: v2
-    appVersion: v0.13.1
-    created: "2026-09-19T23:04:28.915609856Z"
-    description: Heimdall AI Gateway CRDs
-    digest: 776e7feefda2c99396a6552ff340afa26898aa2cf4afb7784065bad38a9091d9
-    home: https://github.com/moreh-dev/aigateway
-    name: heimdall-aigateway-crd
-    sources:
-    - https://github.com/moreh-dev/aigateway/tree/main/deploy/helm/heimdall-aigateway-crd
-    type: application
-    urls:
-    - charts/heimdall-aigateway-crd-v0.13.1.tgz
-    version: v0.13.1
   - apiVersion: v2
     appVersion: v0.13.0
     created: "2026-09-19T23:04:28.915502734Z"
@@ -996,19 +787,6 @@ entries:
     - charts/heimdall-aigateway-crd-v0.4.0.tgz
     version: v0.4.0
   - apiVersion: v2
-    appVersion: v0.4.0-rc.2
-    created: "2026-09-19T23:04:28.91727664Z"
-    description: Heimdall AI Gateway CRDs
-    digest: f62aef06333bb377787cd5d4d136bbeb69192cbbc223086e2fccefbfd094d647
-    home: https://github.com/moreh-dev/aigateway
-    name: heimdall-aigateway-crd
-    sources:
-    - https://github.com/moreh-dev/aigateway/tree/main/deploy/helm/heimdall-aigateway-crd
-    type: application
-    urls:
-    - charts/heimdall-aigateway-crd-v0.4.0-rc.2.tgz
-    version: v0.4.0-rc.2
-  - apiVersion: v2
     appVersion: v0.4.0-rc.1
     created: "2026-09-19T23:04:28.917103708Z"
     description: Heimdall AI Gateway CRDs
@@ -1021,71 +799,6 @@ entries:
     urls:
     - charts/heimdall-aigateway-crd-v0.4.0-rc.1.tgz
     version: v0.4.0-rc.1
-  - apiVersion: v2
-    appVersion: v0.3.0
-    created: "2026-09-19T23:04:28.916936466Z"
-    description: Heimdall AI Gateway CRDs
-    digest: 02dd180675f272feec556b2ca035297ddce3fa3f070ae968b40b08f53f2a390b
-    home: https://github.com/moreh-dev/aigateway
-    name: heimdall-aigateway-crd
-    sources:
-    - https://github.com/moreh-dev/aigateway/tree/main/deploy/helm/heimdall-aigateway-crd
-    type: application
-    urls:
-    - charts/heimdall-aigateway-crd-v0.3.0.tgz
-    version: v0.3.0
-  - apiVersion: v2
-    appVersion: v0.3.0-rc.3
-    created: "2026-09-19T23:04:28.91674779Z"
-    description: Heimdall AI Gateway CRDs
-    digest: 1e041dda15f5b7a34c7be68466e433b962e858dcaf509165dd430bd34a26fcf9
-    home: https://github.com/moreh-dev/aigateway
-    name: heimdall-aigateway-crd
-    sources:
-    - https://github.com/moreh-dev/aigateway/tree/main/deploy/helm/heimdall-aigateway-crd
-    type: application
-    urls:
-    - charts/heimdall-aigateway-crd-v0.3.0-rc.3.tgz
-    version: v0.3.0-rc.3
-  - apiVersion: v2
-    appVersion: v0.3.0-rc.2
-    created: "2026-09-19T23:04:28.916567718Z"
-    description: Heimdall AI Gateway CRDs
-    digest: 4ee39f4342c1f5e9cf69fb0ec0d8371f489afd6d7efa50ca12f0464a2996cf6f
-    home: https://github.com/moreh-dev/aigateway
-    name: heimdall-aigateway-crd
-    sources:
-    - https://github.com/moreh-dev/aigateway/tree/main/deploy/helm/heimdall-aigateway-crd
-    type: application
-    urls:
-    - charts/heimdall-aigateway-crd-v0.3.0-rc.2.tgz
-    version: v0.3.0-rc.2
-  - apiVersion: v2
-    appVersion: v0.3.0-rc.1
-    created: "2026-09-19T23:04:28.916374326Z"
-    description: Heimdall AI Gateway CRDs
-    digest: 259a095e8188ef925a10ce78fed2be043e5331b436787cd757d8e57dcbd4d0b8
-    home: https://github.com/moreh-dev/aigateway
-    name: heimdall-aigateway-crd
-    sources:
-    - https://github.com/moreh-dev/aigateway/tree/main/deploy/helm/heimdall-aigateway-crd
-    type: application
-    urls:
-    - charts/heimdall-aigateway-crd-v0.3.0-rc.1.tgz
-    version: v0.3.0-rc.1
-  - apiVersion: v2
-    appVersion: v0.2.0
-    created: "2026-09-19T23:04:28.916080507Z"
-    description: Heimdall AI Gateway CRDs
-    digest: c9f9c03ccf1542aa8e4bbbcf034a828d64b0076e8e6ba3ab5930bc294a495666
-    home: https://github.com/moreh-dev/aigateway
-    name: heimdall-aigateway-crd
-    sources:
-    - https://github.com/moreh-dev/aigateway/tree/main/deploy/helm/heimdall-aigateway-crd
-    type: application
-    urls:
-    - charts/heimdall-aigateway-crd-v0.2.0.tgz
-    version: v0.2.0
   heimdall-crd:
   - apiVersion: v2
     appVersion: v0.5.0
@@ -1113,58 +826,6 @@ entries:
     urls:
     - charts/heimdall-crd-v0.4.0.tgz
     version: v0.4.0
-  - apiVersion: v2
-    appVersion: v0.3.0
-    created: "2026-09-19T23:04:28.920559653Z"
-    description: Heimdall; AI Gateway operator for MIF
-    digest: 59054d4e258d47e035b447a3c67e513b23e0683f14977df0e966a19396de8654
-    home: https://github.com/moreh-dev/heimdall
-    name: heimdall-crd
-    sources:
-    - https://github.com/moreh-dev/heimdall/tree/main/deploy/helm/heimdall-crd
-    type: application
-    urls:
-    - charts/heimdall-crd-v0.3.0.tgz
-    version: v0.3.0
-  - apiVersion: v2
-    appVersion: v0.3.0-rc.1
-    created: "2026-09-19T23:04:28.920100969Z"
-    description: Heimdall; AI Gateway operator for MIF
-    digest: abe8d33fcc192ea3ca02d9945d0906d23909d6dc47e0017dda5aac9b87fc9824
-    home: https://github.com/moreh-dev/heimdall
-    name: heimdall-crd
-    sources:
-    - https://github.com/moreh-dev/heimdall/tree/main/deploy/helm/heimdall-crd
-    type: application
-    urls:
-    - charts/heimdall-crd-v0.3.0-rc.1.tgz
-    version: v0.3.0-rc.1
-  - apiVersion: v2
-    appVersion: v0.2.0
-    created: "2026-09-19T23:04:28.91963166Z"
-    description: Heimdall; AI Gateway operator for MIF
-    digest: 5ed8182dece9d2a77926d81dcfa9abccc946f9ab2783fec4f73df5c19dd09d47
-    home: https://github.com/moreh-dev/heimdall
-    name: heimdall-crd
-    sources:
-    - https://github.com/moreh-dev/heimdall/tree/main/deploy/helm/heimdall-crd
-    type: application
-    urls:
-    - charts/heimdall-crd-v0.2.0.tgz
-    version: v0.2.0
-  - apiVersion: v2
-    appVersion: v0.2.0-rc.1
-    created: "2026-09-19T23:04:28.919171114Z"
-    description: Heimdall; AI Gateway operator for MIF
-    digest: 57030dc9287079be296d42f37c5ddc7a97873b1839f6bcd421a219cdfbd8d2da
-    home: https://github.com/moreh-dev/heimdall
-    name: heimdall-crd
-    sources:
-    - https://github.com/moreh-dev/heimdall/tree/main/deploy/helm/heimdall-crd
-    type: application
-    urls:
-    - charts/heimdall-crd-v0.2.0-rc.1.tgz
-    version: v0.2.0-rc.1
   - apiVersion: v2
     appVersion: v0.1.0
     created: "2026-09-19T23:04:28.918695395Z"
@@ -1231,23 +892,6 @@ entries:
     - charts/heimdall-inference-scheduler-v0.9.0.tgz
     version: v0.9.0
   - apiVersion: v2
-    appVersion: v0.9.0-rc.1
-    created: "2026-09-19T23:04:28.926057829Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    description: Inference scheduler
-    digest: 38b6c74b627e888eefda9590cf4b8d33cfd35cc7ef8e1428340e773e2deedd0d
-    home: https://github.com/moreh-dev/heimdall-inference-scheduler
-    name: heimdall-inference-scheduler
-    sources:
-    - https://github.com/moreh-dev/heimdall-inference-scheduler
-    type: application
-    urls:
-    - charts/heimdall-inference-scheduler-v0.9.0-rc.1.tgz
-    version: v0.9.0-rc.1
-  - apiVersion: v2
     appVersion: v0.8.1
     created: "2026-09-19T23:04:28.925190478Z"
     dependencies:
@@ -1264,40 +908,6 @@ entries:
     urls:
     - charts/heimdall-inference-scheduler-v0.8.1.tgz
     version: v0.8.1
-  - apiVersion: v2
-    appVersion: v0.8.1-rc.2
-    created: "2026-09-19T23:04:28.924349347Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    description: Inference scheduler
-    digest: 3bb676f3bc7a0b36ebeb30cd995b97ed8f14f9df204de0483fb866cba5ce3862
-    home: https://github.com/moreh-dev/heimdall-inference-scheduler
-    name: heimdall-inference-scheduler
-    sources:
-    - https://github.com/moreh-dev/heimdall-inference-scheduler
-    type: application
-    urls:
-    - charts/heimdall-inference-scheduler-v0.8.1-rc.2.tgz
-    version: v0.8.1-rc.2
-  - apiVersion: v2
-    appVersion: v0.8.1-rc.1
-    created: "2026-09-19T23:04:28.923461084Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    description: Inference scheduler
-    digest: f8422b788c8370a2f8235267fc66cc3628f9f3161948f1ed8bdcf56a3e15f64d
-    home: https://github.com/moreh-dev/heimdall-inference-scheduler
-    name: heimdall-inference-scheduler
-    sources:
-    - https://github.com/moreh-dev/heimdall-inference-scheduler
-    type: application
-    urls:
-    - charts/heimdall-inference-scheduler-v0.8.1-rc.1.tgz
-    version: v0.8.1-rc.1
   hermod:
   - annotations:
       kubebuilder.io/generated-by: kubebuilder
@@ -1377,31 +987,6 @@ entries:
   - annotations:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
-    appVersion: v0.2.0-rc.1
-    created: "2026-09-19T23:04:28.945357319Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    description: Hermod - LLM artifact lifecycle operator for Kubernetes
-    digest: 9933c2a088e59a4a656015abeb489b9a6ea5e75ca3f8336a500adba7b2cfd7b8
-    home: https://github.com/moreh-dev/hermod
-    keywords:
-    - kubernetes
-    - operator
-    - llm
-    - artifact
-    kubeVersion: '>= 1.32.0-0'
-    name: hermod
-    sources:
-    - https://github.com/moreh-dev/hermod/tree/main/deploy/helm/hermod
-    type: application
-    urls:
-    - charts/hermod-v0.2.0-rc.1.tgz
-    version: v0.2.0-rc.1
-  - annotations:
-      kubebuilder.io/generated-by: kubebuilder
-    apiVersion: v2
     appVersion: v0.1.0
     created: "2026-09-19T23:04:28.944153724Z"
     dependencies:
@@ -1424,132 +1009,6 @@ entries:
     urls:
     - charts/hermod-v0.1.0.tgz
     version: v0.1.0
-  - annotations:
-      kubebuilder.io/generated-by: kubebuilder
-    apiVersion: v2
-    appVersion: v0.1.0-rc.3
-    created: "2026-09-19T23:04:28.94259333Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    description: Hermod - LLM artifact lifecycle operator for Kubernetes
-    digest: fea0b05cb517cd1b7a7194fb7e25bcbedda4e9d39765baa6fad6d5ea8437e867
-    home: https://github.com/moreh-dev/hermod
-    keywords:
-    - kubernetes
-    - operator
-    - llm
-    - artifact
-    kubeVersion: '>= 1.32.0-0'
-    name: hermod
-    sources:
-    - https://github.com/moreh-dev/hermod/tree/main/deploy/helm/hermod
-    type: application
-    urls:
-    - charts/hermod-v0.1.0-rc.3.tgz
-    version: v0.1.0-rc.3
-  - annotations:
-      kubebuilder.io/generated-by: kubebuilder
-    apiVersion: v2
-    appVersion: v0.1.0-rc.2
-    created: "2026-09-19T23:04:28.94180625Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    description: Hermod - LLM artifact lifecycle operator for Kubernetes
-    digest: 4d3fa0476082cd7a399cb21d6dc9e05cf2eabb45f45c7af26e65860c09408b58
-    home: https://github.com/moreh-dev/hermod
-    keywords:
-    - kubernetes
-    - operator
-    - llm
-    - artifact
-    kubeVersion: '>= 1.32.0-0'
-    name: hermod
-    sources:
-    - https://github.com/moreh-dev/hermod/tree/main/deploy/helm/hermod
-    type: application
-    urls:
-    - charts/hermod-v0.1.0-rc.2.tgz
-    version: v0.1.0-rc.2
-  - annotations:
-      kubebuilder.io/generated-by: kubebuilder
-    apiVersion: v2
-    appVersion: v0.1.0-rc.1
-    created: "2026-09-19T23:04:28.941042736Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    description: Hermod - LLM artifact lifecycle operator for Kubernetes
-    digest: 4dc71ae05a466daf62b17af905d97c17866020b1e62e691e452da85746fb3dcd
-    home: https://github.com/moreh-dev/hermod
-    keywords:
-    - kubernetes
-    - operator
-    - llm
-    - artifact
-    kubeVersion: '>= 1.32.0-0'
-    name: hermod
-    sources:
-    - https://github.com/moreh-dev/hermod/tree/main/deploy/helm/hermod
-    type: application
-    urls:
-    - charts/hermod-v0.1.0-rc.1.tgz
-    version: v0.1.0-rc.1
-  - annotations:
-      kubebuilder.io/generated-by: kubebuilder
-    apiVersion: v2
-    appVersion: v0.0.3
-    created: "2026-09-19T23:04:28.940275196Z"
-    description: Hermod - LLM artifact lifecycle operator for Kubernetes
-    digest: 8898acaeb74e33bb2a299e6c2b9a94d9c66cc4ddb476158605c86f24b5a4d2a0
-    home: https://github.com/moreh-dev/hermod
-    keywords:
-    - kubernetes
-    - operator
-    kubeVersion: '>= 1.32.0-0'
-    name: hermod
-    sources:
-    - https://github.com/moreh-dev/hermod
-    type: application
-    urls:
-    - charts/hermod-v0.0.3.tgz
-    version: v0.0.3
-  - annotations:
-      kubebuilder.io/generated-by: kubebuilder
-    apiVersion: v2
-    appVersion: v0.0.2
-    created: "2026-09-19T23:04:28.93988115Z"
-    description: Hermod - LLM artifact lifecycle operator for Kubernetes
-    digest: 771071189c033328f55c2ec8ebcecc6e06fa2e4570c987abb70d79ba2d172806
-    keywords:
-    - kubernetes
-    - operator
-    kubeVersion: '>= 1.32.0-0'
-    name: hermod
-    type: application
-    urls:
-    - charts/hermod-v0.0.2.tgz
-    version: v0.0.2
-  - annotations:
-      kubebuilder.io/generated-by: kubebuilder
-    apiVersion: v2
-    appVersion: v0.0.1
-    created: "2026-09-19T23:04:28.939463719Z"
-    description: Hermod - LLM artifact lifecycle operator for Kubernetes
-    digest: 7a7a830983ad9e12f91f058776dfeca9385368427bdce435b20b727e7fbf4c2f
-    keywords:
-    - kubernetes
-    - operator
-    kubeVersion: '>= 1.32.0-0'
-    name: hermod
-    type: application
-    urls:
-    - charts/hermod-v0.0.1.tgz
-    version: v0.0.1
   hermod-crd:
   - annotations:
       kubebuilder.io/generated-by: kubebuilder
@@ -1608,24 +1067,6 @@ entries:
   - annotations:
       kubebuilder.io/generated-by: kubebuilder
     apiVersion: v2
-    appVersion: v0.2.0-rc.1
-    created: "2026-09-19T23:04:28.937561089Z"
-    description: Hermod CRDs for LLM artifact lifecycle management
-    digest: 51471f0915a6f58786d3e755d45a48a225795695dd7b99d268045ec661889adf
-    home: https://github.com/moreh-dev/hermod
-    keywords:
-    - kubernetes
-    - crd
-    name: hermod-crd
-    sources:
-    - https://github.com/moreh-dev/hermod/tree/main/deploy/helm/hermod-crd
-    type: application
-    urls:
-    - charts/hermod-crd-v0.2.0-rc.1.tgz
-    version: v0.2.0-rc.1
-  - annotations:
-      kubebuilder.io/generated-by: kubebuilder
-    apiVersion: v2
     appVersion: v0.1.0
     created: "2026-09-19T23:04:28.937291741Z"
     description: Hermod CRDs for LLM artifact lifecycle management
@@ -1641,60 +1082,6 @@ entries:
     urls:
     - charts/hermod-crd-v0.1.0.tgz
     version: v0.1.0
-  - annotations:
-      kubebuilder.io/generated-by: kubebuilder
-    apiVersion: v2
-    appVersion: v0.1.0-rc.3
-    created: "2026-09-19T23:04:28.937140433Z"
-    description: Hermod CRDs for LLM artifact lifecycle management
-    digest: 0c7a0eaa153c56073152a61d0250937c2a685cd9d3c407a2ce28274ae3b5fe33
-    home: https://github.com/moreh-dev/hermod
-    keywords:
-    - kubernetes
-    - crd
-    name: hermod-crd
-    sources:
-    - https://github.com/moreh-dev/hermod/tree/main/deploy/helm/hermod-crd
-    type: application
-    urls:
-    - charts/hermod-crd-v0.1.0-rc.3.tgz
-    version: v0.1.0-rc.3
-  - annotations:
-      kubebuilder.io/generated-by: kubebuilder
-    apiVersion: v2
-    appVersion: v0.1.0-rc.2
-    created: "2026-09-19T23:04:28.936987472Z"
-    description: Hermod CRDs for LLM artifact lifecycle management
-    digest: d54a2ba8bd822e2ae5c2eeebd87c450c8e526ba64597bbecfe387a94139cba66
-    home: https://github.com/moreh-dev/hermod
-    keywords:
-    - kubernetes
-    - crd
-    name: hermod-crd
-    sources:
-    - https://github.com/moreh-dev/hermod/tree/main/deploy/helm/hermod-crd
-    type: application
-    urls:
-    - charts/hermod-crd-v0.1.0-rc.2.tgz
-    version: v0.1.0-rc.2
-  - annotations:
-      kubebuilder.io/generated-by: kubebuilder
-    apiVersion: v2
-    appVersion: v0.1.0-rc.1
-    created: "2026-09-19T23:04:28.936829443Z"
-    description: Hermod CRDs for LLM artifact lifecycle management
-    digest: 9097ffd7d3c794fdcb99e93130753848c39bebd758c91f1a37a9b0839321d18c
-    home: https://github.com/moreh-dev/hermod
-    keywords:
-    - kubernetes
-    - crd
-    name: hermod-crd
-    sources:
-    - https://github.com/moreh-dev/hermod/tree/main/deploy/helm/hermod-crd
-    type: application
-    urls:
-    - charts/hermod-crd-v0.1.0-rc.1.tgz
-    version: v0.1.0-rc.1
   inference-service:
   - apiVersion: v2
     appVersion: v0.7.0
@@ -1713,36 +1100,6 @@ entries:
     urls:
     - charts/inference-service-v0.7.0.tgz
     version: v0.7.0
-  ingress-nginx:
-  - annotations:
-      artifacthub.io/changes: |
-        - Update Ingress-Nginx version controller-v1.11.3
-      artifacthub.io/prerelease: "false"
-    apiVersion: v2
-    appVersion: 1.11.3
-    created: "2026-09-19T23:04:28.952078444Z"
-    description: Ingress controller for Kubernetes using NGINX as a reverse proxy
-      and load balancer
-    digest: a9f371489a6c18042508c0b5c2ea669deaad7ccc08f37efc4522e336edda1c20
-    home: https://github.com/kubernetes/ingress-nginx
-    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
-    keywords:
-    - ingress
-    - nginx
-    kubeVersion: '>=1.21.0-0'
-    maintainers:
-    - name: cpanato
-    - name: Gacko
-    - name: puerco
-    - name: rikatz
-    - name: strongjz
-    - name: tao12345666333
-    name: ingress-nginx
-    sources:
-    - https://github.com/kubernetes/ingress-nginx
-    urls:
-    - charts/ingress-nginx-4.11.3.tgz
-    version: 4.11.3
   istiod:
   - apiVersion: v2
     appVersion: 1.25.4
@@ -1776,25 +1133,6 @@ entries:
     urls:
     - charts/istiod-1.24.3.tgz
     version: 1.24.3
-  k8s-ecr-login-renew:
-  - apiVersion: v2
-    appVersion: 1.7.1
-    created: "2026-09-19T23:04:28.954394926Z"
-    description: Deploys a cronJob which will renew ECR imagePullSecrets automatically
-    digest: 47a6bbfa5136b5fffd0c5c27be190b51bdc236a6872335dfc91af12bf493bc1d
-    keywords:
-    - aws
-    - ecr
-    - imagePullSecrets
-    maintainers:
-    - name: Nabeel Sulieman
-      url: https://nabeel.dev
-    name: k8s-ecr-login-renew
-    sources:
-    - https://github.com/nabsul/k8s-ecr-login-renew
-    urls:
-    - charts/k8s-ecr-login-renew-1.0.5.tgz
-    version: 1.0.5
   keycloak:
   - annotations:
       category: DeveloperTools
@@ -1835,84 +1173,6 @@ entries:
     urls:
     - charts/keycloak-24.2.0.tgz
     version: 24.2.0
-  - annotations:
-      category: DeveloperTools
-      images: |
-        - name: keycloak
-          image: docker.io/bitnami/keycloak:24.0.4-debian-12-r1
-        - name: keycloak-config-cli
-          image: docker.io/bitnami/keycloak-config-cli:5.12.0-debian-12-r4
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 24.0.4
-    created: "2026-09-19T23:04:28.964593848Z"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 15.x.x
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: Keycloak is a high performance Java-based identity and access management
-      solution. It lets developers add an authentication layer to their applications
-      with minimum effort.
-    digest: b432c5bcf8efa862c190ce4085c26f62420b202a974e701bf7c99b2274668612
-    home: https://bitnami.com
-    icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
-    keywords:
-    - keycloak
-    - access-management
-    maintainers:
-    - name: Broadcom, Inc. All Rights Reserved.
-      url: https://github.com/bitnami/charts
-    name: keycloak
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
-    urls:
-    - charts/keycloak-21.2.2.tgz
-    version: 21.2.2
-  - annotations:
-      category: DeveloperTools
-      images: |
-        - name: keycloak
-          image: docker.io/bitnami/keycloak:23.0.7-debian-12-r4
-        - name: keycloak-config-cli
-          image: docker.io/bitnami/keycloak-config-cli:5.11.1-debian-12-r0
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 23.0.7
-    created: "2026-09-19T23:04:28.959473638Z"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 14.x.x
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: Keycloak is a high performance Java-based identity and access management
-      solution. It lets developers add an authentication layer to their applications
-      with minimum effort.
-    digest: c29239eb5f229fcc93e62ac8da5e7511343dad336928b2a8518fc925a2ad719d
-    home: https://bitnami.com
-    icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
-    keywords:
-    - keycloak
-    - access-management
-    maintainers:
-    - name: VMware, Inc.
-      url: https://github.com/bitnami/charts
-    name: keycloak
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
-    urls:
-    - charts/keycloak-19.3.4.tgz
-    version: 19.3.4
   kube-prometheus-stack:
   - annotations:
       artifacthub.io/license: Apache-2.0
@@ -1993,246 +1253,6 @@ entries:
     urls:
     - charts/kube-prometheus-stack-74.2.2.tgz
     version: 74.2.2
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/links: |
-        - name: Chart Source
-          url: https://github.com/prometheus-community/helm-charts
-        - name: Upstream Project
-          url: https://github.com/prometheus-operator/kube-prometheus
-      artifacthub.io/operator: "true"
-    apiVersion: v2
-    appVersion: v0.78.2
-    created: "2026-09-19T23:04:29.015824432Z"
-    dependencies:
-    - condition: crds.enabled
-      name: crds
-      repository: ""
-      version: 0.0.0
-    - condition: kubeStateMetrics.enabled
-      name: kube-state-metrics
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 5.27.*
-    - condition: nodeExporter.enabled
-      name: prometheus-node-exporter
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 4.42.*
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: 8.6.*
-    - condition: windowsMonitoring.enabled
-      name: prometheus-windows-exporter
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 0.7.*
-    description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards,
-      and Prometheus rules combined with documentation and scripts to provide easy
-      to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
-      Prometheus Operator.
-    digest: 041319a39a131417bac0ce0ffe5d518c50d7f71e036c34b9bed7c57e82a493cb
-    home: https://github.com/prometheus-operator/kube-prometheus
-    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
-    keywords:
-    - operator
-    - prometheus
-    - kube-prometheus
-    kubeVersion: '>=1.19.0-0'
-    maintainers:
-    - email: andrew@quadcorps.co.uk
-      name: andrewgkew
-    - email: gianrubio@gmail.com
-      name: gianrubio
-    - email: github.gkarthiks@gmail.com
-      name: gkarthiks
-    - email: kube-prometheus-stack@sisti.pt
-      name: GMartinez-Sisti
-    - email: github@jkroepke.de
-      name: jkroepke
-    - email: scott@r6by.com
-      name: scottrigby
-    - email: miroslav.hadzhiev@gmail.com
-      name: Xtigyro
-    - email: quentin.bisson@gmail.com
-      name: QuentinBisson
-    name: kube-prometheus-stack
-    sources:
-    - https://github.com/prometheus-community/helm-charts
-    - https://github.com/prometheus-operator/kube-prometheus
-    type: application
-    urls:
-    - charts/kube-prometheus-stack-66.3.1.tgz
-    version: 66.3.1
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/links: |
-        - name: Chart Source
-          url: https://github.com/prometheus-community/helm-charts
-        - name: Upstream Project
-          url: https://github.com/prometheus-operator/kube-prometheus
-      artifacthub.io/operator: "true"
-    apiVersion: v2
-    appVersion: v0.72.0
-    created: "2026-09-19T23:04:28.999212966Z"
-    dependencies:
-    - condition: crds.enabled
-      name: crds
-      repository: ""
-      version: 0.0.0
-    - condition: kubeStateMetrics.enabled
-      name: kube-state-metrics
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 5.16.*
-    - condition: nodeExporter.enabled
-      name: prometheus-node-exporter
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 4.30.*
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: 7.3.*
-    - condition: windowsMonitoring.enabled
-      name: prometheus-windows-exporter
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 0.3.*
-    description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards,
-      and Prometheus rules combined with documentation and scripts to provide easy
-      to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
-      Prometheus Operator.
-    digest: abffe075dae328054976fe5c5ebfd6dd365bb3c87ca9310bed7a654c24c5c760
-    home: https://github.com/prometheus-operator/kube-prometheus
-    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
-    keywords:
-    - operator
-    - prometheus
-    - kube-prometheus
-    kubeVersion: '>=1.19.0-0'
-    maintainers:
-    - email: andrew@quadcorps.co.uk
-      name: andrewgkew
-    - email: gianrubio@gmail.com
-      name: gianrubio
-    - email: github.gkarthiks@gmail.com
-      name: gkarthiks
-    - email: kube-prometheus-stack@sisti.pt
-      name: GMartinez-Sisti
-    - email: github@jkroepke.de
-      name: jkroepke
-    - email: scott@r6by.com
-      name: scottrigby
-    - email: miroslav.hadzhiev@gmail.com
-      name: Xtigyro
-    - email: quentin.bisson@gmail.com
-      name: QuentinBisson
-    name: kube-prometheus-stack
-    sources:
-    - https://github.com/prometheus-community/helm-charts
-    - https://github.com/prometheus-operator/kube-prometheus
-    type: application
-    urls:
-    - charts/kube-prometheus-stack-57.0.1.tgz
-    version: 57.0.1
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/links: |
-        - name: Chart Source
-          url: https://github.com/prometheus-community/helm-charts
-        - name: Upstream Project
-          url: https://github.com/prometheus-operator/kube-prometheus
-      artifacthub.io/operator: "true"
-    apiVersion: v2
-    appVersion: v0.71.2
-    created: "2026-09-19T23:04:28.985318296Z"
-    dependencies:
-    - condition: crds.enabled
-      name: crds
-      repository: ""
-      version: 0.0.0
-    - condition: kubeStateMetrics.enabled
-      name: kube-state-metrics
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 5.16.*
-    - condition: nodeExporter.enabled
-      name: prometheus-node-exporter
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 4.30.*
-    - condition: grafana.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: 7.3.*
-    - condition: windowsMonitoring.enabled
-      name: prometheus-windows-exporter
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 0.3.*
-    description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards,
-      and Prometheus rules combined with documentation and scripts to provide easy
-      to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
-      Prometheus Operator.
-    digest: a260c2b5ad78cbf8e43e830b608d4ca52a616eb502cc6e4f37cfd7bf93db0290
-    home: https://github.com/prometheus-operator/kube-prometheus
-    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
-    keywords:
-    - operator
-    - prometheus
-    - kube-prometheus
-    kubeVersion: '>=1.19.0-0'
-    maintainers:
-    - email: andrew@quadcorps.co.uk
-      name: andrewgkew
-    - email: gianrubio@gmail.com
-      name: gianrubio
-    - email: github.gkarthiks@gmail.com
-      name: gkarthiks
-    - email: kube-prometheus-stack@sisti.pt
-      name: GMartinez-Sisti
-    - email: github@jkroepke.de
-      name: jkroepke
-    - email: scott@r6by.com
-      name: scottrigby
-    - email: miroslav.hadzhiev@gmail.com
-      name: Xtigyro
-    - email: quentin.bisson@gmail.com
-      name: QuentinBisson
-    name: kube-prometheus-stack
-    sources:
-    - https://github.com/prometheus-community/helm-charts
-    - https://github.com/prometheus-operator/kube-prometheus
-    type: application
-    urls:
-    - charts/kube-prometheus-stack-56.8.2.tgz
-    version: 56.8.2
-  kubeflow-trainer:
-  - apiVersion: v2
-    created: "2026-09-19T23:04:29.038477211Z"
-    dependencies:
-    - condition: jobset.install
-      name: jobset
-      repository: oci://registry.k8s.io/jobset/charts
-      version: v0.8.1
-    description: A Helm chart for deploying Kubeflow Trainer on Kubernetes.
-    digest: 9a8c5cdb7ffd2f8c05f9891da0489002a92a7fc508722f33ff5394f734a3a330
-    home: https://github.com/kubeflow/trainer
-    keywords:
-    - kubeflow trainer
-    maintainers:
-    - name: andreyvelich
-      url: https://github.com/andreyvelich
-    - name: ChenYi015
-      url: https://github.com/ChenYi015
-    - name: gaocegege
-      url: https://github.com/gaocegege
-    - name: Jeffwan
-      url: https://github.com/Jeffwan
-    - name: johnugeorge
-      url: https://github.com/johnugeorge
-    - name: tenzen-y
-      url: https://github.com/tenzen-y
-    - name: terrytangyuan
-      url: https://github.com/terrytangyuan
-    name: kubeflow-trainer
-    type: application
-    urls:
-    - charts/kubeflow-trainer-2.0.0.tgz
-    version: 2.0.0
   kubernetes-replicator:
   - apiVersion: v2
     appVersion: v2.9.2
@@ -2296,114 +1316,6 @@ entries:
     urls:
     - charts/kyverno-3.4.4.tgz
     version: 3.4.4
-  - annotations:
-      artifacthub.io/changes: |
-        - kind: added
-          description: Add a key to preserve configmap settings during upgrade
-        - kind: added
-          description: Make admission reports breaker threshold configurable
-      artifacthub.io/links: |
-        - name: Documentation
-          url: https://kyverno.io/docs
-      artifacthub.io/operator: "false"
-      artifacthub.io/prerelease: "false"
-    apiVersion: v2
-    appVersion: v1.12.5
-    created: "2026-09-19T23:04:29.052146018Z"
-    dependencies:
-    - condition: grafana.enabled
-      name: grafana
-      repository: ""
-      version: 3.2.6
-    - condition: crds.install
-      name: crds
-      repository: ""
-      version: 3.2.6
-    description: Kubernetes Native Policy Management
-    digest: f2ca140e20a6637b78bec57ae9005fef7801eda33882013cdf05a7fb72966adc
-    home: https://kyverno.io/
-    icon: https://github.com/kyverno/kyverno/raw/main/img/logo.png
-    keywords:
-    - kubernetes
-    - nirmata
-    - policy agent
-    - policy
-    - validating webhook
-    - admission controller
-    - mutation
-    - mutate
-    - validate
-    - generate
-    - supply chain
-    - security
-    kubeVersion: '>=1.25.0-0'
-    maintainers:
-    - name: Nirmata
-      url: https://kyverno.io/
-    name: kyverno
-    sources:
-    - https://github.com/kyverno/kyverno
-    type: application
-    urls:
-    - charts/kyverno-3.2.6.tgz
-    version: 3.2.6
-  - annotations:
-      artifacthub.io/changes: |
-        - kind: added
-          description: Added possibility to define additional init and sidecar container.
-        - kind: added
-          description: Added ability to remove namespaces from default resourceFilters list.
-        - kind: added
-          description: Prevent installing Kyverno in namespace kube-system.
-        - kind: fixed
-          description: Docs for generatecontrollerExtraResources.
-        - kind: changed
-          description: Enable autogen internals by default.
-        - kind: fixed
-          description: Self signed certificates not using SANs.
-        - kind: added
-          description: Extra args support for init container.
-        - kind: added
-          description: Allow overriding of test security context and resource block.
-        - kind: added
-          description: Added possibility to define custom image registries
-        - kind: added
-          description: Enable adding optional annotations to configmaps
-        - kind: added
-          description: Add startup probes support
-        - kind: added
-          description: Support extra CRD annotations
-        - kind: added
-          description: Grafana dashboard.
-      artifacthub.io/links: |
-        - name: Documentation
-          url: https://kyverno.io/docs
-      artifacthub.io/operator: "false"
-      artifacthub.io/prerelease: "false"
-    apiVersion: v2
-    appVersion: v1.8.5
-    created: "2026-09-19T23:04:29.042553302Z"
-    description: Kubernetes Native Policy Management
-    digest: 747ee2317b34e2e9831b7f47d01086b7582a5c01b188461b8d43638b99efff81
-    home: https://kyverno.io/
-    icon: https://github.com/kyverno/kyverno/raw/main/img/logo.png
-    keywords:
-    - kubernetes
-    - nirmata
-    - policy agent
-    - validating webhook
-    - admissions controller
-    kubeVersion: '>=1.16.0-0'
-    maintainers:
-    - name: Nirmata
-      url: https://kyverno.io/
-    name: kyverno
-    sources:
-    - https://github.com/kyverno/kyverno
-    type: application
-    urls:
-    - charts/kyverno-2.6.5.tgz
-    version: 2.6.5
   local-path-provisioner:
   - apiVersion: v1
     appVersion: v0.0.31
@@ -2421,38 +1333,6 @@ entries:
     urls:
     - charts/local-path-provisioner-0.0.31.tgz
     version: 0.0.31
-  - apiVersion: v1
-    appVersion: v0.0.26
-    created: "2026-09-19T23:04:29.06566895Z"
-    description: Use HostPath for persistent local storage with Kubernetes
-    digest: 7a26dc746b60a67e694e49c52e1b43142c9c98a75d04cccd9ebf2e50f1f7b8ee
-    home: https://github.com/rancher/local-path-provisioner
-    keywords:
-    - storage
-    - hostpath
-    kubeVersion: '>=1.12.0-r0'
-    name: local-path-provisioner
-    sources:
-    - https://github.com/rancher/local-path-provisioner.git
-    urls:
-    - charts/local-path-provisioner-0.0.26.tgz
-    version: 0.0.26
-  - apiVersion: v1
-    appVersion: v0.0.25
-    created: "2026-09-19T23:04:29.065398912Z"
-    description: Use HostPath for persistent local storage with Kubernetes
-    digest: d0b29816de24dc528829da513c55e86e6baaa2f0c7346d80d628b4f97611e284
-    home: https://github.com/rancher/local-path-provisioner
-    keywords:
-    - storage
-    - hostpath
-    kubeVersion: '>=1.12.0-r0'
-    name: local-path-provisioner
-    sources:
-    - https://github.com/rancher/local-path-provisioner.git
-    urls:
-    - charts/local-path-provisioner-0.0.25.tgz
-    version: 0.0.25
   loki:
   - apiVersion: v2
     appVersion: 3.5.0
@@ -2490,25 +1370,6 @@ entries:
     urls:
     - charts/loki-6.30.0.tgz
     version: 6.30.0
-  loki-distributed:
-  - apiVersion: v2
-    appVersion: 2.9.6
-    created: "2026-09-19T23:04:29.077955279Z"
-    description: Helm chart for Grafana Loki in microservices mode
-    digest: c0436b6adfd5dc27b6b81d4b5c62a00cf52c07f1318a5d985e16cb06286e855b
-    home: https://grafana.github.io/helm-charts
-    icon: https://grafana.com/docs/loki/latest/logo_and_name.png
-    maintainers:
-    - name: unguiculus
-    name: loki-distributed
-    sources:
-    - https://github.com/grafana/loki
-    - https://grafana.com/oss/loki/
-    - https://grafana.com/docs/loki/latest/
-    type: application
-    urls:
-    - charts/loki-distributed-0.79.0.tgz
-    version: 0.79.0
   mariadb:
   - annotations:
       category: Database
@@ -2576,31 +1437,6 @@ entries:
     urls:
     - charts/metallb-0.15.2.tgz
     version: 0.15.2
-  - apiVersion: v2
-    appVersion: v0.14.4
-    created: "2026-09-19T23:04:29.082300041Z"
-    dependencies:
-    - condition: crds.enabled
-      name: crds
-      repository: ""
-      version: 0.14.4
-    - condition: frrk8s.enabled
-      name: frr-k8s
-      repository: https://metallb.github.io/frr-k8s
-      version: 0.0.10
-    description: A network load-balancer implementation for Kubernetes using standard
-      routing protocols
-    digest: 41c6026f19737cf3658df23d51023f924a510e8be619a733da38e7e4dc79d872
-    home: https://metallb.universe.tf
-    icon: https://metallb.universe.tf/images/logo/metallb-white.png
-    kubeVersion: '>= 1.19.0-0'
-    name: metallb
-    sources:
-    - https://github.com/metallb/metallb
-    type: application
-    urls:
-    - charts/metallb-0.14.4.tgz
-    version: 0.14.4
   metrics-server:
   - annotations:
       artifacthub.io/changes: |
@@ -2634,42 +1470,6 @@ entries:
     urls:
     - charts/metrics-server-3.12.0.tgz
     version: 3.12.0
-  - annotations:
-      artifacthub.io/changes: |
-        - kind: added
-          description: "Added default Metrics Server resource requests."
-        - kind: changed
-          description: "Updated the Metrics Server OCI image to v0.6.3."
-        - kind: changed
-          description: "Updated the addon resizer OCI image to v1.8.19."
-        - kind: changed
-          description: "Changed the default addon resizer nanny resource configuration to match the documented Metrics Server autoscaling values."
-    apiVersion: v2
-    appVersion: 0.6.4
-    created: "2026-09-19T23:04:29.084060873Z"
-    description: Metrics Server is a scalable, efficient source of container resource
-      metrics for Kubernetes built-in autoscaling pipelines.
-    digest: e7cba5a2d7e2b0949b3ea1aa48fc3780b71eba17e1edccc8273f5da67048164b
-    home: https://github.com/kubernetes-sigs/metrics-server
-    icon: https://avatars.githubusercontent.com/u/36015203?s=400&v=4
-    keywords:
-    - kubernetes
-    - metrics-server
-    - metrics
-    maintainers:
-    - name: stevehipwell
-      url: https://github.com/stevehipwell
-    - name: krmichel
-      url: https://github.com/krmichel
-    - name: endrec
-      url: https://github.com/endrec
-    name: metrics-server
-    sources:
-    - https://github.com/kubernetes-sigs/metrics-server
-    type: application
-    urls:
-    - charts/metrics-server-3.11.0.tgz
-    version: 3.11.0
   minio:
   - annotations:
       category: Infrastructure
@@ -2898,20 +1698,6 @@ entries:
     urls:
     - charts/moai-enduser-web-v1.0.0.tgz
     version: v1.0.0
-  moai-gatekeeper:
-  - apiVersion: v2
-    appVersion: v0.1.0
-    created: "2026-09-19T23:04:29.10228371Z"
-    description: A Helm chart for Moai Gatekeeper service with Redis
-    digest: 78fe81b408b7fd9edcbef6e632f52925aa15553fb7c69d4d6c0a2e11cc32e666
-    home: https://github.com/moreh-dev/moai-gatekeeper
-    name: moai-gatekeeper
-    sources:
-    - https://github.com/moreh-dev/moai-gatekeeper
-    type: application
-    urls:
-    - charts/moai-gatekeeper-v0.1.0.tgz
-    version: v0.1.0
   moai-inference-framework:
   - apiVersion: v2
     appVersion: v0.5.0
@@ -3084,49 +1870,6 @@ entries:
     - charts/moai-inference-framework-v0.4.0.tgz
     version: v0.4.0
   - apiVersion: v2
-    appVersion: v0.3.0
-    created: "2026-09-19T23:04:29.24127891Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    - alias: prometheus-stack
-      condition: prometheus-stack.enabled
-      name: kube-prometheus-stack
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 80.7.0
-    - condition: lws.enabled
-      name: lws
-      repository: oci://registry.k8s.io/lws/charts
-      version: 0.7.0
-    - condition: odin.enabled
-      name: odin
-      repository: https://moreh-dev.github.io/helm-charts
-      version: v0.6.0
-    - condition: odin-crd.enabled
-      name: odin-crd
-      repository: https://moreh-dev.github.io/helm-charts
-      version: v0.6.0
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: 2.18.0
-    - alias: replicator
-      condition: replicator.enabled
-      name: kubernetes-replicator
-      repository: https://helm.mittwald.de
-      version: 2.12.2
-    description: Moreh Inference Framework
-    digest: f64b3b3e2e44b578a5ff3fbd53842d2769f857c7381d23cdda43b5431fad8aa1
-    home: https://docs.moreh.io/
-    name: moai-inference-framework
-    sources:
-    - https://github.com/moreh-dev/mif/tree/main/deploy/helm/moai-inference-framework
-    type: application
-    urls:
-    - charts/moai-inference-framework-v0.3.0.tgz
-    version: v0.3.0
-  - apiVersion: v2
     appVersion: v0.2.0
     created: "2026-09-19T23:04:29.206505409Z"
     dependencies:
@@ -3212,49 +1955,6 @@ entries:
     urls:
     - charts/moai-inference-framework-v0.1.0.tgz
     version: v0.1.0
-  - apiVersion: v2
-    appVersion: v0.0.1
-    created: "2026-09-19T23:04:29.140447076Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    - alias: prometheus-stack
-      condition: prometheus-stack.enabled
-      name: kube-prometheus-stack
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 80.7.0
-    - condition: lws.enabled
-      name: lws
-      repository: oci://registry.k8s.io/lws/charts
-      version: 0.7.0
-    - condition: odin.enabled
-      name: odin
-      repository: https://moreh-dev.github.io/helm-charts
-      version: v0.3.0
-    - condition: odin-crd.enabled
-      name: odin-crd
-      repository: https://moreh-dev.github.io/helm-charts
-      version: v0.3.0
-    - condition: keda.enabled
-      name: keda
-      repository: https://kedacore.github.io/charts
-      version: 2.18.0
-    - alias: replicator
-      condition: replicator.enabled
-      name: kubernetes-replicator
-      repository: https://helm.mittwald.de
-      version: 2.12.2
-    description: Moreh Inference Framework
-    digest: e0d3ae191982e6d7ca5f5b42bc85e0f1b59c34d6e1a06b4da0d22a55cb662b11
-    home: https://github.com/moreh-dev/mif
-    name: moai-inference-framework
-    sources:
-    - https://github.com/moreh-dev/mif/tree/main/deploy/helm/moai-inference-framework
-    type: application
-    urls:
-    - charts/moai-inference-framework-v0.0.1.tgz
-    version: v0.0.1
   moai-inference-preset:
   - apiVersion: v2
     appVersion: v0.5.0
@@ -3441,26 +2141,6 @@ entries:
     - charts/mongodb-15.6.14.tgz
     version: 15.6.14
   - apiVersion: v2
-    appVersion: "7.0"
-    created: "2026-09-19T23:04:29.383336249Z"
-    description: 'MongoDB ReplicaSet preconfigured for the Heimdall Responses API
-      tiered store (MAF-19708). Self-contained StatefulSet using Docker Hub Official
-      library/mongo image. The chart auto-bootstraps the ReplicaSet (rs.initiate +
-      root user creation) on first install via a wrapper-script entrypoint on pod-0;
-      the bootstrap is idempotent on restart and can be disabled with `bootstrap.enabled=false`
-      for fully manual control. '
-    digest: a9ca7143167f76d613d247c219a203f9eef18bc81bb6485c07322842a1021a90
-    home: https://github.com/moreh-dev/heimdall-inference-scheduler
-    maintainers:
-    - name: moreh-dev
-    name: mongodb
-    sources:
-    - https://github.com/moreh-dev/heimdall-inference-scheduler
-    type: application
-    urls:
-    - charts/mongodb-7.0.0.tgz
-    version: 7.0.0
-  - apiVersion: v2
     appVersion: 0.3.3
     created: "2026-09-19T23:04:29.379461452Z"
     description: 'MongoDB ReplicaSet preconfigured for the Heimdall Responses API
@@ -3491,26 +2171,6 @@ entries:
     urls:
     - charts/morehbuild-v0.3.6.tgz
     version: v0.3.6
-  - apiVersion: v2
-    appVersion: v0.3.5
-    created: "2026-09-19T23:04:29.384816482Z"
-    description: Moreh Build
-    digest: b2717076ca39c756681512643474345b8c5f75970b51c3eb858a70abc0efefc6
-    name: morehbuild
-    type: application
-    urls:
-    - charts/morehbuild-v0.3.5.tgz
-    version: v0.3.5
-  - apiVersion: v2
-    appVersion: v0.3.4
-    created: "2026-09-19T23:04:29.384262414Z"
-    description: Moreh Build
-    digest: 18c64e95476463f5b55a64370061f4a09675c3bbd660d08f33ea6d3704baeeda
-    name: morehbuild
-    type: application
-    urls:
-    - charts/morehbuild-v0.3.4.tgz
-    version: v0.3.4
   moss:
   - apiVersion: v2
     appVersion: v0.1.0
@@ -3529,163 +2189,6 @@ entries:
     urls:
     - charts/moss-v0.1.0.tgz
     version: v0.1.0
-  - apiVersion: v2
-    appVersion: v0.0.5
-    created: "2026-09-19T23:04:29.412055062Z"
-    dependencies:
-    - condition: mysql.enabled
-      name: mysql
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - database
-      version: 14.0.0
-    - condition: nginx.enabled
-      name: nginx
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - nginx
-      version: 21.1.1
-    description: A Helm chart for MoSS
-    digest: 72b8c83b41d4d51919996dbf431999dfe0ed375d3a251d3ea4b7d07f546249c9
-    name: moss
-    type: application
-    urls:
-    - charts/moss-v0.0.5.tgz
-    version: v0.0.5
-  - apiVersion: v2
-    appVersion: v0.0.4
-    created: "2026-09-19T23:04:29.406780955Z"
-    dependencies:
-    - condition: mysql.enabled
-      name: mysql
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - database
-      version: 14.0.0
-    - condition: nginx.enabled
-      name: nginx
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - nginx
-      version: 21.1.1
-    description: A Helm chart for MoSS
-    digest: 2b183e4905b800482215a65b235ec9f20e7074cdaaa3305686cc632b13f2e4df
-    name: moss
-    type: application
-    urls:
-    - charts/moss-v0.0.4.tgz
-    version: v0.0.4
-  - apiVersion: v2
-    appVersion: v0.0.3
-    created: "2026-09-19T23:04:29.401871554Z"
-    dependencies:
-    - condition: mysql.enabled
-      name: mysql
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - database
-      version: 14.0.0
-    - condition: nginx.enabled
-      name: nginx
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - nginx
-      version: 21.1.1
-    description: A Helm chart for MoSS
-    digest: 1e3ea9f1556114de29270acfd6586baefbe9d11c01e720606a5233b12c7de7a9
-    name: moss
-    type: application
-    urls:
-    - charts/moss-v0.0.3.tgz
-    version: v0.0.3
-  - apiVersion: v2
-    appVersion: v0.0.2
-    created: "2026-09-19T23:04:29.395867372Z"
-    dependencies:
-    - condition: mysql.enabled
-      name: mysql
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - database
-      version: 14.0.0
-    - condition: nginx.enabled
-      name: nginx
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - nginx
-      version: 21.1.1
-    description: A Helm chart for MoSS
-    digest: d78a3e8b0043b20c301e9b841973c6bf84bfee85b0d1ab6822ff33759703ad1d
-    name: moss
-    type: application
-    urls:
-    - charts/moss-v0.0.2.tgz
-    version: v0.0.2
-  - apiVersion: v2
-    appVersion: v0.0.1
-    created: "2026-09-19T23:04:29.39129111Z"
-    dependencies:
-    - condition: mysql.enabled
-      name: mysql
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - database
-      version: 14.0.0
-    - condition: nginx.enabled
-      name: nginx
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - nginx
-      version: 21.1.1
-    description: A Helm chart for MoSS
-    digest: 7329dfb9b1a6df232fd7b8a66601e4e690bbc300f8592019626012e0301d3067
-    name: moss
-    type: application
-    urls:
-    - charts/moss-v0.0.1.tgz
-    version: v0.0.1
-  mysql:
-  - annotations:
-      category: Database
-      images: |
-        - name: mysql
-          image: docker.io/bitnami/mysql:9.4.0-debian-12-r0
-        - name: mysqld-exporter
-          image: docker.io/bitnami/mysqld-exporter:0.17.2-debian-12-r14
-        - name: os-shell
-          image: docker.io/bitnami/os-shell:12-debian-12-r49
-      licenses: Apache-2.0
-      tanzuCategory: service
-    apiVersion: v2
-    appVersion: 9.4.0
-    created: "2026-09-19T23:04:29.418624499Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: MySQL is a fast, reliable, scalable, and easy to use open source
-      relational database system. Designed to handle mission-critical, heavy-load
-      production applications.
-    digest: a3c5bd27deced8bf9d1efdf57cb0fa70547f732469ccbc0489489158e553ccff
-    home: https://bitnami.com
-    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mysql/img/mysql-stack-220x234.png
-    keywords:
-    - mysql
-    - database
-    - sql
-    - cluster
-    - high availability
-    maintainers:
-    - name: Broadcom, Inc. All Rights Reserved.
-      url: https://github.com/bitnami/charts
-    name: mysql
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/mysql
-    urls:
-    - charts/mysql-14.0.0.tgz
-    version: 14.0.0
   nginx:
   - annotations:
       category: Infrastructure
@@ -3728,28 +2231,6 @@ entries:
     urls:
     - charts/nginx-21.1.1.tgz
     version: 21.1.1
-  nginx-ingress:
-  - apiVersion: v2
-    appVersion: 3.5.0
-    created: "2026-09-19T23:04:29.422760821Z"
-    description: NGINX Ingress Controller
-    digest: 3e050d7d1b9ee8ab7d78fa87f7be5b91cb0e345a912d4a4fb3c407ae2c33b936
-    home: https://github.com/nginxinc/kubernetes-ingress
-    icon: https://raw.githubusercontent.com/nginxinc/kubernetes-ingress/v3.5.0/charts/nginx-ingress/chart-icon.png
-    keywords:
-    - ingress
-    - nginx
-    kubeVersion: '>= 1.23.0-0'
-    maintainers:
-    - email: kubernetes@nginx.com
-      name: nginxinc
-    name: nginx-ingress
-    sources:
-    - https://github.com/nginxinc/kubernetes-ingress/tree/v3.5.0/charts/nginx-ingress
-    type: application
-    urls:
-    - charts/nginx-ingress-1.2.0.tgz
-    version: 1.2.0
   norns:
   - apiVersion: v2
     appVersion: v0.1.0
@@ -3958,27 +2439,6 @@ entries:
     - charts/odin-v0.9.0.tgz
     version: v0.9.0
   - apiVersion: v2
-    appVersion: v0.9.0-rc.1
-    created: "2026-09-19T23:04:29.577603628Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    - condition: lws.enabled
-      name: lws
-      repository: oci://registry.k8s.io/lws/charts
-      version: 0.7.0
-    description: Odin; Inference Service operator for MIF
-    digest: fd7d69390f84bec2a65e8b368f9b5e0c9a98569a081f8fda18904a7ecbce9917
-    home: https://github.com/moreh-dev/odin
-    name: odin
-    sources:
-    - https://github.com/moreh-dev/odin/tree/main/deploy/helm/odin
-    type: application
-    urls:
-    - charts/odin-v0.9.0-rc.1.tgz
-    version: v0.9.0-rc.1
-  - apiVersion: v2
     appVersion: v0.8.0
     created: "2026-09-19T23:04:29.573566069Z"
     dependencies:
@@ -4041,27 +2501,6 @@ entries:
     urls:
     - charts/odin-v0.6.0.tgz
     version: v0.6.0
-  - apiVersion: v2
-    appVersion: v0.5.1
-    created: "2026-09-19T23:04:29.562747145Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.31.4
-    - condition: lws.enabled
-      name: lws
-      repository: oci://registry.k8s.io/lws/charts
-      version: 0.7.0
-    description: Odin; Inference Service operator for MIF
-    digest: 7373ec08361033f682d89c91d79da80f4104a5e8ac09eda69e958a97c9bbbde6
-    home: https://github.com/moreh-dev/odin
-    name: odin
-    sources:
-    - https://github.com/moreh-dev/odin/tree/main/deploy/helm/odin
-    type: application
-    urls:
-    - charts/odin-v0.5.1.tgz
-    version: v0.5.1
   - apiVersion: v2
     appVersion: v0.5.0
     created: "2026-09-19T23:04:29.559223953Z"
@@ -4247,19 +2686,6 @@ entries:
     - charts/odin-crd-v0.9.0.tgz
     version: v0.9.0
   - apiVersion: v2
-    appVersion: v0.9.0-rc.1
-    created: "2026-09-19T23:04:29.503528691Z"
-    description: Odin; Inference Service operator for MIF
-    digest: a47c7498a96075f1a96f96c0225a0b9644ca26eddede405ccac04072c44b79bf
-    home: https://github.com/moreh-dev/odin
-    name: odin-crd
-    sources:
-    - https://github.com/moreh-dev/odin/tree/main/deploy/helm/odin-crd
-    type: application
-    urls:
-    - charts/odin-crd-v0.9.0-rc.1.tgz
-    version: v0.9.0-rc.1
-  - apiVersion: v2
     appVersion: v0.8.0
     created: "2026-09-19T23:04:29.498502879Z"
     description: Odin; Inference Service operator for MIF
@@ -4273,19 +2699,6 @@ entries:
     - charts/odin-crd-v0.8.0.tgz
     version: v0.8.0
   - apiVersion: v2
-    appVersion: v0.7.0
-    created: "2026-09-19T23:04:29.493171604Z"
-    description: Odin; Inference Service operator for MIF
-    digest: 5760ccae0ffa784549514427459546602ec667f3a8356f0f3e0cfb711a8fea85
-    home: https://github.com/moreh-dev/odin
-    name: odin-crd
-    sources:
-    - https://github.com/moreh-dev/odin/tree/main/deploy/helm/odin-crd
-    type: application
-    urls:
-    - charts/odin-crd-v0.7.0.tgz
-    version: v0.7.0
-  - apiVersion: v2
     appVersion: v0.6.0
     created: "2026-09-19T23:04:29.487259853Z"
     description: Odin; Inference Service operator for MIF
@@ -4298,19 +2711,6 @@ entries:
     urls:
     - charts/odin-crd-v0.6.0.tgz
     version: v0.6.0
-  - apiVersion: v2
-    appVersion: v0.5.1
-    created: "2026-09-19T23:04:29.481915304Z"
-    description: Odin; Inference Service operator for MIF
-    digest: c50cfe611697ebc1ff558b62878d3ef9e4296229afcc04c44cfc3225e23d8e92
-    home: https://github.com/moreh-dev/odin
-    name: odin-crd
-    sources:
-    - https://github.com/moreh-dev/odin/tree/main/deploy/helm/odin-crd
-    type: application
-    urls:
-    - charts/odin-crd-v0.5.1.tgz
-    version: v0.5.1
   - apiVersion: v2
     appVersion: v0.5.0
     created: "2026-09-19T23:04:29.476529091Z"
@@ -4337,32 +2737,6 @@ entries:
     urls:
     - charts/odin-crd-v0.4.0.tgz
     version: v0.4.0
-  - apiVersion: v2
-    appVersion: v0.3.0
-    created: "2026-09-19T23:04:29.46474381Z"
-    description: Odin; Inference Service operator for MIF
-    digest: c196f0e5b5395c80800e1ff4fbdf4c50d31874db020e93e6639ca31960a5351c
-    home: https://github.com/moreh-dev/odin
-    name: odin-crd
-    sources:
-    - https://github.com/moreh-dev/odin/tree/main/deploy/helm/odin-crd
-    type: application
-    urls:
-    - charts/odin-crd-v0.3.0.tgz
-    version: v0.3.0
-  - apiVersion: v2
-    appVersion: v0.2.0
-    created: "2026-09-19T23:04:29.458564645Z"
-    description: Odin; Inference Service operator for MIF
-    digest: 82a5d05435dd9b947ab1ab3194bd1b7eccb7fe0cc04fa91d4a77bb10b4a83018
-    home: https://github.com/moreh-dev/odin
-    name: odin-crd
-    sources:
-    - https://github.com/moreh-dev/odin/tree/main/deploy/helm/odin-crd
-    type: application
-    urls:
-    - charts/odin-crd-v0.2.0.tgz
-    version: v0.2.0
   - apiVersion: v2
     appVersion: v0.1.0
     created: "2026-09-19T23:04:29.439129901Z"
@@ -4438,28 +2812,6 @@ entries:
     urls:
     - charts/postgresql-16.2.1.tgz
     version: 16.2.1
-  promtail:
-  - apiVersion: v2
-    appVersion: 2.9.3
-    created: "2026-09-19T23:04:29.586166788Z"
-    description: Promtail is an agent which ships the contents of local logs to a
-      Loki instance
-    digest: 8bf485b757bfc7c37e809b60a8f61324c84160c820269fda469cb6270045c514
-    home: https://grafana.com/loki
-    icon: https://raw.githubusercontent.com/grafana/loki/master/docs/sources/logo.png
-    maintainers:
-    - email: lokiproject@googlegroups.com
-      name: Loki Maintainers
-    - name: unguiculus
-    name: promtail
-    sources:
-    - https://github.com/grafana/loki
-    - https://grafana.com/oss/loki/
-    - https://grafana.com/docs/loki/latest/
-    type: application
-    urls:
-    - charts/promtail-6.15.5.tgz
-    version: 6.15.5
   redis-sentinel:
   - apiVersion: v2
     appVersion: "8.0"
@@ -4546,22 +2898,6 @@ entries:
     urls:
     - charts/rook-ceph-v1.15.1.tgz
     version: v1.15.1
-  - apiVersion: v2
-    appVersion: v1.13.7
-    created: "2026-09-19T23:04:29.592042394Z"
-    dependencies:
-    - name: library
-      repository: file://../library
-      version: 0.0.1
-    description: File, Block, and Object Storage Services for your Cloud-Native Environment
-    digest: a3ef66c08783b67444e83a32456f1f089b40740139364b51f9a0670cb3df09f5
-    icon: https://rook.io/images/rook-logo.svg
-    name: rook-ceph
-    sources:
-    - https://github.com/rook/rook
-    urls:
-    - charts/rook-ceph-v1.13.7.tgz
-    version: v1.13.7
   rook-ceph-cluster:
   - apiVersion: v2
     appVersion: v1.15.1
@@ -4579,22 +2915,6 @@ entries:
     urls:
     - charts/rook-ceph-cluster-v1.15.1.tgz
     version: v1.15.1
-  - apiVersion: v2
-    appVersion: v1.13.7
-    created: "2026-09-19T23:04:29.587703571Z"
-    dependencies:
-    - name: library
-      repository: file://../library
-      version: 0.0.1
-    description: Manages a single Ceph cluster namespace for Rook
-    digest: da92c83ebe9b9ff5d6e352e47d1996e0ed2fe59f984548b37e9b4dca7eccc9d0
-    icon: https://rook.io/images/rook-logo.svg
-    name: rook-ceph-cluster
-    sources:
-    - https://github.com/rook/rook
-    urls:
-    - charts/rook-ceph-cluster-v1.13.7.tgz
-    version: v1.13.7
   tempo-distributed:
   - apiVersion: v2
     appVersion: 2.6.0
@@ -4796,79 +3116,4 @@ entries:
     urls:
     - charts/vector-0.39.0.tgz
     version: 0.39.0
-  - annotations:
-      artifacthub.io/images: |
-        - name: vector
-          image: timberio/vector:0.43.0-distroless-libc
-        - name: haproxy
-          image: haproxytech/haproxy-alpine:2.6.12
-      artifacthub.io/license: MPL-2.0
-      artifacthub.io/links: |
-        - name: Chart Source
-          url: https://github.com/vectordotdev/helm-charts
-      artifacthub.io/prerelease: "false"
-    apiVersion: v2
-    appVersion: 0.43.0-distroless-libc
-    created: "2026-09-19T23:04:29.619103958Z"
-    description: A lightweight, ultra-fast tool for building observability pipelines
-    digest: 7e861f2f6687b581f274c206206bc0b7d1f6ba769170cef9b2c63cfe7547e150
-    home: https://vector.dev/
-    icon: https://vector.dev/press/vector-icon.svg
-    keywords:
-    - vector
-    - events
-    - logs
-    - metrics
-    - observability
-    - stream-processing
-    kubeVersion: '>=1.15.0-0'
-    maintainers:
-    - email: vector@datadoghq.com
-      name: Datadog
-    name: vector
-    sources:
-    - https://github.com/vectordotdev/vector/
-    type: application
-    urls:
-    - charts/vector-0.38.0.tgz
-    version: 0.38.0
-  vertical-pod-autoscaler:
-  - annotations:
-      artifacthub.io/signKey: |
-        fingerprint: 9E57D2479D48B84463EF491F66D280CE667AD6C8
-        url: https://cowboysysop.github.io/charts/pgp-public-key-2022-02-19.asc
-      kubeVersion: '>=1.24'
-    apiVersion: v2
-    appVersion: 1.3.0
-    created: "2026-09-19T23:04:29.624337454Z"
-    dependencies:
-    - name: common
-      repository: https://charts.bitnami.com/bitnami/
-      version: 2.21.0
-    description: Set of components that automatically adjust the amount of CPU and
-      memory requested by pods running in the Kubernetes Cluster
-    digest: 7bcaeb6fa1a052db65fd083eae2131943563484eae4a6eee6a9c4d84d20ddea1
-    home: https://github.com/kubernetes/autoscaler
-    icon: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg
-    maintainers:
-    - email: sebastien.prudhomme@gmail.com
-      name: sebastien-prudhomme
-    name: vertical-pod-autoscaler
-    sources:
-    - https://github.com/kubernetes/autoscaler
-    - https://github.com/cowboysysop/charts/tree/master/charts/vertical-pod-autoscaler
-    urls:
-    - charts/vertical-pod-autoscaler-10.0.0.tgz
-    version: 10.0.0
-  whereabouts-chart:
-  - apiVersion: v2
-    appVersion: v0.8.0
-    created: "2026-09-19T23:04:29.624547702Z"
-    description: A Helm chart for Kubernetes
-    digest: 7cdb7cf5295476be3655e41a075befb38f5944bbb82cda55b199e5e91b5d8c31
-    name: whereabouts-chart
-    type: application
-    urls:
-    - charts/whereabouts-chart-0.1.1.tgz
-    version: 0.1.1
 generated: "2026-09-19T23:04:28.856659997Z"
